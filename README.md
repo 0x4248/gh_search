@@ -1,7 +1,7 @@
 # Github prebuilt searches
 Total searches: `67`
 
-This is a list of prebuilt searches on Github. These searches are useful for finding code that is similar to your own.
+This is a list of prebuilt searches on Github. These searches are useful for finding things on github.
 
 ## Code
 
