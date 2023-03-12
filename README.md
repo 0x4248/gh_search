@@ -66,7 +66,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:c path:*.c "#include<HEADER>"` - Find files with a C file that use a header replace HEADER with the header you want to search for e.g. `#include<math.h>` or `#include<time.h>`
 
-- `language:c path:*.c "int main"` - Find files with a C file that use a main function. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22int+main%22&type=code)
+- `language:c path:*.c "int main("` - Find files with a C file that use a main function. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22int+main(%22&type=code)
 
 ### C++
 
@@ -78,7 +78,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:cpp path:*.cpp "#include<HEADER>"` - Find files with a C++ file that use a header replace HEADER with the header you want to search for e.g. `#include<math.h>` or `#include<time.h>`
 
-- `language:cpp path:*.cpp "int main"` - Find files with a C++ file that use a main function. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22int+main%22&type=code)
+- `language:cpp path:*.cpp "int main("` - Find files with a C++ file that use a main function. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22int+main(%22&type=code)
 
 ### Json
 
