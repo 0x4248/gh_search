@@ -119,6 +119,13 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `path:.github/workflows language:yaml "uses: <PACKAGE>"` - find github workflows that use a package replace package with the package you want to search for e.g. `actions/checkout@v3` or `actions/setup-node@v2`
 
+### PHP
+
+- `language:PHP` - Find PHP files. [Search](https://github.com/search?q=language%3APHP&type=code)
+
+- `language:PHP "use Monolog"` Find PHP files that use the Monlog package. [Search](https://github.com/search?q=language%3APHP+%22use+Monolog%22&type=code)
+
+- `language:PHP "use <PACKAGE>"` Find PHP files that use a package. Replace <PACKAGE> with a package name.
 
 ## Repositories
 
