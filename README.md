@@ -21,6 +21,8 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `path:*/pyproject.toml` - Find python files with a pyproject file. [Search](https://github.com/search?q=path:*/pyproject.toml&type=code)
 
+- `language:python "#<COMMENT>"` - Find python files with a comment replace comment with the comment you want to search for e.g. `#TODO` or `#FIXME`
+
 ### Makefile
 
 - `language:make path:*/Makefile` - Find files with a Makefile. [Search](https://github.com/search?q=language%3Amake+path%3A*%2FMakefile&type=code)
@@ -68,6 +70,8 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:c path:*.c "int main("` - Find files with a C file that use a main function. <a href="https://github.com/search?q=language%3Ac+path%3A*.c+%22int+main(%22&type=code">Search</a>
 
+- `language:c path:*.c "/*<COMMENT>*/" OR "//<COMMENT>"` - Find files with a C file that use a comment replace COMMENT with the comment you want to search for e.g. `/*<COMMENT>*/` or `//<COMMENT>
+
 ### C++
 
 - `language:cpp path:*.cpp` - Find files with a C++ file. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp&type=code)
@@ -80,6 +84,8 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:cpp path:*.cpp "int main("` - Find files with a C++ file that use a main function. <a href="https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22int+main(%22&type=code">Search</a>
 
+- `language:cpp path:*.cpp "/*<COMMENT>*/" OR "//<COMMENT>"` - Find files with a C++ file that use a comment replace COMMENT with the comment you want to search for e.g. `/*<COMMENT>*/` or `//<COMMENT>
+
 ### Json
 
 - `language:json path:*.json` - Find Files with a json file. [Search](https://github.com/search?q=language%3Ajson+path%3A*.json&type=code)
@@ -91,6 +97,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 - `path:package.json` - Find package.json file. [Search](https://github.com/search?q=path%3Apackage.json&type=code)
 
 ### Javascript
+
 - `language:javascript path:*.js` - Find files with a javascript file. [Search](https://github.com/search?q=language%3Ajavascript+path%3A*.js&type=code)
 
 - `language:javascript path:*.js "require("` - Find files with a javascript file that use a package. [Search](https://github.com/search?q=language%3Ajavascript+path%3A*.js+%22require%28%22&type=code)
@@ -100,6 +107,24 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 - `language:javascript path:*.js "import "` - Find files with a javascript file that use a import. [Search](https://github.com/search?q=language%3Ajavascript+path%3A*.js+%22import+%22&type=code)
 
 - `language:javascript path:*.js "import " <PACKAGE>` - Find files with a javascript file that use a import replace package with the package you want to search for e.g. `express` or `react`
+
+- `language:javascript "//<COMMENT>"` - Find files with a javascript file that use a comment replace COMMENT with the comment you want to search for e.g. `//<COMMENT>`
+
+### Typescript
+
+- `language:typescript path:*.ts` - Find files with a typescript file. [Search](https://github.com/search?q=language%3Atypescript%20path%3A*.ts&type=code)
+
+- `language:typescript path:*.ts "require("` - Find files with a typescript file that use a package. [Search](https://github.com/search?q=language%3Atypescript+path%3A*.ts+%22require%28%22&type=code)
+
+- `language:typescript path:*.ts "require(" <PACKAGE>` - Find files with a typescript file that use a package replace package with the package you want to search for e.g. `express` or `react`
+
+### Ruby
+
+- `language:ruby path:*.rb` - Find files with a ruby file. [Search](https://github.com/search?q=language%3Aruby+path%3A*.rb&type=code)
+
+- `language:ruby path:*.rb "require "` - Find files with a ruby file that use a require. [Search](https://github.com/search?q=language%3Aruby+path%3A*.rb+%22require+%22&type=code)
+
+- `language:ruby path:*.rb "require " <PACKAGE>` - Find files with a ruby file that use a require replace package with the package you want to search for e.g. `express` or `react`
 
 ### Java
 
