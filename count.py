@@ -1,5 +1,8 @@
-# This file finds the number of searches and updates the README.md file
-# This file is run by a GitHub Action every push to the master branch
+# Gh_search (count.py)
+# A list of prebuilt searches on Github.
+# Github: https://www.github.com/awesomelewis2007/gh_search
+#
+# This file adds the total number of searches to the README.md file.
 
 if __name__ == "__main__":
     f = open("README.md", "r")
