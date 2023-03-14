@@ -1,5 +1,5 @@
 # Github prebuilt searches
-Total searches: `80`
+Total searches: `82`
 
 This is a list of prebuilt searches on Github. These searches are useful for finding things on github.
 
