@@ -156,6 +156,10 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `archived:true` - Find archived repositories. [Search](https://github.com/search?q=+archived%3Atrue&type=repositories)
 
+- `license:gpl` - Find repositories with gpl licence. [Search](https://github.com/search?q=license%3Agpl+&type=repositories)
+
+- `stars:>200` - Find repositories with more that 200 stars. [Search](https://github.com/search?q=stars%3A%3E200&type=repositories)
+
 ## Issues
 
 ### Open Issues
