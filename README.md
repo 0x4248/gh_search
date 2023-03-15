@@ -33,7 +33,8 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `path:*/Makefile language:make "= clang"` - Find files with a Makefile that use clang. [Search](https://github.com/search?q=path%3A*%2FMakefile+language%3Amake+%22%3D+clang%22&type=code)
 
-- `path:*/Makefile language:make python3` - Find files with a Makefile that use python3. [Search](https://github.com/search?q=path%3A*%2FMakefile+language%3Amake+%22+%3D+python3%22&type=code)
+- `path:*/Makefile language:make = python3` - Find files with a Makefile that use python3. [Search](https://github.com/search?q=path%3A*%2FMakefile+language%3Amake+%22+%3D+python3%22&type=code)
+
 
 
 ### Docker
