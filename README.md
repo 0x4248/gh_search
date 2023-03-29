@@ -71,7 +71,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:c path:*.c "int main("` - Find files with a C file that use a main function. <a href="https://github.com/search?q=language%3Ac+path%3A*.c+%22int+main(%22&type=code">Search</a>
 
-- `language:c path:*.c "/*<COMMENT>*/" OR "//<COMMENT>"` - Find files with a C file that use a comment replace COMMENT with the comment you want to search for e.g. `/*<COMMENT>*/` or `//<COMMENT>
+- `language:c path:*.c "/*<COMMENT>*/" OR "//<COMMENT>"` - Find files with a C file that use a comment replace COMMENT with the comment you want to search for e.g. `/*<COMMENT>*/` or `//<COMMENT>`
 
 ### C++
 
@@ -85,10 +85,10 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:cpp path:*.cpp "int main("` - Find files with a C++ file that use a main function. <a href="https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22int+main(%22&type=code">Search</a>
 
-- `language:cpp path:*.cpp "/*<COMMENT>*/" OR "//<COMMENT>"` - Find files with a C++ file that use a comment replace COMMENT with the comment you want to search for e.g. `/*<COMMENT>*/` or `//<COMMENT>
+- `language:cpp path:*.cpp "/*<COMMENT>*/" OR "//<COMMENT>"` - Find files with a C++ file that use a comment replace COMMENT with the comment you want to search for e.g. `/*<COMMENT>*/` or `//<COMMENT>`
 
 ### Json
-
+````
 - `language:json path:*.json` - Find Files with a json file. [Search](https://github.com/search?q=language%3Ajson+path%3A*.json&type=code)
 
 - `path:.vscode/settings.json` - Find vscode settings file. [Search](https://github.com/search?q=path%3A.vscode%2Fsettings.json&type=code)
