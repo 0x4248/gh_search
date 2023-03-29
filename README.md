@@ -21,6 +21,8 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `path:*/pyproject.toml` - Find python files with a pyproject file. [Search](https://github.com/search?q=path:*/pyproject.toml&type=code)
 
+- `language:python "import <PACKAGE>"` - Find python files that use a package replace package with the package you want to search for e.g. `requests` or `flask`
+
 - `language:python "#<COMMENT>"` - Find python files with a comment replace comment with the comment you want to search for e.g. `#TODO` or `#FIXME`
 
 ### Makefile
