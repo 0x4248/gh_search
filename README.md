@@ -157,6 +157,8 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 ## Repositories
 
+- `language:javascript` - Find javascript repositories. [Search](https://github.com/search?q=language%3AJavaScript+&type=repositories)
+
 - `archived:true` - Find archived repositories. [Search](https://github.com/search?q=+archived%3Atrue&type=repositories)
 
 - `license:gpl` - Find repositories with gpl licence. [Search](https://github.com/search?q=license%3Agpl+&type=repositories)
