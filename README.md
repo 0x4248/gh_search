@@ -3,6 +3,28 @@ Total searches: `84`
 
 This is a list of prebuilt searches on Github. These searches are useful for finding things on github.
 
+## Table of Contents
+
+* [Code](#code)
+    + [Python](#python)
+    + [Makefile](#makefile)
+    + [Docker](#docker)
+    + [CMake](#cmake)
+    + [C](#c)
+    + [C++](#c++)
+    + [JSON](#json)
+    + [YAML](#yaml)
+    + [PHP](#php)
+* [Repositories](#repositories)
+* [Issues](#issues)
+    + [Open Issues](#open-issues)
+    + [Closed Issues](#closed-issues)
+    + [Not planned Issues](#not-planned-issues)
+* [Pull Requests](#pull-requests)
+    + [Open Pull Requests](#open-pull-requests)
+    + [Closed Pull Requests](#closed-pull-requests)
+* [Packages](#packages)
+
 ## Code
 
 ### Python
