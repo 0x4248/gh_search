@@ -24,6 +24,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
     + [Open Pull Requests](#open-pull-requests)
     + [Closed Pull Requests](#closed-pull-requests)
 * [Packages](#packages)
+* [Commits](#commits)
 
 ## Code
 
@@ -241,3 +242,13 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 - `package_type:nuget` - Find nuget packages. [Search](https://github.com/search?q=package_type%3Anuget&type=registrypackages)
 
 - `package_type:rubygems` - Find npm packages. [Search](https://github.com/search?q=package_type%3Arubygems&type=registrypackages)
+
+## Commits
+
+- `"fix" AND "bug"` - Find commits with the word fix and bug. [Search](https://github.com/search?q=%22fix%22+AND+%22bug%22&type=commits)
+
+- `"improvements"` - Find commits with the word improvements. [Search](https://github.com/search?q=%22improvements%22&type=repositories)
+
+- `"patch" AND "vulnerability"` - Find commits with the word patch and vulnerability. [Search](https://github.com/search?q=%22patch%22+AND+%22vulnerability%22&type=commits)
+
+- `"merge pull request"` - Find commits that merge pull requests. [Search](https://github.com/search?q=%22merge+pull+request%22&type=commits)
