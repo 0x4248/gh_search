@@ -138,6 +138,14 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:javascript "//<COMMENT>"` - Find files with a javascript file that use a comment replace COMMENT with the comment you want to search for e.g. `//<COMMENT>`
 
+- `language:javascript "console.log("` - Find files with a javascript file that use a console.log. [Search](https://github.com/search?q=language%3Ajavascript+%22console.log%28%22&type=code)
+
+- `language:javascript "console.warn("` - Find files with a javascript file that use a console.warn. [Search](https://github.com/search?q=language%3Ajavascript+%22console.warn%28%22&type=code)
+
+- `language:javascript "console.error("` - Find files with a javascript file that use a console.error. [Search](https://github.com/search?q=language%3Ajavascript+%22console.error%28%22&type=code)
+
+- `language:javascript "console.table("` - Find files with a javascript file that use a console.table. [Search](https://github.com/search?q=language%3Ajavascript+%22console.table%28%22&type=code)
+
 ### Typescript
 
 - `language:typescript path:*.ts` - Find files with a typescript file. [Search](https://github.com/search?q=language%3Atypescript%20path%3A*.ts&type=code)
@@ -145,6 +153,14 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 - `language:typescript path:*.ts "require("` - Find files with a typescript file that use a package. [Search](https://github.com/search?q=language%3Atypescript+path%3A*.ts+%22require%28%22&type=code)
 
 - `language:typescript path:*.ts "require(" <PACKAGE>` - Find files with a typescript file that use a package replace package with the package you want to search for e.g. `express` or `react`
+
+- `language:typescript "console.log("` - Find files with a typescript file that use a console.log. [Search](https://github.com/search?q=language%3Atypescript+%22console.log%28%22&type=code)
+
+- `language:typescript "console.warn("` - Find files with a typescript file that use a console.warn. [Search](https://github.com/search?q=language%3Atypescript+%22console.warn%28%22&type=code)
+
+- `language:typescript "console.error("` - Find files with a typescript file that use a console.error. [Search](https://github.com/search?q=language%3Atypescript+%22console.error%28%22&type=code)
+
+- `language:typescript "console.table("` - Find files with a typescript file that use a console.table. [Search](https://github.com/search?q=language%3Atypescript+%22console.table%28%22&type=code)
 
 ### Ruby
 
