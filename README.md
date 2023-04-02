@@ -48,6 +48,8 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:python "#<COMMENT>"` - Find python files with a comment replace comment with the comment you want to search for e.g. `#TODO` or `#FIXME`
 
+- `language:python "print(" OR language:python "print ("` - Find python files with a print statement. [Search](https://github.com/search?q=language%3Apython+%22print%28%22+OR+language%3Apython+%22print+%28%22&type=code)
+
 ### Makefile
 
 - `language:make path:*/Makefile` - Find files with a Makefile. [Search](https://github.com/search?q=language%3Amake+path%3A*%2FMakefile&type=code)
@@ -59,8 +61,6 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 - `path:*/Makefile language:make "= clang"` - Find files with a Makefile that use clang. [Search](https://github.com/search?q=path%3A*%2FMakefile+language%3Amake+%22%3D+clang%22&type=code)
 
 - `path:*/Makefile language:make = python3` - Find files with a Makefile that use python3. [Search](https://github.com/search?q=path%3A*%2FMakefile+language%3Amake+%22+%3D+python3%22&type=code)
-
-
 
 ### Docker
 
@@ -83,6 +83,8 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 - `language:cmake path:*/CMakeLists.txt "find_package("` - Find files with a CMakeLists.txt that use a package. [Search](https://github.com/search?q=language%3Acmake+path%3A*%2FCMakeLists.txt+%22find_package%28%22&type=code)
 
 - `language:cmake path:*/CMakeLists.txt "find_package(" <PACKAGE>` - Find files with a CMakeLists.txt that use a package replace package with the package you want to search for e.g. `Boost` or `OpenCV`
+
+- `language:cmake path:*/CMakeLists.txt "find_package(Boost"` - Find files with a CMakeLists.txt that use Boost. [Search](https://github.com/search?q=language%3Acmake+path%3A*%2FCMakeLists.txt+%22find_package%28Boost%22&type=code)
 
 ### C
 
