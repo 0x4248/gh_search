@@ -6,17 +6,21 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 ## Table of Contents
 
 * [Code](#code)
-    + [Python](#python)
-    + [Makefile](#makefile)
-    + [Docker](#docker)
-    + [CMake](#cmake)
     + [C](#c)
-    + [C++](#c++)
-    + [JSON](#json)
-    + [YAML](#yaml)
-    + [PHP](#php)
+    + [C++](#c-1)
+    + [Python](#python)
+    + [Java](#java)
+    + [JavaScript](#javascript)
+    + [TypeScript](#typescript)
     + [Rust](#rust)
     + [Go](#go)
+    + [PHP](#php)
+    + [Ruby](#ruby)
+    + [Makefile](#makefile)
+    + [CMake](#cmake)
+    + [Dockerfile](#dockerfile)
+    + [JSON](#json)
+    + [YAML](#yaml)
 * [Repositories](#repositories)
 * [Issues](#issues)
     + [Open Issues](#open-issues)
@@ -29,6 +33,36 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 * [Commits](#commits)
 
 ## Code
+
+### C
+
+- `language:c path:*.c` - Find repositories with a C file. [Search](https://github.com/search?q=language%3Ac+path%3A*.c&type=code)
+
+- `language:c path:*.h` - Find repositories with a C header file. [Search](https://github.com/search?q=language%3Ac+path%3A*.h&type=code)
+
+- `language:c path:*.c "#include<stdio.h>"` - Find repositories with a C file that use stdio. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22%23include%3Cstdio.h%3E%22&type=code)
+
+- `language:c path:*.c "#include<HEADER>"` - Find repositories with a C file that use a header replace HEADER with the header you want to search for e.g. `#include<math.h>` or `#include<time.h>`
+
+- `language:c path:*.c "int main("` - Find repositories with a C file that use a main function. <a href="https://github.com/search?q=language%3Ac+path%3A*.c+%22int+main(%22&type=code">Search</a>
+
+- `language:c path:*.c "/*<COMMENT>*/" OR "//<COMMENT>"` - Find repositories with a C file that use a comment replace COMMENT with the comment you want to search for e.g. `/*<COMMENT>*/` or `//<COMMENT>`
+
+
+### C++
+
+- `language:cpp path:*.cpp` - Find repositories with a C++ file. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp&type=code)
+
+- `language:cpp path:*.h` - Find repositories with a C++ header file. [Search](https://github.com/search?q=language%3Acpp+path%3A*.h&type=code)
+
+- `language:cpp path:*.cpp "#include<iostream>"` - Find repositories with a C++ file that use iostream. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22%23include%3Ciostream%3E%22&type=code)
+
+- `language:cpp path:*.cpp "#include<HEADER>"` - Find repositories with a C++ file that use a header replace HEADER with the header you want to search for e.g. `#include<math.h>` or `#include<time.h>`
+
+- `language:cpp path:*.cpp "int main("` - Find repositories with a C++ file that use a main function. <a href="https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22int+main(%22&type=code">Search</a>
+
+- `language:cpp path:*.cpp "/*<COMMENT>*/" OR "//<COMMENT>"` - Find repositories with a C++ file that use a comment replace COMMENT with the comment you want to search for e.g. `/*<COMMENT>*/` or `//<COMMENT>`
+
 
 ### Python
 
@@ -52,79 +86,15 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:python "print(" OR language:python "print ("` - Find python files with a print statement. [Search](https://github.com/search?q=language%3Apython+%22print%28%22+OR+language%3Apython+%22print+%28%22&type=code)
 
-### Makefile
 
-- `language:make path:*/Makefile` - Find repositories with a Makefile. [Search](https://github.com/search?q=language%3Amake+path%3A*%2FMakefile&type=code)
+### Java
 
-- `path:*/Makefile language:make "= g++"` - Find repositories with a Makefile that use g++. [Search](https://github.com/search?q=path%3A*%2FMakefile+language%3Amake+%22%3D+g%2B%2B%22&type=code)
+- `language:java path:*.java` - Find repositories with a java file. [Search](
 
-- `path:*/Makefile language:make "= gcc"` - Find repositories with a Makefile that use gcc. [Search](https://github.com/search?q=path%3A*%2FMakefile+language%3Amake+%22%3D+gcc%22&type=code)
+- `language:java path:*.java "import "` - Find repositories with a java file that use a import. [Search](https://github.com/search?q=language%3Ajava+path%3A*.java+%22import+%22&type=code)
 
-- `path:*/Makefile language:make "= clang"` - Find repositories with a Makefile that use clang. [Search](https://github.com/search?q=path%3A*%2FMakefile+language%3Amake+%22%3D+clang%22&type=code)
+- `language:java path:*.java "import " <PACKAGE>` - Find repositories with a java file that use a import replace package with the package you want to search for e.g. `java.util` or `java.io`
 
-- `path:*/Makefile language:make = python3` - Find repositories with a Makefile that use python3. [Search](https://github.com/search?q=path%3A*%2FMakefile+language%3Amake+%22+%3D+python3%22&type=code)
-
-### Docker
-
-- `language:dockerfile path:*/Dockerfile` - Find repositories with a Dockerfile. [Search](https://github.com/search?q=language%3Adockerfile+path%3A*%2FDockerfile&type=code)
-
-- `language:dockerfile path:*/Dockerfile FROM <PACKAGE>` - Find repositories with a Dockerfile that use a package replace package with the package you want to search for e.g. `ubuntu:latest` or `gcc:latest`
-
-- `language:dockerfile path:*/Dockerfile FROM ubuntu:` - Find repositories with a Dockerfile that use ubuntu. [Search](https://github.com/search?q=language%3Adockerfile+path%3A*%2FDockerfile+FROM+ubuntu%3A&type=code)
-
-- `language:dockerfile path:*/Dockerfile FROM gcc:` - Find repositories with a Dockerfile that use gcc. [Search](https://github.com/search?q=language%3Adockerfile+path%3A*%2FDockerfile+FROM+gcc%3A&type=code)
-
-- `language:dockerfile path:*/Dockerfile FROM node:` - Find repositories with a Dockerfile that use node. [Search](https://github.com/search?q=language%3Adockerfile+path%3A*%2FDockerfile+FROM+node%3A&type=code)
-
-- `language:dockerfile path:*/Dockerfile FROM python:` - Find repositories with a Dockerfile that use python. [Search](https://github.com/search?q=language%3Adockerfile+path%3A*%2FDockerfile+FROM+python%3A&type=code)
-
-### CMake
-
-- `language:cmake path:*/CMakeLists.txt` - Find repositories with a CMakeLists.txt. [Search](https://github.com/search?q=language%3Acmake+path%3A*%2FCMakeLists.txt&type=code)
-
-- `language:cmake path:*/CMakeLists.txt "find_package("` - Find repositories with a CMakeLists.txt that use a package. [Search](https://github.com/search?q=language%3Acmake+path%3A*%2FCMakeLists.txt+%22find_package%28%22&type=code)
-
-- `language:cmake path:*/CMakeLists.txt "find_package(" <PACKAGE>` - Find repositories with a CMakeLists.txt that use a package replace package with the package you want to search for e.g. `Boost` or `OpenCV`
-
-- `language:cmake path:*/CMakeLists.txt "find_package(Boost"` - Find repositories with a CMakeLists.txt that use Boost. [Search](https://github.com/search?q=language%3Acmake+path%3A*%2FCMakeLists.txt+%22find_package%28Boost%22&type=code)
-
-### C
-
-- `language:c path:*.c` - Find repositories with a C file. [Search](https://github.com/search?q=language%3Ac+path%3A*.c&type=code)
-
-- `language:c path:*.h` - Find repositories with a C header file. [Search](https://github.com/search?q=language%3Ac+path%3A*.h&type=code)
-
-- `language:c path:*.c "#include<stdio.h>"` - Find repositories with a C file that use stdio. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22%23include%3Cstdio.h%3E%22&type=code)
-
-- `language:c path:*.c "#include<HEADER>"` - Find repositories with a C file that use a header replace HEADER with the header you want to search for e.g. `#include<math.h>` or `#include<time.h>`
-
-- `language:c path:*.c "int main("` - Find repositories with a C file that use a main function. <a href="https://github.com/search?q=language%3Ac+path%3A*.c+%22int+main(%22&type=code">Search</a>
-
-- `language:c path:*.c "/*<COMMENT>*/" OR "//<COMMENT>"` - Find repositories with a C file that use a comment replace COMMENT with the comment you want to search for e.g. `/*<COMMENT>*/` or `//<COMMENT>`
-
-### C++
-
-- `language:cpp path:*.cpp` - Find repositories with a C++ file. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp&type=code)
-
-- `language:cpp path:*.h` - Find repositories with a C++ header file. [Search](https://github.com/search?q=language%3Acpp+path%3A*.h&type=code)
-
-- `language:cpp path:*.cpp "#include<iostream>"` - Find repositories with a C++ file that use iostream. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22%23include%3Ciostream%3E%22&type=code)
-
-- `language:cpp path:*.cpp "#include<HEADER>"` - Find repositories with a C++ file that use a header replace HEADER with the header you want to search for e.g. `#include<math.h>` or `#include<time.h>`
-
-- `language:cpp path:*.cpp "int main("` - Find repositories with a C++ file that use a main function. <a href="https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22int+main(%22&type=code">Search</a>
-
-- `language:cpp path:*.cpp "/*<COMMENT>*/" OR "//<COMMENT>"` - Find repositories with a C++ file that use a comment replace COMMENT with the comment you want to search for e.g. `/*<COMMENT>*/` or `//<COMMENT>`
-
-### Json
-
-- `language:json path:*.json` - Find repositories with a json file. [Search](https://github.com/search?q=language%3Ajson+path%3A*.json&type=code)
-
-- `path:.vscode/settings.json` - Find vscode settings files. [Search](https://github.com/search?q=path%3A.vscode%2Fsettings.json&type=code)
-
-- `path:.vscode/launch.json` - Find vscode launch files. [Search](https://github.com/search?q=path%3A.vscode%2Flaunch.json&type=code)
-
-- `path:package.json` - Find package.json files. [Search](https://github.com/search?q=path%3Apackage.json&type=code)
 
 ### Javascript
 
@@ -164,41 +134,6 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:typescript "console.table("` - Find repositories with a typescript file that use a console.table. [Search](https://github.com/search?q=language%3Atypescript+%22console.table%28%22&type=code)
 
-### Ruby
-
-- `language:ruby path:*.rb` - Find repositories with a ruby file. [Search](https://github.com/search?q=language%3Aruby+path%3A*.rb&type=code)
-
-- `language:ruby path:*.rb "require "` - Find repositories with a ruby file that use a require. [Search](https://github.com/search?q=language%3Aruby+path%3A*.rb+%22require+%22&type=code)
-
-- `language:ruby path:*.rb "require " <PACKAGE>` - Find repositories with a ruby file that use a require replace package with the package you want to search for e.g. `express` or `react`
-
-### Java
-
-- `language:java path:*.java` - Find repositories with a java file. [Search](
-
-- `language:java path:*.java "import "` - Find repositories with a java file that use a import. [Search](https://github.com/search?q=language%3Ajava+path%3A*.java+%22import+%22&type=code)
-
-- `language:java path:*.java "import " <PACKAGE>` - Find repositories with a java file that use a import replace package with the package you want to search for e.g. `java.util` or `java.io`
-
-### YAML
-
-- `language:yaml path:*.yaml` - Find repositories with a yaml file. [Search](https://github.com/search?q=language%3Ayaml+path%3A*.yaml&type=code)
-
-- `path:.github/workflows language:yaml` - find github workflow files. [Search](https://github.com/search?q=path%3A.github%2Fworkflows+language%3Ayaml&type=code)
-
-- `path:.github/workflows language:yaml "uses: actions/checkout@v3"` - find github workflows that use actions/checkout@v3. [Search](https://github.com/search?q=path%3A.github%2Fworkflows+language%3Ayaml+%22uses%3A+actions%2Fcheckout%40v3%22&type=code)
-
-- `path:.github/workflows language:yaml "uses: <PACKAGE>"` - find github workflows that use a package replace package with the package you want to search for e.g. `actions/checkout@v3` or `actions/setup-node@v2`
-
-### PHP
-
-- `language:PHP` - Find PHP files. [Search](https://github.com/search?q=language%3APHP&type=code)
-
-- `language:PHP "use Monolog"` Find PHP files that use the Monlog package. [Search](https://github.com/search?q=language%3APHP+%22use+Monolog%22&type=code)
-
-- `language:PHP "use <PACKAGE>"` Find PHP files that use a package. Replace <PACKAGE> with a package name.
-
-
 ### Rust
 
 - `language:rust "use std::io"` - Find Rust files that use the std::io package. [Search](https://github.com/search?q=language%3Arust+%22use+std%3A%3Aio%22&type=code)
@@ -209,6 +144,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:rust "mod <MODULE>"` - Find Rust files that use a module. Replace <MODULE> with a package name.
 
+- `language:java path:*.java` - Find repositories with a java file. [Search](
 
 - `language:rust "fn"` - Find Rust files that use a function. [Search](https://github.com/search?q=language%3Arust+%22fn%22&type=code)
 
@@ -227,6 +163,82 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 - `language:go "// <COMMENT>"` - Find Go files that use a comment. Replace <COMMENT> with a comment.
 
 - `language:go "// TODO:" OR "// BUG:" OR "// FIXME:" OR "// XXX:"` - Find Go files that have a TODO, BUG, FIXME or XXX comment. [Search](https://github.com/search?q=language%3Ago+%22%2F%2F+TODO%3A%22+OR+%22%2F%2F+BUG%3A%22+OR+%22%2F%2F+FIXME%3A%22+OR+%22%2F%2F+XXX%3A%22&type=code)
+
+
+### PHP
+
+- `language:PHP` - Find PHP files. [Search](https://github.com/search?q=language%3APHP&type=code)
+
+- `language:PHP "use Monolog"` Find PHP files that use the Monlog package. [Search](https://github.com/search?q=language%3APHP+%22use+Monolog%22&type=code)
+
+- `language:PHP "use <PACKAGE>"` Find PHP files that use a package. Replace <PACKAGE> with a package name.
+
+
+### Ruby
+
+- `language:ruby path:*.rb` - Find repositories with a ruby file. [Search](https://github.com/search?q=language%3Aruby+path%3A*.rb&type=code)
+
+- `language:ruby path:*.rb "require "` - Find repositories with a ruby file that use a require. [Search](https://github.com/search?q=language%3Aruby+path%3A*.rb+%22require+%22&type=code)
+
+- `language:ruby path:*.rb "require " <PACKAGE>` - Find repositories with a ruby file that use a require replace package with the package you want to search for e.g. `express` or `react`
+
+### Makefile
+
+- `language:make path:*/Makefile` - Find repositories with a Makefile. [Search](https://github.com/search?q=language%3Amake+path%3A*%2FMakefile&type=code)
+
+- `path:*/Makefile language:make "= g++"` - Find repositories with a Makefile that use g++. [Search](https://github.com/search?q=path%3A*%2FMakefile+language%3Amake+%22%3D+g%2B%2B%22&type=code)
+
+- `path:*/Makefile language:make "= gcc"` - Find repositories with a Makefile that use gcc. [Search](https://github.com/search?q=path%3A*%2FMakefile+language%3Amake+%22%3D+gcc%22&type=code)
+
+- `path:*/Makefile language:make "= clang"` - Find repositories with a Makefile that use clang. [Search](https://github.com/search?q=path%3A*%2FMakefile+language%3Amake+%22%3D+clang%22&type=code)
+
+- `path:*/Makefile language:make = python3` - Find repositories with a Makefile that use python3. [Search](https://github.com/search?q=path%3A*%2FMakefile+language%3Amake+%22+%3D+python3%22&type=code)
+
+
+### CMake
+
+- `language:cmake path:*/CMakeLists.txt` - Find repositories with a CMakeLists.txt. [Search](https://github.com/search?q=language%3Acmake+path%3A*%2FCMakeLists.txt&type=code)
+
+- `language:cmake path:*/CMakeLists.txt "find_package("` - Find repositories with a CMakeLists.txt that use a package. [Search](https://github.com/search?q=language%3Acmake+path%3A*%2FCMakeLists.txt+%22find_package%28%22&type=code)
+
+- `language:cmake path:*/CMakeLists.txt "find_package(" <PACKAGE>` - Find repositories with a CMakeLists.txt that use a package replace package with the package you want to search for e.g. `Boost` or `OpenCV`
+
+- `language:cmake path:*/CMakeLists.txt "find_package(Boost"` - Find repositories with a CMakeLists.txt that use Boost. [Search](https://github.com/search?q=language%3Acmake+path%3A*%2FCMakeLists.txt+%22find_package%28Boost%22&type=code)
+
+### Docker
+
+- `language:dockerfile path:*/Dockerfile` - Find repositories with a Dockerfile. [Search](https://github.com/search?q=language%3Adockerfile+path%3A*%2FDockerfile&type=code)
+
+- `language:dockerfile path:*/Dockerfile FROM <PACKAGE>` - Find repositories with a Dockerfile that use a package replace package with the package you want to search for e.g. `ubuntu:latest` or `gcc:latest`
+
+- `language:dockerfile path:*/Dockerfile FROM ubuntu:` - Find repositories with a Dockerfile that use ubuntu. [Search](https://github.com/search?q=language%3Adockerfile+path%3A*%2FDockerfile+FROM+ubuntu%3A&type=code)
+
+- `language:dockerfile path:*/Dockerfile FROM gcc:` - Find repositories with a Dockerfile that use gcc. [Search](https://github.com/search?q=language%3Adockerfile+path%3A*%2FDockerfile+FROM+gcc%3A&type=code)
+
+- `language:dockerfile path:*/Dockerfile FROM node:` - Find repositories with a Dockerfile that use node. [Search](https://github.com/search?q=language%3Adockerfile+path%3A*%2FDockerfile+FROM+node%3A&type=code)
+
+- `language:dockerfile path:*/Dockerfile FROM python:` - Find repositories with a Dockerfile that use python. [Search](https://github.com/search?q=language%3Adockerfile+path%3A*%2FDockerfile+FROM+python%3A&type=code)
+
+### Json
+
+- `language:json path:*.json` - Find repositories with a json file. [Search](https://github.com/search?q=language%3Ajson+path%3A*.json&type=code)
+
+- `path:.vscode/settings.json` - Find vscode settings files. [Search](https://github.com/search?q=path%3A.vscode%2Fsettings.json&type=code)
+
+- `path:.vscode/launch.json` - Find vscode launch files. [Search](https://github.com/search?q=path%3A.vscode%2Flaunch.json&type=code)
+
+- `path:package.json` - Find package.json files. [Search](https://github.com/search?q=path%3Apackage.json&type=code)
+
+
+### YAML
+
+- `language:yaml path:*.yaml` - Find repositories with a yaml file. [Search](https://github.com/search?q=language%3Ayaml+path%3A*.yaml&type=code)
+
+- `path:.github/workflows language:yaml` - find github workflow files. [Search](https://github.com/search?q=path%3A.github%2Fworkflows+language%3Ayaml&type=code)
+
+- `path:.github/workflows language:yaml "uses: actions/checkout@v3"` - find github workflows that use actions/checkout@v3. [Search](https://github.com/search?q=path%3A.github%2Fworkflows+language%3Ayaml+%22uses%3A+actions%2Fcheckout%40v3%22&type=code)
+
+- `path:.github/workflows language:yaml "uses: <PACKAGE>"` - find github workflows that use a package replace package with the package you want to search for e.g. `actions/checkout@v3` or `actions/setup-node@v2`
 
 ## Repositories
 
