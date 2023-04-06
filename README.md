@@ -15,6 +15,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
     + [JSON](#json)
     + [YAML](#yaml)
     + [PHP](#php)
+    + [Rust](#rust)
 * [Repositories](#repositories)
 * [Issues](#issues)
     + [Open Issues](#open-issues)
