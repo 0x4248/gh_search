@@ -9,6 +9,8 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
     + [Programming Languages](#programming-languages)
         + [C](#c)
         + [C++](#c-1)
+        + [C#](#c-2)
+        + [Objective-C](#objective-c)
         + [Python](#python)
         + [Java](#java)
         + [JavaScript](#javascript)
@@ -17,9 +19,15 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
         + [Go](#go)
         + [PHP](#php)
         + [Ruby](#ruby)
+        + [Elixir](#elixir)
+        + [Swift](#swift)
+        + [Kotlin](#kotlin)
+        + [Dart](#dart)
     + [Build Scripts](#build-scripts)
         + [Makefile](#makefile)
         + [CMake](#cmake)
+        + [Gradle](#gradle)
+        + [Ninja](#ninja)
     + [Containers](#containers)
         + [Dockerfile](#dockerfile)
     + [Configuration and Data](#configuration-and-data)
@@ -29,6 +37,16 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
         + [TOML](#toml)
         + [INI](#ini)
         + [CSV](#csv)
+        + [SQL](#sql)
+    + [Documentation](#documentation)
+        + [Text](#text)
+        + [Markdown](#markdown)
+        + [Rich Text Format](#rich-text-format)
+        + [AsciiDoc](#asciidoc)
+        + [reStructuredText](#restructuredtext)
+        + [MediaWiki](#mediawiki)
+        + [LaTeX](#latex)
+    + [Comment Annotations](#comment-annotations)
 * [Repositories](#repositories)
 * [Issues](#issues)
     + [Open Issues](#open-issues)
@@ -75,6 +93,38 @@ Here are some searches for code on github.
 - `language:cpp path:*.cpp "/*<COMMENT>*/" OR "//<COMMENT>"` - Find repositories with a C++ file that use a comment replace COMMENT with the comment you want to search for e.g. `/*<COMMENT>*/` or `//<COMMENT>`
 
 
+#### C#
+
+- `language:C#  path:*.cs` - Find repositories with a C# file. [Search](https://github.com/search?q=language%3AC%23++path%3A*.cs&type=code)
+
+- `language:C#  path:*.cs "using System;"` - Find repositories with a C# file that use System. [Search](https://github.com/search?q=language%3AC%23++path%3A*.cs+%22using+System%3B%22&type=code)
+
+- `language:C#  path:*.cs "using <NAMESPACE>;"` - Find repositories with a C# file that use a namespace replace NAMESPACE with the namespace you want to search for e.g. `using System;` or `using System.IO;`
+
+- `language:C#  path:*.cs "class <CLASSNAME>"` - Find repositories with a C# file that use a class replace CLASSNAME with the class you want to search for e.g. `class Program` or `class MyClass`
+
+- `language:C#  path:*.cs "/*<COMMENT>*/" OR "//<COMMENT>"` - Find repositories with a C# file that use a comment replace COMMENT with the comment you want to search for e.g. `/*<COMMENT>*/` or `//<COMMENT>`
+
+- `language:C#  path:*.cs "static void Main"` - Find repositories with a C# main function [Search](https://github.com/search?q=language%3AC%23++path%3A*.cs+%22static+void+Main%22&type=code)
+
+- `language:C#  path:*.cs "// TODO:" OR "/* TODO:"` - Find repositories with a C# file that have a TODO comment [Search](https://github.com/search?q=language%3AC%23++path%3A*.cs+%22%2F%2F+TODO%3A%22+OR+%22%2F*+TODO%3A%22&type=code)
+
+- `language:C#  path:*.cs "///<summary>"` - Find repositories with a C# file that have a summary [Search](https://github.com/search?q=language%3AC%23++path%3A*.cs+%22%2F%2F%2F%3Csummary%3E%22&type=code)
+
+#### Objective-C
+
+- `language:objective-c path:*.m` - Find repositories with a Objective-C file. [Search](https://github.com/search?q=language%3Aobjective-c+path%3A*.m&type=code)
+
+- `language:objective-c path:*.h` - Find repositories with a Objective-C header file. [Search](https://github.com/search?q=language%3Aobjective-c+path%3A*.h&type=code)
+
+- `language:objective-c path:*.m "typedef struct"` - Find repositories with a Objective-C file that use a struct. [Search](https://github.com/search?q=language%3Aobjective-c+path%3A*.m+%22typedef+struct%22&type=code)
+
+- `language:objective-c path:*.m "#import <HEADER>"` - Find repositories with a Objective-C file that use a header replace HEADER with the header you want to search for e.g. `#import <Foundation/Foundation.h>` or `#import <UIKit/UIKit.h>`
+
+- `language:objective-c path:*.m "int main("` - Find repositories with a Objective-C file that use a main function. [Search](https://github.com/search?q=language%3Aobjective-c+path%3A*.m+%22int+main%28%22&type=code)
+
+- `language:objective-c path:*.m "/*<COMMENT>*/" OR "//<COMMENT>"` - Find repositories with a Objective-C file that use a comment replace COMMENT with the comment you want to search for e.g. `/*<COMMENT>*/` or `//<COMMENT>`
+
 #### Python
 
 - `language:python path:*/__main__.py OR language:python path:*/main.py` - Find repositories with a main python file. [Search](https://github.com/search?q=language%3Apython+path%3A*%2F__main__.py+OR+language%3Apython+path%3A*%2Fmain.py&type=code)
@@ -85,7 +135,7 @@ Here are some searches for code on github.
 
 - `path:*/requirements.txt <PACKAGE>` - Find repositories with a requirements file that use a package replace package with the package you want to search for e.g. `requests==` or `flask==`
 
-- `language:python path:*/setup.py` - Find repositories with a setup file
+- `language:python path:*/setup.py` - Find repositories with a setup file [Search](https://github.com/search?q=language%3Apython+path%3A*%2Fsetup.py&type=code)
 
 - `path:*/setup.cfg` - Find repositories with a setup config file. [Search](https://github.com/search?q=path%3A*%2Fsetup.cfg&type=code)
 
@@ -93,19 +143,18 @@ Here are some searches for code on github.
 
 - `language:python "import <PACKAGE>"` - Find python files that use a package replace package with the package you want to search for e.g. `requests` or `flask`
 
-- `language:python "#<COMMENT>"` - Find python files with a comment replace comment with the comment you want to search for e.g. `#TODO` or `#FIXME`
-
 - `language:python "print(" OR language:python "print ("` - Find python files with a print statement. [Search](https://github.com/search?q=language%3Apython+%22print%28%22+OR+language%3Apython+%22print+%28%22&type=code)
 
 
 #### Java
 
-- `language:java path:*.java` - Find repositories with a java file. [Search](
+- `language:java path:*.java` - Find repositories with a java file. [Search](https://github.com/search?q=language%3Ajava+path%3A*.java&type=code)
 
 - `language:java path:*.java "import "` - Find repositories with a java file that use a import. [Search](https://github.com/search?q=language%3Ajava+path%3A*.java+%22import+%22&type=code)
 
 - `language:java path:*.java "import " <PACKAGE>` - Find repositories with a java file that use a import replace package with the package you want to search for e.g. `java.util` or `java.io`
 
+- `language:java path:*.java "public class"` - Find repositories with a java file that use a class. [Search](https://github.com/search?q=language%3Ajava+path%3A*.java+%22public+class%22&type=code)
 
 #### Javascript
 
@@ -193,6 +242,50 @@ Here are some searches for code on github.
 
 - `language:ruby path:*.rb "require " <PACKAGE>` - Find repositories with a ruby file that use a require replace package with the package you want to search for e.g. `express` or `react`
 
+#### Elixir
+
+- `language:Elixir path:*.ex OR path:*.exs` - Find repositories with a Elixir file. [Search](https://github.com/search?q=language%3AElixir+path%3A*.ex+OR+path%3A*.exs&type=code)
+
+- `language:Elixir path:*.ex OR path:*.exs "import "` - Find repositories with a Elixir file that have a import. [Search](https://github.com/search?q=language%3AElixir+path%3A*.ex+OR+path%3A*.exs+%22import+%22&type=code)
+
+#### Swift
+
+- `language:swift path:*.swift` - Find repositories with a Swift file. [Search](https://github.com/search?q=language%3Aswift+path%3A*.swift&type=code)
+
+- `language:swift path:*.swift "import "` - Find repositories with a Swift file that have a import. [Search](https://github.com/search?q=language%3Aswift+path%3A*.swift+%22import+%22&type=code)
+
+- `language:swift path:*.swift "import " <PACKAGE>` - Find repositories with a Swift file that have a import replace package with the package you want to search for e.g. `UIKit` or `Foundation`
+
+- `language:swift path:*.swift "func"` - Find repositories with a Swift file that have a function. [Search](https://github.com/search?q=language%3Aswift+path%3A*.swift+%22func%22&type=code)
+
+- `language:swift path:*.swift "func " <NAME>` - Find repositories with a Swift file that have a function with a name of <NAME>. Replace <NAME> with a package name.
+
+- `language:swift path:*.swift "// <COMMENT>"` - Find repositories with a Swift file that have a comment. Replace <COMMENT> with a comment.
+
+#### Kotlin
+
+- `language:kotlin path:*.kt` - Find repositories with a Kotlin file. [Search](https://github.com/search?q=language%3Akotlin+path%3A*.kt&type=code)
+
+- `language:kotlin path:*.kt "import "` - Find repositories with a Kotlin file that have a import. [Search](https://github.com/search?q=language%3Akotlin+path%3A*.kt+%22import+%22&type=code)
+
+- `language:kotlin path:*.kt "import " <PACKAGE>` - Find repositories with a Kotlin file that have a import replace package with the package you want to search for e.g. `androidx.appcompat.app.AppCompatActivity` or `androidx.recyclerview.widget.RecyclerView`
+
+- `language:kotlin path:*.kt "fun"` - Find repositories with a Kotlin file that have a function. [Search](https://github.com/search?q=language%3Akotlin+path%3A*.kt+%22fun%22&type=code)
+
+- `language:kotlin path:*.kt "fun " <NAME>` - Find repositories with a Kotlin file that have a function with a name of <NAME>. Replace <NAME> with a package name.
+
+- `language:kotlin path:*.kt "// <COMMENT>"` - Find repositories with a Kotlin file that have a comment. Replace <COMMENT> with a comment.
+
+#### Dart
+
+- `language:dart path:*.dart` - Find repositories with a Dart file. [Search](https://github.com/search?q=language%3Adart+path%3A*.dart&type=code)
+
+- `language:dart path:*.dart "import "` - Find repositories with a Dart file that have a import. [Search](https://github.com/search?q=language%3Adart+path%3A*.dart+%22import+%22&type=code)
+
+- `language:dart path:*.dart "import " <PACKAGE>` - Find repositories with a Dart file that have a import replace package with the package you want to search for e.g. `package:flutter/material.dart` or `package:provider/provider.dart`
+
+- `language:dart path:*.dart "//" OR "/*"` - Find repositories with a Dart file that have a comment. [Search](https://github.com/search?q=language%3Adart+path%3A*.dart+%22%2F%2F%22+OR+%22%2F*%22+&type=code)
+
 ### Build Scripts
 
 #### Makefile
@@ -218,6 +311,22 @@ Here are some searches for code on github.
 
 - `language:cmake path:*/CMakeLists.txt "find_package(Boost"` - Find repositories with a CMakeLists.txt that use Boost. [Search](https://github.com/search?q=language%3Acmake+path%3A*%2FCMakeLists.txt+%22find_package%28Boost%22&type=code)
 
+#### Gradle
+
+- `path:*.gradle` - Find repositories with a gradle file. [Search](https://github.com/search?q=path%3A*.gradle&type=code)
+
+- `path:*.gradle "implementation"` - Find repositories with a gradle file that use a package. [Search](https://github.com/search?q=path%3A*.gradle+%22implementation%22&type=code)
+
+- `path:*.gradle "implementation" <PACKAGE>` - Find repositories with a gradle file that use a package replace package with the package you want to search for e.g. `com.google.android.material:material` or `androidx.appcompat:appcompat`
+
+- `path:*.gradle "plugins {"` - Find repositories with a gradle file that use a plugin. [Search](https://github.com/search?q=path%3A*.gradle+%22plugins+%7B%22&type=code)
+
+
+#### Ninja
+
+- `path:*.ninja` - Find repositories with a ninja file. [Search](https://github.com/search?q=path%3A*.ninja&type=code)
+
+- `path:*.ninja "rule "` - Find repositories with a ninja file that use a rule. [Search](https://github.com/search?q=path%3A*.ninja+%22rule+%22&type=code)
 
 ### Containers
 
@@ -261,7 +370,7 @@ Here are some searches for code on github.
 
 #### XML
 
-- `language:xml path:*.xml` - Find repositories with a xml file. [Search](
+- `language:xml path:*.xml` - Find repositories with a xml file. [Search](https://github.com/search?q=language%3Axml+path%3A*.xml&type=code)
 
 - `language:xml <?xml version="1.0" encoding="UTF-8"?>` - Find repositories with a xml file that has the xml version of 1.0 and a file encoding of UTF-8. [Search](https://github.com/search?q=language%3Axml+%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E&type=code)
 
@@ -286,6 +395,94 @@ Here are some searches for code on github.
 - `language:csv path:*.csv` - Find repositories with a csv file. [Search](https://github.com/search?q=language%3Acsv+path%3A*.csv&type=code)
 
 - `language:csv path:*.csv "<HEADER>"` - Find repositories with a csv file that has a header replace header with the header you want to search for e.g. `name` or `email`
+
+#### SQL
+
+- `language:sql path:*.sql` - Find repositories with a sql file. [Search](https://github.com/search?q=language%3Asql+path%3A*.sql&type=code)
+
+- `language:sql path:*.sql "SELECT"` - Find repositories with a sql file that has a select statement. [Search](https://github.com/search?q=language%3Asql+path%3A*.sql+%22SELECT%22&type=code)
+
+- `language:sql path:*.sql "SELECT" "FROM"` - Find repositories with a sql file that has a select statement and a from statement. [Search](https://github.com/search?q=language%3Asql+path%3A*.sql+%22SELECT%22+%22FROM%22&type=code)
+
+- `language:sql path:*.sql "SELECT *"` - Find repositories with a sql file that has a select * statement. [Search](https://github.com/search?q=language%3Asql+path%3A*.sql+%22SELECT+*%22&type=code)
+
+
+### Documentation
+
+
+#### Text
+
+- `language:text path:*.txt` - Find repositories with a text file. [Search](https://github.com/search?q=language%3Atext+path%3A*.txt&type=code)
+
+- `language:text path:README.txt` - Find repositories with a readme file. [Search](https://github.com/search?q=language%3Atext+path%3AREADME.txt&type=code)
+
+- `language:text path:LICENSE.txt` - Find repositories with a license file. [Search](https://github.com/search?q=language%3Atext+path%3ALICENSE.txt&type=code)
+
+- `language:text path:CHANGELOG.txt` - Find repositories with a changelog file. [Search](https://github.com/search?q=language%3Atext+path%3ACHANGELOG.txt&type=code)
+
+- `language:text path:CONTRIBUTING.txt` - Find repositories with a contributing file. [Search](https://github.com/search?q=language%3Atext+path%3ACONTRIBUTING.txt&type=code)
+
+#### Markdown
+
+- `language:markdown path:*.md` - Find repositories with a markdown file. [Search](https://github.com/search?q=language%3Amarkdown+path%3A*.md&type=code)
+
+- `language:markdown path:README.md` - Find repositories with a readme file. [Search](https://github.com/search?q=language%3Amarkdown+path%3AREADME.md&type=code)
+
+- `language:markdown path:LICENSE.md` - Find repositories with a license file. [Search](https://github.com/search?q=language%3Amarkdown+path%3ALICENSE.md&type=code)
+
+- `language:markdown path:CONTRIBUTING.md` - Find repositories with a contributing file. [Search](https://github.com/search?q=language%3Amarkdown+path%3ACONTRIBUTING.md&type=code)
+
+
+#### Rich Text Format
+
+- `path:*.rtf` - Find repositories with a rtf file. [Search](https://github.com/search?q=path%3A*.rtf&type=code)
+
+- `path:README.rtf` - Find repositories with a readme file. [Search](https://github.com/search?q=path%3AREADME.rtf&type=code)
+
+#### AsciiDoc
+
+- `language:asciidoc path:*.adoc` - Find repositories with a asciidoc file. [Search](https://github.com/search?q=language%3Aasciidoc+path%3A*.adoc&type=code)
+
+- `language:asciidoc path:README.adoc` - Find repositories with a readme file. [Search](https://github.com/search?q=language%3Aasciidoc+path%3AREADME.adoc&type=code)
+
+#### ReStructuredText
+
+- `language:restructuredtext path:*.rst` - Find repositories with a restructuredtext file. [Search](https://github.com/search?q=language%3Arestructuredtext+path%3A*.rst&type=code)
+
+- `language:restructuredtext path:README.rst` - Find repositories with a readme file. [Search](https://github.com/search?q=language%3Arestructuredtext+path%3AREADME.rst&type=code)
+
+#### MediaWiki
+
+- `language:wikitext path:*.mediawiki` - Find repositories with a mediawiki file. [Search](https://github.com/search?q=language%3Awikitext+path%3A*.mediawiki&type=code)
+
+#### LaTeX
+
+- `language:tex path:*.tex` - Find repositories with a tex file. [Search](https://github.com/search?q=language%3Atex+path%3A*.tex&type=code)
+
+- `language:tex path:*.tex "documentclass"` - Find repositories with a tex file that has a documentclass. [Search](https://github.com/search?q=language%3Atex+path%3A*.tex+%22documentclass%22&type=code)
+
+### Comment Annotations
+
+- `"TODO:"` - Find files with a todo comment. [Search](https://github.com/search?q=%22TODO%3A%22&type=code)
+
+- `"FIXME:"` - Find files with a fixme comment. [Search](https://github.com/search?q=%22FIXME%3A%22&type=code)
+
+- `"XXX:"` - Find files with a xxx comment. [Search](https://github.com/search?q=%22XXX%3A%22&type=code)
+
+- `"BUG:"` - Find files with a bug comment. [Search](https://github.com/search?q=%22BUG%3A%22&type=code)
+
+- `"HACK:"` - Find files with a hack comment. [Search](https://github.com/search?q=%22HACK%3A%22&type=code)
+
+- `"NOTE:"` - Find files with a note comment. [Search](https://github.com/search?q=%22NOTE%3A%22&type=code)
+
+- `"OPTIMIZE:"` - Find files with a optimize comment. [Search](https://github.com/search?q=%22OPTIMIZE%3A%22&type=code)
+
+- `"REFACTOR:"` - Find files with a refactor comment. [Search](https://github.com/search?q=%22REFACTOR%3A%22&type=code)
+
+- `"WIP:"` - Find files with a wip comment. [Search](https://github.com/search?q=%22WIP%3A%22&type=code)
+
+- `"DEPRECATED:"` - Find files with a deprecated comment. [Search](https://github.com/search?q=%22DEPRECATED%3A%22&type=code)
+
 
 ## Repositories
 
@@ -365,3 +562,7 @@ Here are some searches for code on github.
 - `"improve" OR "improvements"` - Find commits with the word improve or improvements. [Search](https://github.com/search?q=%22improve%22+OR+%22improvements%22&type=commits)
 
 - `"fix" OR "fixes" OR "fixed"` - Find commits with the word fix, fixes or fixed. [Search](https://github.com/search?q=%22fix%22+OR+%22fixes%22+OR+%22fixed%22&type=commits)
+
+- `"update" OR "updates" OR "updated"` - Find commits with the word update, updates or updated. [Search](https://github.com/search?q=%22update%22+OR+%22updates%22+OR+%22updated%22&type=commits)
+
+- `"add" OR "adds" OR "added"` - Find commits with the word add, adds or added. [Search](https://github.com/search?q=%22add%22+OR+%22adds%22+OR+%22added%22&type=commits)
