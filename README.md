@@ -196,6 +196,22 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:PHP "use <PACKAGE>"` Find PHP files that use a package. Replace <PACKAGE> with a package name.
 
+
+### Rust
+
+- `language:rust "use std::io"` - Find Rust files that use the std::io package. [Search](https://github.com/search?q=language%3Arust+%22use+std%3A%3Aio%22&type=code)
+
+- `language:rust "use <PACKAGE>"` - Find Rust files that use a package. Replace <PACKAGE> with a package name.
+
+- `language:rust "mod"` - Find Rust files that use a module. [Search](https://github.com/search?q=language%3Arust+%22mod%22&type=code)
+
+- `language:rust "mod <MODULE>"` - Find Rust files that use a module. Replace <MODULE> with a package name.
+
+
+- `language:rust "fn"` - Find Rust files that use a function. [Search](https://github.com/search?q=language%3Arust+%22fn%22&type=code)
+
+- `language:rust "fn <NAME>"` - Find Rust files that use a function. Replace <NAME> with a package name.
+
 ## Repositories
 
 - `language:javascript` - Find javascript repositories. [Search](https://github.com/search?q=language%3AJavaScript+&type=repositories)
