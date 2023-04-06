@@ -6,21 +6,29 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 ## Table of Contents
 
 * [Code](#code)
-    + [C](#c)
-    + [C++](#c-1)
-    + [Python](#python)
-    + [Java](#java)
-    + [JavaScript](#javascript)
-    + [TypeScript](#typescript)
-    + [Rust](#rust)
-    + [Go](#go)
-    + [PHP](#php)
-    + [Ruby](#ruby)
-    + [Makefile](#makefile)
-    + [CMake](#cmake)
-    + [Dockerfile](#dockerfile)
-    + [JSON](#json)
-    + [YAML](#yaml)
+    + [Programming Languages](#programming-languages)
+        + [C](#c)
+        + [C++](#c-1)
+        + [Python](#python)
+        + [Java](#java)
+        + [JavaScript](#javascript)
+        + [TypeScript](#typescript)
+        + [Rust](#rust)
+        + [Go](#go)
+        + [PHP](#php)
+        + [Ruby](#ruby)
+    + [Build Scripts](#build-scripts)
+        + [Makefile](#makefile)
+        + [CMake](#cmake)
+    + [Containers](#containers)
+        + [Dockerfile](#dockerfile)
+    + [Configuration and Data](#configuration-and-data)
+        + [JSON](#json)
+        + [YAML](#yaml)
+        + [XML](#xml)
+        + [TOML](#toml)
+        + [INI](#ini)
+        + [CSV](#csv)
 * [Repositories](#repositories)
 * [Issues](#issues)
     + [Open Issues](#open-issues)
@@ -33,8 +41,11 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 * [Commits](#commits)
 
 ## Code
+Here are some searches for code on github.
 
-### C
+### Programming Languages
+
+#### C
 
 - `language:c path:*.c` - Find repositories with a C file. [Search](https://github.com/search?q=language%3Ac+path%3A*.c&type=code)
 
@@ -49,7 +60,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 - `language:c path:*.c "/*<COMMENT>*/" OR "//<COMMENT>"` - Find repositories with a C file that use a comment replace COMMENT with the comment you want to search for e.g. `/*<COMMENT>*/` or `//<COMMENT>`
 
 
-### C++
+#### C++
 
 - `language:cpp path:*.cpp` - Find repositories with a C++ file. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp&type=code)
 
@@ -64,7 +75,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 - `language:cpp path:*.cpp "/*<COMMENT>*/" OR "//<COMMENT>"` - Find repositories with a C++ file that use a comment replace COMMENT with the comment you want to search for e.g. `/*<COMMENT>*/` or `//<COMMENT>`
 
 
-### Python
+#### Python
 
 - `language:python path:*/__main__.py OR language:python path:*/main.py` - Find repositories with a main python file. [Search](https://github.com/search?q=language%3Apython+path%3A*%2F__main__.py+OR+language%3Apython+path%3A*%2Fmain.py&type=code)
 
@@ -87,7 +98,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 - `language:python "print(" OR language:python "print ("` - Find python files with a print statement. [Search](https://github.com/search?q=language%3Apython+%22print%28%22+OR+language%3Apython+%22print+%28%22&type=code)
 
 
-### Java
+#### Java
 
 - `language:java path:*.java` - Find repositories with a java file. [Search](
 
@@ -96,7 +107,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 - `language:java path:*.java "import " <PACKAGE>` - Find repositories with a java file that use a import replace package with the package you want to search for e.g. `java.util` or `java.io`
 
 
-### Javascript
+#### Javascript
 
 - `language:javascript path:*.js` - Find repositories with a javascript file. [Search](https://github.com/search?q=language%3Ajavascript+path%3A*.js&type=code)
 
@@ -118,7 +129,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:javascript "console.table("` - Find repositories with a javascript file that use a console.table. [Search](https://github.com/search?q=language%3Ajavascript+%22console.table%28%22&type=code)
 
-### Typescript
+#### Typescript
 
 - `language:typescript path:*.ts` - Find repositories with a typescript file. [Search](https://github.com/search?q=language%3Atypescript%20path%3A*.ts&type=code)
 
@@ -134,7 +145,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:typescript "console.table("` - Find repositories with a typescript file that use a console.table. [Search](https://github.com/search?q=language%3Atypescript+%22console.table%28%22&type=code)
 
-### Rust
+#### Rust
 
 - `language:rust "use std::io"` - Find Rust files that use the std::io package. [Search](https://github.com/search?q=language%3Arust+%22use+std%3A%3Aio%22&type=code)
 
@@ -150,7 +161,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:rust "fn <NAME>"` - Find Rust files that use a function. Replace <NAME> with a package name.
 
-### Go
+#### Go
 
 - `language:go "import ("` - Find Go files that use a import. [Search](https://github.com/search?q=language%3Ago+%22import+%28%22&type=code)
 
@@ -164,8 +175,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:go "// TODO:" OR "// BUG:" OR "// FIXME:" OR "// XXX:"` - Find Go files that have a TODO, BUG, FIXME or XXX comment. [Search](https://github.com/search?q=language%3Ago+%22%2F%2F+TODO%3A%22+OR+%22%2F%2F+BUG%3A%22+OR+%22%2F%2F+FIXME%3A%22+OR+%22%2F%2F+XXX%3A%22&type=code)
 
-
-### PHP
+#### PHP
 
 - `language:PHP` - Find PHP files. [Search](https://github.com/search?q=language%3APHP&type=code)
 
@@ -173,8 +183,9 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:PHP "use <PACKAGE>"` Find PHP files that use a package. Replace <PACKAGE> with a package name.
 
+- `language:PHP "function"` Find PHP files that have a function. [Search](https://github.com/search?q=language%3APHP+%22function%22&type=code)
 
-### Ruby
+#### Ruby
 
 - `language:ruby path:*.rb` - Find repositories with a ruby file. [Search](https://github.com/search?q=language%3Aruby+path%3A*.rb&type=code)
 
@@ -182,7 +193,9 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:ruby path:*.rb "require " <PACKAGE>` - Find repositories with a ruby file that use a require replace package with the package you want to search for e.g. `express` or `react`
 
-### Makefile
+### Build Scripts
+
+#### Makefile
 
 - `language:make path:*/Makefile` - Find repositories with a Makefile. [Search](https://github.com/search?q=language%3Amake+path%3A*%2FMakefile&type=code)
 
@@ -195,7 +208,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 - `path:*/Makefile language:make = python3` - Find repositories with a Makefile that use python3. [Search](https://github.com/search?q=path%3A*%2FMakefile+language%3Amake+%22+%3D+python3%22&type=code)
 
 
-### CMake
+#### CMake
 
 - `language:cmake path:*/CMakeLists.txt` - Find repositories with a CMakeLists.txt. [Search](https://github.com/search?q=language%3Acmake+path%3A*%2FCMakeLists.txt&type=code)
 
@@ -205,7 +218,10 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:cmake path:*/CMakeLists.txt "find_package(Boost"` - Find repositories with a CMakeLists.txt that use Boost. [Search](https://github.com/search?q=language%3Acmake+path%3A*%2FCMakeLists.txt+%22find_package%28Boost%22&type=code)
 
-### Docker
+
+### Containers
+
+#### Docker
 
 - `language:dockerfile path:*/Dockerfile` - Find repositories with a Dockerfile. [Search](https://github.com/search?q=language%3Adockerfile+path%3A*%2FDockerfile&type=code)
 
@@ -219,7 +235,9 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 - `language:dockerfile path:*/Dockerfile FROM python:` - Find repositories with a Dockerfile that use python. [Search](https://github.com/search?q=language%3Adockerfile+path%3A*%2FDockerfile+FROM+python%3A&type=code)
 
-### Json
+### Configuration and Data
+
+#### Json
 
 - `language:json path:*.json` - Find repositories with a json file. [Search](https://github.com/search?q=language%3Ajson+path%3A*.json&type=code)
 
@@ -230,7 +248,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 - `path:package.json` - Find package.json files. [Search](https://github.com/search?q=path%3Apackage.json&type=code)
 
 
-### YAML
+#### YAML
 
 - `language:yaml path:*.yaml` - Find repositories with a yaml file. [Search](https://github.com/search?q=language%3Ayaml+path%3A*.yaml&type=code)
 
@@ -239,6 +257,35 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 - `path:.github/workflows language:yaml "uses: actions/checkout@v3"` - find github workflows that use actions/checkout@v3. [Search](https://github.com/search?q=path%3A.github%2Fworkflows+language%3Ayaml+%22uses%3A+actions%2Fcheckout%40v3%22&type=code)
 
 - `path:.github/workflows language:yaml "uses: <PACKAGE>"` - find github workflows that use a package replace package with the package you want to search for e.g. `actions/checkout@v3` or `actions/setup-node@v2`
+
+
+#### XML
+
+- `language:xml path:*.xml` - Find repositories with a xml file. [Search](
+
+- `language:xml <?xml version="1.0" encoding="UTF-8"?>` - Find repositories with a xml file that has the xml version of 1.0 and a file encoding of UTF-8. [Search](https://github.com/search?q=language%3Axml+%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E&type=code)
+
+#### TOML
+
+- `language:toml path:*.toml` - Find repositories with a toml file. [Search](https://github.com/search?q=language%3Atoml+path%3A*.toml&type=code)
+
+- `language:toml path:*.toml [<SECTION>]` - Find repositories with a toml file that has a section replace section with the section you want to search for e.g. `tool` or `dependencies`
+
+- `language:toml path:*.toml "#"` - Find repositories with a toml file that has a comment. [Search](https://github.com/search?q=language%3Atoml+path%3A*.toml+%22%23%22&type=code)
+
+- `language:toml path:*.toml "# TODO:"` - Find repositories with a toml file that has a todo comment. [Search](https://github.com/search?q=language%3Atoml+path%3A*.toml+%22%23+TODO%3A%22&type=code)
+
+#### INI
+
+- `language:ini path:*.ini` - Find repositories with a ini file. [Search](https://github.com/search?q=language%3Aini+path%3A*.ini&type=code)
+
+- `language:ini path:*.ini [SECTION]` - Find repositories with a ini file that has a section replace section with the section you want to search for e.g. `tool` or `dependencies`
+
+#### CSV
+
+- `language:csv path:*.csv` - Find repositories with a csv file. [Search](https://github.com/search?q=language%3Acsv+path%3A*.csv&type=code)
+
+- `language:csv path:*.csv "<HEADER>"` - Find repositories with a csv file that has a header replace header with the header you want to search for e.g. `name` or `email`
 
 ## Repositories
 
