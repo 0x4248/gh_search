@@ -16,6 +16,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
     + [YAML](#yaml)
     + [PHP](#php)
     + [Rust](#rust)
+    + [Go](#go)
 * [Repositories](#repositories)
 * [Issues](#issues)
     + [Open Issues](#open-issues)
@@ -212,6 +213,20 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 - `language:rust "fn"` - Find Rust files that use a function. [Search](https://github.com/search?q=language%3Arust+%22fn%22&type=code)
 
 - `language:rust "fn <NAME>"` - Find Rust files that use a function. Replace <NAME> with a package name.
+
+### Go
+
+- `language:go "import ("` - Find Go files that use a import. [Search](https://github.com/search?q=language%3Ago+%22import+%28%22&type=code)
+
+- `language:go "import (<PACKAGE>"` - Find Go files that use a import. Replace <PACKAGE> with a package name.
+
+- `language:go "func"` - Find Go files that use a function. [Search](https://github.com/search?q=language%3Ago+%22func%22&type=code)
+
+- `language:go "func <NAME>"` - Find Go files that use a function with a name of <NAME>. Replace <NAME> with a package name.
+
+- `language:go "// <COMMENT>"` - Find Go files that use a comment. Replace <COMMENT> with a comment.
+
+- `language:go "// TODO:" OR "// BUG:" OR "// FIXME:" OR "// XXX:"` - Find Go files that have a TODO, BUG, FIXME or XXX comment. [Search](https://github.com/search?q=language%3Ago+%22%2F%2F+TODO%3A%22+OR+%22%2F%2F+BUG%3A%22+OR+%22%2F%2F+FIXME%3A%22+OR+%22%2F%2F+XXX%3A%22&type=code)
 
 ## Repositories
 
