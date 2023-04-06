@@ -23,6 +23,15 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
         + [Swift](#swift)
         + [Kotlin](#kotlin)
         + [Dart](#dart)
+        + [HTML](#html)
+        + [CSS](#css)
+        + [SCSS](#scss)
+        + [R](#r)
+        + [F#](#f-)
+        + [Scala](#scala)
+        + [Bash](#bash)
+        + [PowerShell](#powershell)
+        + [COBOL](#cobol)
     + [Build Scripts](#build-scripts)
         + [Makefile](#makefile)
         + [CMake](#cmake)
@@ -285,6 +294,86 @@ Here are some searches for code on github.
 - `language:dart path:*.dart "import " <PACKAGE>` - Find repositories with a Dart file that have a import replace package with the package you want to search for e.g. `package:flutter/material.dart` or `package:provider/provider.dart`
 
 - `language:dart path:*.dart "//" OR "/*"` - Find repositories with a Dart file that have a comment. [Search](https://github.com/search?q=language%3Adart+path%3A*.dart+%22%2F%2F%22+OR+%22%2F*%22+&type=code)
+
+#### HTML
+
+- `language:HTML path:*.html` - Find repositories with a HTML file. [Search](https://github.com/search?q=language%3AHTML+path%3A*.html&type=code)
+
+- `language:HTML path:*.html "<script"` - Find repositories with a HTML file that have a script tag. [Search](https://github.com/search?q=language%3AHTML+path%3A*.html+%22%3Cscript%22&type=code)
+
+- `language:HTML path:*.html "<css"` - Find repositories with a HTML file that have a css tag. [Search](https://github.com/search?q=language%3AHTML+path%3A*.html+%22%3Ccss%22&type=code)
+
+- `language:HTML path:*.html "<meta"` - Find repositories with a HTML file that have a meta tag. [Search](https://github.com/search?q=language%3AHTML+path%3A*.html+%22%3Cmeta%22&type=code)
+
+#### CSS
+
+- `language:CSS path:*.css` - Find repositories with a CSS file. [Search](https://github.com/search?q=language%3ACSS+path%3A*.css&type=code)
+
+- `language:CSS path:*.css "import "` - Find repositories with a CSS file that have a import. [Search](https://github.com/search?q=language%3ACSS+path%3A*.css+%22import+%22&type=code)
+
+- `language:CSS path:*.css "import " <PACKAGE>` - Find repositories with a CSS file that have a import replace package with the package you want to search for e.g. `package:flutter/material.dart` or `package:provider/provider.dart`
+
+- `language:CSS path:*.css "/*"` - Find repositories with a CSS file that have a comment. [Search](https://github.com/search?q=language%3ACSS+path%3A*.css+%22%2F%2F%22+OR+%22%2F*%22&type=code)
+
+#### SASS
+
+- `language:SASS path:*.sass` - Find repositories with a SASS file. [Search](https://github.com/search?q=language%3ASASS+path%3A*.sass&type=code)
+
+- `language:SASS path:*.sass "import "` - Find repositories with a SASS file that have a import. [Search](https://github.com/search?q=language%3ASASS+path%3A*.sass+%22import+%22&type=code)
+
+- `language:SASS path:*.sass "import " <PACKAGE>` - Find repositories with a SASS file that have a import replace package with the package you want to search for e.g. `package:flutter/material.dart` or `package:provider/provider.dart`
+
+- `language:SASS path:*.sass "/*"` - Find repositories with a SASS file that have a comment. [Search](https://github.com/search?q=language%3ASASS+path%3A*.sass+%22%2F*%22&type=code)
+
+#### R
+
+- `language:R path:*.R` - Find repositories with a R file. [Search](https://github.com/search?q=language%3AR+path%3A*.R&type=code)
+
+- `language:R path:*.R "#"` - Find repositories with a R file that have a comment. [Search](https://github.com/search?q=language%3AR%20path%3A*.R%20%22%23%22&type=code)
+
+#### F#
+
+- `language:F# path:*.fs` - Find repositories with a F# file. [Search](https://github.com/search?q=language%3AF%23+path%3A*.fs&type=code)
+
+- `language:F# path:*.fs "open "` - Find repositories with a F# file that have a open. [Search](https://github.com/search?q=language%3AF%23+path%3A*.fs+%22open+%22&type=code)
+
+- `language:F# path:*.fs "open " <PACKAGE>` - Find repositories with a F# file that have a open replace package with the package you want to search for e.g. `package:flutter/material.dart` or `package:provider/provider.dart`
+
+- `language:F# path:*.fs "//" OR "/*"` - Find repositories with a F# file that have a comment. [Search](https://github.com/search?q=language%3AF%23+path%3A*.fs+%22%2F%2F%22+OR+%22%2F*%22&type=code)
+
+#### Scala
+
+- `language:Scala path:*.scala` - Find repositories with a Scala file. [Search](https://github.com/search?q=language%3AScala+path%3A*.scala&type=code)
+
+- `language:Scala path:*.scala "import "` - Find repositories with a Scala file that have a import. [Search](https://github.com/search?q=language%3AScala+path%3A*.scala+%22import+%22&type=code)
+
+- `language:Scala path:*.scala "import " <PACKAGE>` - Find repositories with a Scala file that have a import replace package with the package you want to search for.
+
+- `language:Scala path:*.scala "//" OR "/*"` - Find repositories with a Scala file that have a comment. [Search](https://github.com/search?q=language%3AScala+path%3A*.scala+%22%2F%2F%22+OR+%22%2F*%22&type=code)
+
+#### Bash
+
+- `language:Bash path:*.bash` - Find repositories with a Bash file. [Search](https://github.com/search?q=language%3ABash+path%3A*.bash&type=code)
+
+- `language:Bash path:*.bash "#"` - Find repositories with a Bash file that have a comment. [Search](https://github.com/search?q=language%3ABash+path%3A*.bash+%22%23%22&type=code)
+
+
+#### PowerShell
+
+- `language:PowerShell path:*.ps1` - Find repositories with a PowerShell file. [Search](https://github.com/search?q=language%3APowerShell+path%3A*.ps1&type=code)
+
+- `language:PowerShell path:*.ps1 "#"` - Find repositories with a PowerShell file that have a comment. [Search](https://github.com/search?q=language%3APowerShell+path%3A*.ps1+%22%23%22&type=code)
+
+- `language:PowerShell path:*.ps1 "Import-Module "` - Find repositories with a PowerShell file that have a Import-Module. [Search](https://github.com/search?q=language%3APowerShell+path%3A*.ps1+%22Import-Module+%22&type=code)
+
+- `language:PowerShell path:*.ps1 "Import-Module " <PACKAGE>` - Find repositories with a PowerShell file that have a Import-Module replace package with the package you want to search for.
+
+#### COBOL
+
+- `language:COBOL path:*.cbl` - Find repositories with a COBOL file. [Search](https://github.com/search?q=language%3ACOBOL+path%3A*.cbl&type=code)
+
+- `language:COBOL path:*.cbl "*"` - Find repositories with a COBOL file that have a comment. [Search](
+
 
 ### Build Scripts
 
