@@ -32,6 +32,12 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
         + [Bash](#bash)
         + [PowerShell](#powershell)
         + [COBOL](#cobol)
+        + [EJS](#ejs)
+        + [Assembly](#assembly)
+        + [Lua](#lua)
+        + [Julia](#julia)
+        + [Perl](#perl)
+        + [Lisp](#lisp)
     + [Build Scripts](#build-scripts)
         + [Makefile](#makefile)
         + [CMake](#cmake)
@@ -39,6 +45,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
         + [Ninja](#ninja)
     + [Containers](#containers)
         + [Dockerfile](#dockerfile)
+        + [LXC](#lxc)
     + [Configuration and Data](#configuration-and-data)
         + [JSON](#json)
         + [YAML](#yaml)
@@ -86,6 +93,21 @@ Here are some searches for code on github.
 
 - `language:c path:*.c "/*<COMMENT>*/" OR "//<COMMENT>"` - Find repositories with a C file that use a comment replace COMMENT with the comment you want to search for e.g. `/*<COMMENT>*/` or `//<COMMENT>`
 
+- `language:c path:*.c "struct"` - Find repositories with a C file that use a struct. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22struct%22&type=code)
+
+- `language:c path:*.c "typedef"` - Find repositories with a C file that use a typedef. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22typedef%22&type=code)
+
+- `language:c path:*.c "/// <COMMENT>"` - Find repositories with a C file that use a docxygen comment replace COMMENT with the comment you want to search for e.g. `/// <COMMENT>`
+
+- `language:c path:*.c "@param"` - Find repositories with a C file that use a docxygen param. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22%40param%22&type=code)
+
+- `language:c path:*.c "@return" OR "@returns"` - Find repositories with a C file that use a docxygen return. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22%40return%22+OR+%22%40returns%22&type=code)
+
+- `language:c path:*.c "@brief"` - Find repositories with a C file that use a docxygen brief. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22%40brief%22&type=code)
+
+- `language:c path:*.c "@see"` - Find repositories with a C file that use a docxygen see. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22%40see%22&type=code)
+
+- `language:c path:*.c "@note"` - Find repositories with a C file that use a docxygen note. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22%40note%22&type=code)
 
 #### C++
 
@@ -101,6 +123,29 @@ Here are some searches for code on github.
 
 - `language:cpp path:*.cpp "/*<COMMENT>*/" OR "//<COMMENT>"` - Find repositories with a C++ file that use a comment replace COMMENT with the comment you want to search for e.g. `/*<COMMENT>*/` or `//<COMMENT>`
 
+- `language:cpp path:*.cpp "class"` - Find repositories with a C++ file that use a class. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22class%22&type=code)
+
+- `language:cpp path:*.cpp "class <CLASSNAME>"` - Find repositories with a C++ file that use a class replace CLASSNAME with the class you want to search for e.g. `class MyClass` or `class MyClass: public BaseClass`
+
+- `language:cpp path:*.cpp "namespace"` - Find repositories with a C++ file that use a namespace. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22namespace%22&type=code)
+
+- `language:cpp path:*.cpp "namespace <NAMESPACE>"` - Find repositories with a C++ file that use a namespace replace NAMESPACE with the namespace you want to search for e.g. `namespace MyNamespace` or `namespace MyNamespace::MySubNamespace`
+
+- `language:cpp path:*.cpp "using"` - Find repositories with a C++ file that use a using. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22using%22&type=code)
+
+- `language:cpp path:*.cpp "using <NAMESPACE>"` - Find repositories with a C++ file that use a using replace NAMESPACE with the namespace you want to search for e.g. `using MyNamespace` or `using MyNamespace::MySubNamespace`
+
+- `language:cpp path:*.cpp "/// <COMMENT>"` - Find repositories with a C++ file that use a doxygen comment replace COMMENT with the comment you want to search for e.g. `/// <COMMENT>` or `/** <COMMENT> */`
+
+- `language:cpp path:*.cpp "@param"` - Find repositories with a C++ file that use a doxygen param. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22%40param%22&type=code)
+
+- `language:cpp path:*.cpp "@return" OR "@returns"` - Find repositories with a C++ file that use a doxygen return. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22%40return%22+OR+%22%40returns%22&type=code)
+
+- `language:cpp path:*.cpp "@brief"` - Find repositories with a C++ file that use a doxygen brief. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22%40brief%22&type=code)
+
+- `language:cpp path:*.cpp "@see"` - Find repositories with a C++ file that use a doxygen see. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22%40see%22&type=code)
+
+- `language:cpp path:*.cpp "@note"` - Find repositories with a C++ file that use a doxygen note. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22%40note%22&type=code)
 
 #### C#
 
@@ -251,6 +296,16 @@ Here are some searches for code on github.
 
 - `language:ruby path:*.rb "require " <PACKAGE>` - Find repositories with a ruby file that use a require replace package with the package you want to search for e.g. `express` or `react`
 
+- `language:ruby path:*.rb "puts "` - Find repositories with a ruby file that use a puts. [Search](https://github.com/search?q=language%3Aruby+path%3A*.rb+%22puts+%22&type=code)
+
+- `language:ruby path:*.rb "print "` - Find repositories with a ruby file that use a print. [Search](https://github.com/search?q=language%3Aruby+path%3A*.rb+%22print+%22&type=code)
+
+- `language:ruby path:Gemfile` - Find repositories with a Gemfile. [Search](https://github.com/search?q=language%3Aruby+path%3AGemfile&type=code)
+
+- `language:ruby path:*.rb "def "` - Find repositories with a ruby file that use a def. [Search](https://github.com/search?q=language%3Aruby+path%3A*.rb+%22def+%22&type=code)
+
+- `language:ruby path:*.rb "def <NAME>"` - Find repositories with a ruby file that use a def with a name of <NAME>. Replace <NAME> with a package name.
+
 #### Elixir
 
 - `language:Elixir path:*.ex OR path:*.exs` - Find repositories with a Elixir file. [Search](https://github.com/search?q=language%3AElixir+path%3A*.ex+OR+path%3A*.exs&type=code)
@@ -375,6 +430,59 @@ Here are some searches for code on github.
 - `language:COBOL path:*.cbl "*"` - Find repositories with a COBOL file that have a comment. [Search](
 
 
+#### EJS
+
+- `language:EJS path:*.ejs` - Find repositories with a EJS file. [Search](https://github.com/search?q=language%3AEJS+path%3A*.ejs&type=code)
+
+- `language:EJS path:*.ejs "<%"` - Find repositories with a EJS file that have a <% . [Search](https://github.com/search?q=language%3AEJS+path%3A*.ejs+%22%3C%25%22&type=code)
+
+#### Assembly
+
+- `language:assembly path:*.asm` - Find repositories with a Assembly file. [Search](https://github.com/search?q=language%3Aassembly+path%3A*.asm&type=code)
+
+- ` language:assembly path:*.asm ";"` - Find repositories with a Assembly file that have a comment. [Search](https://github.com/search?q=+language%3Aassembly+path%3A*.asm+%22%3B%22&type=code)
+
+#### Lua
+
+- `language:Lua path:*.lua` - Find repositories with a Lua file. [Search](https://github.com/search?q=language%3ALua+path%3A*.lua&type=code)
+
+- `language:Lua path:*.lua "--"` - Find repositories with a Lua file that have a comment. [Search](https://github.com/search?q=language%3ALua+path%3A*.lua+%22--%22&type=code)
+
+- `language:Lua path:*.lua "require "` - Find repositories with a Lua file that have a require. [Search](https://github.com/search?q=language%3ALua+path%3A*.lua+%22require+%22&type=code)
+
+- `language:Lua path:*.lua "require " <PACKAGE>` - Find repositories with a Lua file that have a require replace package with the package you want to search for.
+
+
+#### Julia
+
+- `language:Julia path:*.jl` - Find repositories with a Julia file. [Search](https://github.com/search?q=language%3AJulia+path%3A*.jl&type=code)
+
+- `language:Julia path:*.jl "#"` - Find repositories with a Julia file that have a comment. [Search](https://github.com/search?q=language%3AJulia+path%3A*.jl+%22%23%22&type=code)
+
+- `language:Julia path:*.jl "using"` - Find repositories with a Julia file that have a using. [Search](https://github.com/search?q=Language%3AJulia+path%3A*.jl+%22using%22&type=code)
+
+- `language:Julia path:*.jl "using " <PACKAGE>` - Find repositories with a Julia file that have a using replace package with the package you want to search for.
+
+- `language:Julia path:*.jl "import"` - Find repositories with a Julia file that have a import. [Search](https://github.com/search?q=language%3AJulia+path%3A*.jl+%22import%22&type=code)
+
+- `language:Julia path:*.jl "import " <PACKAGE>` - Find repositories with a Julia file that have a import replace package with the package you want to search for.
+
+#### Perl
+
+- `language:Perl path:*.pl` - Find repositories with a Perl file. [Search](https://github.com/search?q=language%3APerl+path%3A*.pl&type=code)
+
+- `language:Perl path:*.pl "#"` - Find repositories with a Perl file that have a comment. [Search](https://github.com/search?q=language%3APerl+path%3A*.pl+%22%23%22&type=code)
+
+- `language:Perl path:*.pl "use"` - Find repositories with a Perl file that have a use. [Search](https://github.com/search?q=language%3APerl+path%3A*.pl+%22use%22&type=code)
+
+- `language:Perl path:*.pl "use " <MODULE>` - Find repositories with a Perl file that have a use replace module with the package you want to search for.
+
+##### Lisp
+
+- `language:Lisp path:*.lisp` - Find repositories with a Lisp file. [Search](https://github.com/search?q=language%3ALisp+path%3A*.lisp&type=code)
+
+- `language:Lisp path:*.lisp ";"` - Find repositories with a Lisp file that have a comment. [Search](https://github.com/search?q=language%3ALisp+path%3A*.lisp+%22%3B%22&type=code)
+
 ### Build Scripts
 
 #### Makefile
@@ -433,6 +541,13 @@ Here are some searches for code on github.
 
 - `language:dockerfile path:*/Dockerfile FROM python:` - Find repositories with a Dockerfile that use python. [Search](https://github.com/search?q=language%3Adockerfile+path%3A*%2FDockerfile+FROM+python%3A&type=code)
 
+
+#### LXC
+
+- `path:*.in "lxc" NOT language:markdown` - Find repositories with a lxc file. [Search](https://github.com/search?q=path:*.in++%22lxc%22+NOT+language:markdown&type=code)
+
+- `path:*.in "lxc" "#" NOT language:markdown` - Find repositories with a lxc file that use a comment. [Search](https://github.com/search?q=path%3A*.in+%22lxc%22+%22%23%22+NOT+language%3Amarkdown&type=code)
+
 ### Configuration and Data
 
 #### Json
@@ -445,6 +560,13 @@ Here are some searches for code on github.
 
 - `path:package.json` - Find package.json files. [Search](https://github.com/search?q=path%3Apackage.json&type=code)
 
+- `language:json path:*.eslintrc` - Find eslint config files. [Search](https://github.com/search?q=language%3Ajson+path%3A*.eslintrc&type=code)
+
+- `language:json path:*.babelrc` - Find repositories with a Babel configuration file in JSON format. [Search](https://github.com/search?q=language%3Ajson+path%3A*.babelrc&type=code)
+
+- `language:json path:*.prettierrc` - Find repositories with a Prettier configuration file in JSON format. [Search](https://github.com/search?q=language%3Ajson+path%3A*.prettierrc&type=code)
+
+- `language:json path:*.tsconfig.json` - Find repositories with a TypeScript configuration file in JSON format. [Search](https://github.com/search?q=language%3Ajson+path%3A*.tsconfig.json&type=code)
 
 #### YAML
 
@@ -521,6 +643,13 @@ Here are some searches for code on github.
 
 - `language:markdown path:CONTRIBUTING.md` - Find repositories with a contributing file. [Search](https://github.com/search?q=language%3Amarkdown+path%3ACONTRIBUTING.md&type=code)
 
+- `language:markdown path:.github/ISSUE_TEMPLATE/*.md` - Find repositories with a issue template file. [Search](https://github.com/search?q=language%3Amarkdown+path%3A.github%2FISSUE_TEMPLATE%2F*.md&type=code)
+
+- `language:markdown path:.github/PULL_REQUEST_TEMPLATE/*.md` - Find repositories with a pull request template file. [Search](https://github.com/search?q=language%3Amarkdown+path%3A.github%2FPULL_REQUEST_TEMPLATE%2F*.md&type=code)
+
+- `language:markdown path:CHANGELOG.md` - Find repositories with a changelog file. [Search](https://github.com/search?q=language%3Amarkdown+path%3ACHANGELOG.md&type=code)
+
+- `language:markdown path:*.md "<!--"` - Find repositories with a markdown file that has a comment. [Search](https://github.com/search?q=language%3Amarkdown+path%3A*.md+%22%3C%21--%22&type=code)
 
 #### Rich Text Format
 
@@ -528,11 +657,19 @@ Here are some searches for code on github.
 
 - `path:README.rtf` - Find repositories with a readme file. [Search](https://github.com/search?q=path%3AREADME.rtf&type=code)
 
+- `path:LICENSE.rtf` - Find repositories with a license file. [Search](https://github.com/search?q=path%3ALICENSE.rtf&type=code)
+
+- `path:CHANGELOG.rtf` - Find repositories with a changelog file. [Search](https://github.com/search?q=path%3ACHANGELOG.rtf&type=code)
+
 #### AsciiDoc
 
 - `language:asciidoc path:*.adoc` - Find repositories with a asciidoc file. [Search](https://github.com/search?q=language%3Aasciidoc+path%3A*.adoc&type=code)
 
 - `language:asciidoc path:README.adoc` - Find repositories with a readme file. [Search](https://github.com/search?q=language%3Aasciidoc+path%3AREADME.adoc&type=code)
+
+-`language:asciidoc path:LICENSE.adoc` - Find repositories with a license file. [Search](https://github.com/search?q=language%3Aasciidoc+path%3ALICENSE.adoc&type=code)
+
+- `language:asciidoc path:CHANGELOG.adoc` - Find repositories with a changelog file. [Search](https://github.com/search?q=language%3Aasciidoc+path%3ACHANGELOG.adoc&type=code)
 
 #### ReStructuredText
 
@@ -571,7 +708,6 @@ Here are some searches for code on github.
 - `"WIP:"` - Find files with a wip comment. [Search](https://github.com/search?q=%22WIP%3A%22&type=code)
 
 - `"DEPRECATED:"` - Find files with a deprecated comment. [Search](https://github.com/search?q=%22DEPRECATED%3A%22&type=code)
-
 
 ## Repositories
 
