@@ -27,7 +27,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
         + [CSS](#css)
         + [SCSS](#scss)
         + [R](#r)
-        + [F#](#f-)
+        + [F#](#f)
         + [Scala](#scala)
         + [Bash](#bash)
         + [PowerShell](#powershell)
