@@ -25,7 +25,7 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
         + [Dart](#dart)
         + [HTML](#html)
         + [CSS](#css)
-        + [SCSS](#scss)
+        + [SASS](#sass)
         + [R](#r)
         + [F#](#f)
         + [Scala](#scala)
