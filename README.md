@@ -224,6 +224,9 @@ Here are some searches for code on github.
 
 - `language:python "print(" OR language:python "print ("` - Find python files with a print statement. [Search](https://github.com/search?q=language%3Apython+%22print%28%22+OR+language%3Apython+%22print+%28%22&type=code)
 
+- `language:python "def "` - Find python files with a function. [Search](https://github.com/search?q=language%3Apython+%22def+%22&type=code)
+
+- `language:python "class "` - Find python files with a class. [Search](https://github.com/search?q=language%3Apython+%22class+%22&type=code)
 
 #### Java
 
