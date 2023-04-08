@@ -97,6 +97,14 @@ Here are some searches for code on github.
 
 - `language:c path:*.c "typedef"` - Find repositories with a C file that use a typedef. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22typedef%22&type=code)
 
+- `language:c path:*.c "if (" OR "if("` - Find repositories with a C file that use an if statement. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22if+%28%22+OR+%22if%28%22&type=code)
+
+- `language:c path:*.c "for (" OR "for("` - Find repositories with a C file that use a for loop. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22for+%28%22+OR+%22for%28%22&type=code)
+
+- `language:c path:*.c "while (" OR "while("` - Find repositories with a C file that use a while loop. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22while+%28%22+OR+%22while%28%22&type=code)
+
+- `language:c path:*.c "switch (" OR "switch("` - Find repositories with a C file that use a switch statement. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22switch+%28%22+OR+%22switch%28%22&type=code)
+
 - `language:c path:*.c "/// <COMMENT>"` - Find repositories with a C file that use a docxygen comment replace COMMENT with the comment you want to search for e.g. `/// <COMMENT>`
 
 - `language:c path:*.c "@param"` - Find repositories with a C file that use a docxygen param. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22%40param%22&type=code)
@@ -134,6 +142,23 @@ Here are some searches for code on github.
 - `language:cpp path:*.cpp "using"` - Find repositories with a C++ file that use a using. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22using%22&type=code)
 
 - `language:cpp path:*.cpp "using <NAMESPACE>"` - Find repositories with a C++ file that use a using replace NAMESPACE with the namespace you want to search for e.g. `using MyNamespace` or `using MyNamespace::MySubNamespace`
+
+- `language:cpp path:*.cpp "struct"` - Find repositories with a C++ file that use a struct. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22struct%22&type=code)
+
+- `language:cpp path:*.cpp "typedef"` - Find repositories with a C++ file that use a typedef. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22typedef%22&type=code)
+
+- `language:cpp path:*.cpp "if (" OR "if("` - Find repositories with a C++ file that use an if statement. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22if+%28%22+OR+%22if%28%22&type=code)
+
+- `language:cpp path:*.cpp "for (" OR "for("` - Find repositories with a C++ file that use a for loop. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22for+%28%22+OR+%22for%28%22&type=code)
+
+- `language:cpp path:*.cpp "while (" OR "while("` - Find repositories with a C++ file that use a while loop. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22while+%28%22+OR+%22while%28%22&type=code)
+
+- `language:cpp path:*.cpp "switch (" OR "switch("` - Find repositories with a C++ file that use a switch statement. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22switch+%28%22+OR+%22switch%28%22&type=code)
+
+- `language:cpp path:*.cpp "try {" OR "try{"` - Find repositories with a C++ file that use a try statement. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22try+%7B%22+OR+%22try%7B&type=code)
+
+- `language:cpp path:*.cpp "catch (" OR "catch("` - Find repositories with a C++ file that use a catch statement. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22catch+%28%22+OR+%22catch%28%22&type=code)
+
 
 - `language:cpp path:*.cpp "/// <COMMENT>"` - Find repositories with a C++ file that use a doxygen comment replace COMMENT with the comment you want to search for e.g. `/// <COMMENT>` or `/** <COMMENT> */`
 
