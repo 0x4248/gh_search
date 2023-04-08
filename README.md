@@ -222,7 +222,7 @@ Here are some searches for code on github.
 
 - `language:javascript path:*.js "import " <PACKAGE>` - Find repositories with a javascript file that use a import replace package with the package you want to search for e.g. `express` or `react`
 
-- `language:javascript "//<COMMENT>"` - Find repositories with a javascript file that use a comment replace COMMENT with the comment you want to search for e.g. `//<COMMENT>`
+- `language:javascript "//<COMMENT>"` - Find repositories with a javascript file that use a comment replace COMMENT with the comment you want to search for.
 
 - `language:javascript "console.log("` - Find repositories with a javascript file that use a console.log. [Search](https://github.com/search?q=language%3Ajavascript+%22console.log%28%22&type=code)
 
@@ -231,6 +231,36 @@ Here are some searches for code on github.
 - `language:javascript "console.error("` - Find repositories with a javascript file that use a console.error. [Search](https://github.com/search?q=language%3Ajavascript+%22console.error%28%22&type=code)
 
 - `language:javascript "console.table("` - Find repositories with a javascript file that use a console.table. [Search](https://github.com/search?q=language%3Ajavascript+%22console.table%28%22&type=code)
+
+- `language:javascript "function "` - Find repositories with a javascript file that have a function. [Search](https://github.com/search?q=language%3Ajavascript+%22function+%22&type=code)
+
+- `language:javascript "function " <FUNCTION>` - Find repositories with a javascript file that have a function replace FUNCTION with the function you want to search for.
+
+- `language:javascript "async function "` - Find repositories with a javascript file that have a asynconous function. [Search](https://github.com/search?q=language%3Ajavascript+%22async+function+%22&type=code)
+
+- `language:javascript "async function " <FUNCTION>` - Find repositories with a javascript file that have a asynconous function replace FUNCTION with the function you want to search for e.g. `async function <FUNCTION>`
+
+- `language:javascript "let "` - Find javascript files that use a let statement. [Search](https://github.com/search?q=language%3Ajavascript+%22let+%22&type=code)
+
+- `language:javascript "let " <VARIABLE>` - Find javascript files that use a let statement replace VARIABLE with the variable you want to search for.
+
+- `language:javascript "const "`- Find javascript files that use a const statement. [Search](https://github.com/search?q=language%3Ajavascript+%22const+%22&type=code)
+
+- `language:javascript "var "` - Find javascript files that use a var statement. [Search](https://github.com/search?q=language%3Ajavascript+%22var+%22&type=code)
+
+- `language:javascript "var " <VARIABLE>` - Find javascript files that use a var statement replace VARIABLE with the variable you want to search for.
+
+- `language:javascript "if("` - Find javascript files that use a if statement. [Search](https://github.com/search?q=language%3Ajavascript+%22if%28%22&type=code)
+
+- `language:javascript "if(" <CONDITION>` - Find javascript files that use a if statement replace CONDITION with the condition you want to search for.
+
+- `language:javascript "for("` - Find javascript files that use a for statement. [Search](https://github.com/search?q=language%3Ajavascript+%22for%28%22&type=code)
+
+- `language:javascript "for(" <CONDITION>` - Find javascript files that use a for statement replace CONDITION with the condition you want to search for.
+
+- `language:javascript "while("` - Find javascript files that use a while statement. [Search](https://github.com/search?q=language%3Ajavascript+%22while%28%22&type=code)
+
+- `language:javascript "while(" <CONDITION>` - Find javascript files that use a while statement replace CONDITION with the condition you want to search for.
 
 #### Typescript
 
@@ -247,6 +277,28 @@ Here are some searches for code on github.
 - `language:typescript "console.error("` - Find repositories with a typescript file that use a console.error. [Search](https://github.com/search?q=language%3Atypescript+%22console.error%28%22&type=code)
 
 - `language:typescript "console.table("` - Find repositories with a typescript file that use a console.table. [Search](https://github.com/search?q=language%3Atypescript+%22console.table%28%22&type=code)
+
+- `language:typescript "function "` - Find repositories with a typescript file that have a function. [Search](https://github.com/search?q=language%3Atypescript+%22function+%22&type=code)
+
+- `language:typescript "function " <FUNCTION>` - Find repositories with a typescript file that have a function replace FUNCTION with the function you want to search for e.g. `function <FUNCTION>`
+
+- `language:typescript "async function "` - Find repositories with a typescript file that have a asynconous function. [Search](https://github.com/search?q=language%3Atypescript+%22async+function+%22&type=code)
+
+- `language:typescript "async function " <FUNCTION>` - Find repositories with a typescript file that have a asynconous function replace FUNCTION with the function you want to search for e.g. `async function <FUNCTION>`
+
+- `language:typescript "let "` - Find typescript files that use a let statement. [Search](https://github.com/search?q=language%3Atypescript+%22let+%22&type=code)
+
+- `language:typescript "let " <VARIABLE>` - Find typescript files that use a let statement replace VARIABLE with the variable you want to search for.
+
+- `language:typescript "const "`- Find typescript files that use a const statement. [Search](https://github.com/search?q=language%3Atypescript+%22const+%22&type=code)
+
+- `language:typescript "var "` - Find typescript files that use a var statement. [Search](https://github.com/search?q=language%3Atypescript+%22var+%22&type=code)
+
+- `language:typescript "var " <VARIABLE>` - Find typescript files that use a var statement replace VARIABLE with the variable you want to search for.
+
+- `language:typescript "if("` - Find typescript files that use a if statement. [Search](https://github.com/search?q=language%3Atypescript+%22if%28%22&type=code)
+
+- `language:typescript "if(" <CONDITION>` - Find typescript files that use a if statement replace CONDITION with the condition you want to search for.
 
 #### Rust
 
