@@ -18,7 +18,9 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
         + [Elixir](#elixir)
         + [EJS](#ejs)
         + [F#](#f)
+        + [Fortran](#fortran)
         + [Go](#go)
+        + [Haskell](#haskell)
         + [HTML](#html)
         + [Java](#java)
         + [JavaScript](#javascript)
@@ -83,13 +85,29 @@ Here are some searches for code on github.
 
 - `language:assembly path:*.asm` - Find repositories with a Assembly file. [Search](https://github.com/search?q=language%3Aassembly+path%3A*.asm&type=code)
 
-- ` language:assembly path:*.asm ";"` - Find repositories with a Assembly file that have a comment. [Search](https://github.com/search?q=+language%3Aassembly+path%3A*.asm+%22%3B%22&type=code)
+- `language:assembly path:*.asm ";"` - Find repositories with a Assembly file that have a comment. [Search](https://github.com/search?q=language%3Aassembly+path%3A*.asm+%22%3B%22&type=code)
+
+- `language:assembly path:*.asm "mov"` - Find repositories with a Assembly file that have a mov instruction. [Search](https://github.com/search?q=language%3Aassembly+path%3A*.asm+%22mov%22&type=code)
+
+- `language:assembly path:*.asm ".global"` - Find repositories with a Assembly file that have a global instruction. [Search](https://github.com/search?q=language%3Aassembly+path%3A*.asm+%22.global%22&type=code)
 
 #### Bash
 
 - `language:Bash path:*.bash` - Find repositories with a Bash file. [Search](https://github.com/search?q=language%3ABash+path%3A*.bash&type=code)
 
 - `language:Bash path:*.bash "#"` - Find repositories with a Bash file that have a comment. [Search](https://github.com/search?q=language%3ABash+path%3A*.bash+%22%23%22&type=code)
+
+- `language:Bash path:*.bash "echo "` - Find repositories with a Bash file that have a echo instruction. [Search](https://github.com/search?q=language%3ABash+path%3A*.bash+%22echo+%22&type=code)
+
+- `language:Bash path:*.bash "function " OR "() {"` - Find repositories with a Bash file that have a function. [Search](https://github.com/search?q=language%3ABash+path%3A*.bash+%22function+%22+OR+%22%28%29+%7B%22&type=code)
+
+- `language:Bash path:*.bash "if "` - Find repositories with a Bash file that have a if statement. [Search](https://github.com/search?q=language%3ABash+path%3A*.bash+%22if+%22&type=code)
+
+- `language:Bash path:*.bash "for "` - Find repositories with a Bash file that have a for statement. [Search](https://github.com/search?q=language%3ABash+path%3A*.bash+%22for+%22&type=code)
+
+- `language:Bash path:*.bash "while "` - Find repositories with a Bash file that have a while statement. [Search](https://github.com/search?q=language%3ABash+path%3A*.bash+%22while+%22&type=code)
+
+- `language:Bash path:*.bash "until "` - Find repositories with a Bash file that have a until statement. [Search](https://github.com/search?q=language%3ABash+path%3A*.bash+%22until+%22&type=code)
 
 #### C
 
@@ -206,7 +224,7 @@ Here are some searches for code on github.
 
 - `language:COBOL path:*.cbl` - Find repositories with a COBOL file. [Search](https://github.com/search?q=language%3ACOBOL+path%3A*.cbl&type=code)
 
-- `language:COBOL path:*.cbl "*"` - Find repositories with a COBOL file that have a comment. [Search](
+- `language:COBOL path:*.cbl "*"` - Find repositories with a COBOL file that have a comment. [Search](https://github.com/search?q=language%3ACOBOL+path%3A*.cbl+%22*%22&type=code)
 
 #### CSS
 
@@ -250,6 +268,16 @@ Here are some searches for code on github.
 
 - `language:F# path:*.fs "//" OR "/*"` - Find repositories with a F# file that have a comment. [Search](https://github.com/search?q=language%3AF%23+path%3A*.fs+%22%2F%2F%22+OR+%22%2F*%22&type=code)
 
+### Fortran
+
+- `language:Fortran path:*.f*` - Find repositories with a Fortran file. [Search](https://github.com/search?q=language%3AFortran+path%3A*.f&type=code)
+
+- `language:Fortran path:*.f* "!"` - Find repositories with a Fortran file that have a comment. [Search](https://github.com/search?q=language%3AFortran+path%3A*.f*+%22%21%22&type=code)
+
+- `language:Fortran path:*.f* "print "` - Find repositories with a Fortran file that have a print. [Search](https://github.com/search?q=language%3AFortran+path%3A*.f*+%22print+%22&type=code)
+
+- `language:Fortran path:*.f* "return "` - Find repositories with a Fortran file that have a return. [Search](https://github.com/search?q=language%3AFortran+path%3A*.f*+%22return+%22&type=code)
+
 #### Go
 
 - `language:go "import ("` - Find Go files that use a import. [Search](https://github.com/search?q=language%3Ago+%22import+%28%22&type=code)
@@ -263,6 +291,21 @@ Here are some searches for code on github.
 - `language:go "// <COMMENT>"` - Find Go files that use a comment. Replace <COMMENT> with a comment.
 
 - `language:go "// TODO:" OR "// BUG:" OR "// FIXME:" OR "// XXX:"` - Find Go files that have a TODO, BUG, FIXME or XXX comment. [Search](https://github.com/search?q=language%3Ago+%22%2F%2F+TODO%3A%22+OR+%22%2F%2F+BUG%3A%22+OR+%22%2F%2F+FIXME%3A%22+OR+%22%2F%2F+XXX%3A%22&type=code)
+
+
+### Haskell
+
+- `language:Haskell path:*.hs` - Find repositories with a Haskell file. [Search](https://github.com/search?q=language%3AHaskell+path%3A*.hs&type=code)
+
+- `language:Haskell path:*.hs "import "` - Find repositories with a Haskell file that have a import. [Search](https://github.com/search?q=language%3AHaskell+path%3A*.hs+%22import+%22&type=code)
+
+- `language:Haskell path:*.hs "import " <PACKAGE>` - Find repositories with a Haskell file that have a import replace package with the package you want to search for.
+
+- `language:Haskell path:*.hs "{-" OR "--"` - Find repositories with a Haskell file that have a comment. [Search](https://github.com/search?q=language%3AHaskell+path%3A*.hs+%22%7B-%22+OR+%22--%22&type=code)
+
+- `language:Haskell path:*.hs "putStrLn "` - Find repositories with a Haskell file that have a putStrLn. [Search](https://github.com/search?q=language%3AHaskell+path%3A*.hs+%22putStrLn+%22&type=code)
+
+- `language:Haskell path:*.hs "if "` - Find repositories with a Haskell file that have a if. [Search](https://github.com/search?q=language%3AHaskell+path%3A*.hs+%22if+%22&type=code)
 
 #### HTML
 
