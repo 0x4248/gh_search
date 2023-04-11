@@ -7,7 +7,11 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
 
 * [Code](#code)
     + [Programming Languages](#programming-languages)
+        + [ABAP](#abap)
+        + [Ada](#ada)
+        + [ASP](#asp)
         + [Assembly](#assembly)
+        + [AppleScript](#applescript)
         + [Bash](#bash)
         + [C](#c)
         + [C++](#c-1)
@@ -65,6 +69,8 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
         + [Rich Text Format](#rich-text-format)
         + [Text](#text)
     + [Comment Annotations](#comment-annotations)
+        + [General](#general)
+        + [Doxygen](#doxygen)
 * [Repositories](#repositories)
 * [Issues](#issues)
     + [Open Issues](#open-issues)
@@ -81,6 +87,52 @@ Here are some searches for code on github.
 
 ### Programming Languages
 
+#### ABAP
+
+- `language:ABAP path:*.abap` - Find repositories with a ABAP file. [Search](https://github.com/search?q=language%3AABAP+&type=code)
+
+- `language:ABAP path:*.abap "*"` - Find repositories with a ABAP file that have a comment. [Search](https://github.com/search?q=language%3AABAP+path%3A*.abap++%22*%22&type=code)
+
+- `language:ABAP path:*.abap "PUBLIC"` - Find repositories with a ABAP file that have a PUBLIC keyword. [Search](https://github.com/search?q=language%3AABAP+path%3A*.abap+%22PUBLIC%22&type=code)
+
+- `language:ABAP path:*.abap "CLASS"` - Find repositories with a ABAP file that have a CLASS keyword. [Search](https://github.com/search?q=language%3AABAP+path%3A*.abap+%22CLASS%22&type=code)
+
+#### Ada
+
+- `language:Ada path:*.adb OR path:*.ads` - Find repositories with a Ada file. [Search](https://github.com/search?q=language%3AAda+path%3A*.adb+OR+path%3A*.ads&type=code)
+
+- `language:Ada path:*.adb OR path:*.ads "'-- "` - Find repositories with a Ada file that have a comment. [Search](https://github.com/search?q=language%3AAda+path%3A*.adb+OR+path%3A*.ads+%22%27--+%22&type=code)
+
+- `language:Ada path:*.adb OR path:*.ads "function "` - Find repositories with a Ada file that have a function keyword. [Search](https://github.com/search?q=language%3AAda+path%3A*.adb+OR+path%3A*.ads+%22function+%22&type=code)
+
+- `language:Ada path:*.adb OR path:*.ads "procedure "` - Find repositories with a Ada file that have a procedure keyword. [Search](https://github.com/search?q=language%3AAda+path%3A*.adb+OR+path%3A*.ads+%22procedure+%22&type=code)
+
+#### ASP
+
+- `language:ASP path:*.asp` - Find repositories with a ASP file. [Search](https://github.com/search?q=language%3AASP+path%3A*.asp&type=code)
+
+- `language:ASP path:*.asp "' "` - Find repositories with a ASP file that have a comment. [Search](https://github.com/search?q=language%3AASP+path%3A*.asp+%22%27+%22&type=code)
+
+- `language:ASP path:*.asp "Response.Write"` - Find repositories with a ASP file that have a Response.Write instruction. [Search](https://github.com/search?q=language%3AASP+path%3A*.asp+%22Response.Write%22&type=code)
+
+- `language:ASP path:*.asp "Request.Form"` - Find repositories with a ASP file that have a Request.Form instruction. [Search](https://github.com/search?q=language%3AASP+path%3A*.asp+%22Request.Form%22&type=code)
+
+- `language:ASP path:*.asp "Request.QueryString"` - Find repositories with a ASP file that have a Request.QueryString instruction. [Search](https://github.com/search?q=language%3AASP+path%3A*.asp+%22Request.QueryString%22&type=code)
+
+- `language:ASP path:*.asp "Request.ServerVariables"` - Find repositories with a ASP file that have a Request.ServerVariables instruction. [Search](https://github.com/search?q=language%3AASP+path%3A*.asp+%22Request.ServerVariables%22&type=code)
+
+- `language:ASP path:*.asp "Request.Cookies"` - Find repositories with a ASP file that have a Request.Cookies instruction. [Search](https://github.com/search?q=language%3AASP+path%3A*.asp+%22Request.Cookies%22&type=code)
+
+- `language:ASP path:*.asp "if "` - Find repositories with a ASP file that have a if statement. [Search](https://github.com/search?q=language%3AASP+path%3A*.asp+%22if+%22&type=code)
+
+- `language:ASP path:*.asp "for "` - Find repositories with a ASP file that have a for statement. [Search](https://github.com/search?q=language%3AASP+path%3A*.asp+%22for+%22&type=code)
+
+- `language:ASP path:*.asp "while "` - Find repositories with a ASP file that have a while statement. [Search](https://github.com/search?q=language%3AASP+path%3A*.asp+%22while+%22&type=code)
+
+- `language:ASP path:*.asp "do "` - Find repositories with a ASP file that have a do statement. [Search](https://github.com/search?q=language%3AASP+path%3A*.asp+%22do+%22&type=code)
+
+- `language:ASP path:*.asp "switch "` - Find repositories with a ASP file that have a switch statement. [Search](https://github.com/search?q=language%3AASP+path%3A*.asp+%22switch+%22&type=code)
+
 #### Assembly
 
 - `language:assembly path:*.asm` - Find repositories with a Assembly file. [Search](https://github.com/search?q=language%3Aassembly+path%3A*.asm&type=code)
@@ -90,6 +142,32 @@ Here are some searches for code on github.
 - `language:assembly path:*.asm "mov"` - Find repositories with a Assembly file that have a mov instruction. [Search](https://github.com/search?q=language%3Aassembly+path%3A*.asm+%22mov%22&type=code)
 
 - `language:assembly path:*.asm ".global"` - Find repositories with a Assembly file that have a global instruction. [Search](https://github.com/search?q=language%3Aassembly+path%3A*.asm+%22.global%22&type=code)
+
+#### AppleScript
+
+- `language:AppleScript path:*.applescript` - Find repositories with a AppleScript file. [Search](https://github.com/search?q=language%3AAppleScript+path%3A*.applescript&type=code)
+
+- `language:AppleScript path:*.applescript "--" OR "(*"` - Find repositories with a AppleScript file that have a comment. [Search](https://github.com/search?q=language%3AAppleScript+path%3A*.applescript+%22--%22+OR+%22%28*%22&type=code)
+
+- `language:AppleScript path:*.applescript "set "` - Find repositories with a AppleScript file that have a set instruction. [Search](https://github.com/search?q=language%3AAppleScript+path%3A*.applescript+%22set+%22&type=code)
+
+- `language:AppleScript path:*.applescript "if "` - Find repositories with a AppleScript file that have a if statement. [Search](https://github.com/search?q=language%3AAppleScript+path%3A*.applescript+%22if+%22&type=code)
+
+- `language:AppleScript path:*.applescript "repeat "` - Find repositories with a AppleScript file that have a repeat statement. [Search](https://github.com/search?q=language%3AAppleScript+path%3A*.applescript+%22repeat+%22&type=code)
+
+- `language:AppleScript path:*.applescript "tell "` - Find repositories with a AppleScript file that have a tell statement. [Search](https://github.com/search?q=language%3AAppleScript+path%3A*.applescript+%22tell+%22&type=code)
+
+- `language:AppleScript path:*.applescript "try"` - Find repositories with a AppleScript file that have a try statement. [Search](https://github.com/search?q=language%3AAppleScript+path%3A*.applescript+%22try%22&type=code)
+
+- `language:AppleScript path:*.applescript "with "` - Find repositories with a AppleScript file that have a with statement. [Search](https://github.com/search?q=language%3AAppleScript+path%3A*.applescript+%22with+%22&type=code)
+
+- `language:AppleScript path:*.applescript "on "` - Find repositories with a AppleScript file that have a on statement. [Search](https://github.com/search?q=language%3AAppleScript+path%3A*.applescript+%22on+%22&type=code)
+
+- `language:AppleScript path:*.applescript "end "` - Find repositories with a AppleScript file that have a end statement. [Search](https://github.com/search?q=language%3AAppleScript+path%3A*.applescript+%22end+%22&type=code)
+
+- `language:AppleScript path:*.applescript "return "` - Find repositories with a AppleScript file that have a return statement. [Search](https://github.com/search?q=language%3AAppleScript+path%3A*.applescript+%22return+%22&type=code)
+
+- `language:AppleScript path:*.applescript "script "` - Find repositories with a AppleScript file that have a script statement. [Search](https://github.com/search?q=language%3AAppleScript+path%3A*.applescript+%22script+%22&type=code)
 
 #### Bash
 
@@ -134,8 +212,6 @@ Here are some searches for code on github.
 - `language:c path:*.c "while (" OR "while("` - Find repositories with a C file that use a while loop. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22while+%28%22+OR+%22while%28%22&type=code)
 
 - `language:c path:*.c "switch (" OR "switch("` - Find repositories with a C file that use a switch statement. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22switch+%28%22+OR+%22switch%28%22&type=code)
-
-- `language:c path:*.c "/// <COMMENT>"` - Find repositories with a C file that use a docxygen comment replace COMMENT with the comment you want to search for e.g. `/// <COMMENT>`
 
 - `language:c path:*.c "@param"` - Find repositories with a C file that use a docxygen param. [Search](https://github.com/search?q=language%3Ac+path%3A*.c+%22%40param%22&type=code)
 
@@ -188,9 +264,6 @@ Here are some searches for code on github.
 - `language:cpp path:*.cpp "try {" OR "try{"` - Find repositories with a C++ file that use a try statement. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22try+%7B%22+OR+%22try%7B&type=code)
 
 - `language:cpp path:*.cpp "catch (" OR "catch("` - Find repositories with a C++ file that use a catch statement. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22catch+%28%22+OR+%22catch%28%22&type=code)
-
-
-- `language:cpp path:*.cpp "/// <COMMENT>"` - Find repositories with a C++ file that use a doxygen comment replace COMMENT with the comment you want to search for e.g. `/// <COMMENT>` or `/** <COMMENT> */`
 
 - `language:cpp path:*.cpp "@param"` - Find repositories with a C++ file that use a doxygen param. [Search](https://github.com/search?q=language%3Acpp+path%3A*.cpp+%22%40param%22&type=code)
 
@@ -805,8 +878,9 @@ Here are some searches for code on github.
 
 - `language:text path:CONTRIBUTING.txt` - Find repositories with a contributing file. [Search](https://github.com/search?q=language%3Atext+path%3ACONTRIBUTING.txt&type=code)
 
-
 ### Comment Annotations
+
+#### General
 
 - `"TODO:"` - Find files with a todo comment. [Search](https://github.com/search?q=%22TODO%3A%22&type=code)
 
@@ -827,6 +901,33 @@ Here are some searches for code on github.
 - `"WIP:"` - Find files with a wip comment. [Search](https://github.com/search?q=%22WIP%3A%22&type=code)
 
 - `"DEPRECATED:"` - Find files with a deprecated comment. [Search](https://github.com/search?q=%22DEPRECATED%3A%22&type=code)
+
+
+#### Doxygen
+
+- `"@brief " OR "\brief "` - Find files with a brief comment. [Search](https://github.com/search?q=%22%40brief+%22+OR+%22%5Cbrief+%22&type=code)
+
+- `"@bug " OR "\bug "` - Find files with a bug comment. [Search](https://github.com/search?q=%22%40bug+%22+OR+%22%5Cbug+%22&type=code)
+
+- `"@param " OR "\param "` - Find files with a param comment. [Search](https://github.com/search?q=%22%40param+%22+OR+%22%5Cparam+%22&type=code)
+
+- `"@return " OR "\return " OR "@returns " OR "\returns "` - Find files with a return comment. [Search](https://github.com/search?q=%22%40return+%22+OR+%22%5Creturn+%22+OR+%22%40returns+%22+OR+%22%5Creturns+%22&type=code)
+
+- `"@deprecated " OR "\deprecated "` - Find files with a deprecated comment. [Search](https://github.com/search?q=%22%40deprecated+%22+OR+%22%5Cdeprecated+%22&type=code)
+
+- `"@see " OR "\see "` - Find files with a see comment. [Search](https://github.com/search?q=%22%40see+%22+OR+%22%5Csee+%22&type=code)
+
+- `"@todo " OR "\todo "` - Find files with a todo comment. [Search](https://github.com/search?q=%22%40todo+%22+OR+%22%5Ctodo+%22&type=code)
+
+- `"@warning " OR "\warning "` - Find files with a warning comment. [Search](https://github.com/search?q=%22%40warning+%22+OR+%22%5Cwarning+%22&type=code)
+
+- `"@note " OR "\note "` - Find files with a note comment. [Search](https://github.com/search?q=%22%40note+%22+OR+%22%5Cnote+%22&type=code)
+
+- `"@attention " OR "\attention "` - Find files with a attention comment. [Search](https://github.com/search?q=%22%40attention+%22+OR+%22%5Cattention+%22&type=code)
+
+- `"@version " OR "\version "` - Find files with a version comment. [Search](https://github.com/search?q=%22%40version+%22+OR+%22%5Cversion+%22&type=code)
+
+- `"@date " OR "\date "` - Find files with a date comment. [Search](https://github.com/search?q=%22%40date+%22+OR+%22%5Cdate+%22&type=code)
 
 ## Repositories
 
