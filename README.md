@@ -40,6 +40,8 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
         + [Scala](#scala)
         + [Swift](#swift)
         + [TypeScript](#typescript)
+        + [Vim script](#vim-script)
+        + [Visual Basic](#visual-basic)
     + [Build Scripts](#build-scripts)
         + [CMake](#cmake)
         + [Gradle](#gradle)
@@ -413,6 +415,10 @@ Here are some searches for code on github.
 
 - `language:Lisp path:*.lisp ";"` - Find repositories with a Lisp file that have a comment. [Search](https://github.com/search?q=language%3ALisp+path%3A*.lisp+%22%3B%22&type=code)
 
+- `language:Lisp path:*.lisp "require "` - Find repositories with a Lisp file that have a require. [Search](https://github.com/search?q=language%3ALisp+path%3A*.lisp+%22require+%22&type=code)
+
+- `language:Lisp path:*.lisp "defun "` - Find repositories with a Lisp file that have a defun. [Search](https://github.com/search?q=language%3ALisp+path%3A*.lisp+%22defun+%22&type=code)
+
 #### Lua
 
 - `language:Lua path:*.lua` - Find repositories with a Lua file. [Search](https://github.com/search?q=language%3ALua+path%3A*.lua&type=code)
@@ -422,6 +428,10 @@ Here are some searches for code on github.
 - `language:Lua path:*.lua "require "` - Find repositories with a Lua file that have a require. [Search](https://github.com/search?q=language%3ALua+path%3A*.lua+%22require+%22&type=code)
 
 - `language:Lua path:*.lua "require " <PACKAGE>` - Find repositories with a Lua file that have a require replace package with the package you want to search for.
+
+- `language:Lua path:*.lua "function "` - Find repositories with a Lua file that have a function. [Search](https://github.com/search?q=language%3ALua+path%3A*.lua+%22function+%22&type=code)
+
+- `language:Lua path:*.lua "if "` - Find repositories with a Lua file that have a if statement. [Search](https://github.com/search?q=language%3ALua+path%3A*.lua+%22if+%22&type=code)
 
 #### Objective-C
 
@@ -491,6 +501,10 @@ Here are some searches for code on github.
 - `language:python "def "` - Find python files with a function. [Search](https://github.com/search?q=language%3Apython+%22def+%22&type=code)
 
 - `language:python "class "` - Find python files with a class. [Search](https://github.com/search?q=language%3Apython+%22class+%22&type=code)
+
+- `language:python "if "` - Find python files with a if statement. [Search](https://github.com/search?q=language%3Apython+%22if+%22&type=code)
+
+- `language:python if __name__ == "__main__"` - Find python files with a main function. [Search](https://github.com/search?q=language%3Apython+if+__name__+%3D%3D+%22__main__%22&type=code)
 
 #### R
 
@@ -604,6 +618,34 @@ Here are some searches for code on github.
 - `language:typescript "if("` - Find typescript files that use a if statement. [Search](https://github.com/search?q=language%3Atypescript+%22if%28%22&type=code)
 
 - `language:typescript "if(" <CONDITION>` - Find typescript files that use a if statement replace CONDITION with the condition you want to search for.
+
+### Vim Script
+
+- `language:vim path:*.vim` - Find repositories with a vim file. [Search](https://github.com/search?q=language%3Avim%20path%3A*.vim&type=code)
+
+- `language:vim path:*.vim "call "` - Find repositories with a vim file that use a call. [Search](https://github.com/search?q=language%3Avim+path%3A*.vim+%22call+%22&type=code)
+
+- `language:vim path:*.vim "function "` - Find repositories with a vim file that have a function. [Search](https://github.com/search?q=language%3Avim+path%3A*.vim+%22function+%22&type=code)
+
+- `language:vim path:*.vim "let "` - Find repositories with a vim file that use a let statement. [Search](https://github.com/search?q=language%3Avim+path%3A*.vim+%22let+%22&type=code)
+
+- `language:vim path:*.vim "const "` - Find repositories with a vim file that use a const statement. [Search](https://github.com/search?q=language%3Avim+path%3A*.vim+%22const+%22&type=code)
+
+- `language:vim path:*.vim "var "` - Find repositories with a vim file that use a var statement. [Search](https://github.com/search?q=language%3Avim+path%3A*.vim+%22var+%22&type=code)
+
+### Visual Basic
+
+- `language:"Visual Basic" path:*.vb` - Find repositories with a visual basic file. [Search](https://github.com/search?q=language%3A%22Visual+Basic%22+path%3A*.vb&type=code)
+
+- `language:"Visual Basic" path:*.vb "Console.WriteLine("` - Find repositories with a visual basic file that use a console.writeline. [Search](https://github.com/search?q=language%3A%22Visual+Basic%22+path%3A*.vb+%22Console.WriteLine%28%22&type=code)
+
+- `language:"Visual Basic" path:*.vb "Imports "` - Find repositories with a visual basic file that use a import. [Search](https://github.com/search?q=language%3A%22Visual+Basic%22+path%3A*.vb+%22Imports+%22&type=code)
+
+- `language:"Visual Basic" path:*.vb "Dim "` - Find repositories with a visual basic file that use a Dim statement. [Search](https://github.com/search?q=language%3A%22Visual+Basic%22+path%3A*.vb+%22Dim+%22&type=code)
+
+- `language:"Visual Basic" path:*.vb "If "` - Find repositories with a visual basic file that use a If statement. [Search](https://github.com/search?q=language%3A%22Visual+Basic%22+path%3A*.vb+%22If+%22&type=code)
+
+- `language:"Visual Basic" path:*.vb "Case "` - Find repositories with a visual basic file that use a Case statement. [Search](https://github.com/search?q=language%3A%22Visual+Basic%22+path%3A*.vb+%22Case+%22&type=code)
 
 
 ### Build Scripts
