@@ -1,7 +1,7 @@
 # Github prebuilt searches
 Total searches: `360`
 
-This is a list of prebuilt searches on Github. These searches are useful for finding things on github.
+This is a list of prebuilt searches on Github. These searches are useful for finding code, commits, issues, pull requests, packages and repositories.
 
 ## Table of Contents
 
