@@ -16,22 +16,32 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
         + [C](#c)
         + [C++](#c-1)
         + [C#](#c-2)
+        + [Ceylon](#ceylon)
+        + [Chapel](#chapel)
+        + [Cirru](#cirru)
         + [COBOL](#cobol)
+        + [CoffeeScript](#coffeescript)
         + [CSS](#css)
+        + [D](#d)
         + [Dart](#dart)
+        + [E](#e)
         + [Elixir](#elixir)
         + [EJS](#ejs)
         + [F#](#f)
+        + [F*](#f-1)
         + [Fortran](#fortran)
         + [Go](#go)
+        + [Groovy](#groovy)
         + [Haskell](#haskell)
         + [HTML](#html)
         + [Java](#java)
         + [JavaScript](#javascript)
         + [Julia](#julia)
+        + [Jupyter Notebook](#jupyter-notebook)
         + [Kotlin](#kotlin)
         + [Lisp](#lisp)
         + [Lua](#lua)
+        + [OCaml](#ocaml)
         + [Objective-C](#objective-c)
         + [Perl](#perl)
         + [PHP](#php)
@@ -46,6 +56,9 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
         + [TypeScript](#typescript)
         + [Vim script](#vim-script)
         + [Visual Basic](#visual-basic)
+        + [Vue](#vue)
+        + [WebAssembly](#webassembly)
+        + [Zig](#zig)
     + [Build Scripts](#build-scripts)
         + [CMake](#cmake)
         + [Gradle](#gradle)
@@ -295,11 +308,91 @@ Here are some searches for code on github.
 
 - `language:C#  path:*.cs "///<summary>"` - Find repositories with a C# file that have a summary [Search](https://github.com/search?q=language%3AC%23++path%3A*.cs+%22%2F%2F%2F%3Csummary%3E%22&type=code)
 
+
+#### Ceylon
+
+- `language:Ceylon path:*.ceylon` - Find repositories with a Ceylon file. [Search](https://github.com/search?q=language%3ACeylon+path%3A*.ceylon&type=code)
+
+- `language:Ceylon path:*.ceylon "//" OR "/*"` - Find repositories with a Ceylon file that have a comment. [Search](https://github.com/search?q=language%3ACeylon+path%3A*.ceylon+%22%2F%2F%22+OR+%22%2F*%22&type=code
+
+- `language:Ceylon path:*.ceylon "import "` - Find repositories with a Ceylon file that have a import. [Search](language:Ceylon path:*.ceylon "import ")
+
+- `language:Ceylon path:*.ceylon "class "` - Find repositories with a Ceylon file that have a class. [Search](https://github.com/search?q=language%3ACeylon+path%3A*.ceylon+%22class+%22&type=code)
+
+- `language:Ceylon path:*.ceylon "interface "` - Find repositories with a Ceylon file that have a interface. [Search](language:Ceylon path:*.ceylon "interface ")
+
+- `language:Ceylon path:*.ceylon "shared "` - Find repositories with a Ceylon file that have a shared. [Search](https://github.com/search?q=language%3ACeylon+path%3A*.ceylon+%22shared+%22&type=code)
+
+- `language:Ceylon path:*.ceylon "void "` - Find repositories with a Ceylon file that have a void. [Search](https://github.com/search?q=language%3ACeylon+path%3A*.ceylon+%22void+%22&type=code)
+
+- `language:Ceylon path:*.ceylon "function "` - Find repositories with a Ceylon file that have a function. [Search](https://github.com/search?q=language%3ACeylon+path%3A*.ceylon+%22function+%22&type=code)
+
+
+#### Chapel
+
+- `language:Chapel path:*.chpl` - Find repositories with a Chapel file. [Search](https://github.com/search?q=language%3AChapel+path%3A*.chpl&type=code)
+
+- `language:Chapel path:*.chpl "//" OR "/*"` - Find repositories with a Chapel file that have a comment. [Search](https://github.com/search?q=language%3AChapel+path%3A*.chpl+%22%2F%2F%22+OR+%22%2F*%22&type=code)
+
+- `language:Chapel path:*.chpl "use "` - Find repositories with a Chapel file that have a use. [Search](https://github.com/search?q=language%3AChapel+path%3A*.chpl+%22use+%22&type=code)
+
+- `language:Chapel path:*.chpl "proc "` - Find repositories with a Chapel file that have a proc. [Search](https://github.com/search?q=language%3AChapel+path%3A*.chpl+%22proc+%22&type=code)
+
+- `language:Chapel path:*.chpl "class "` - Find repositories with a Chapel file that have a class. [Search](https://github.com/search?q=language%3AChapel+path%3A*.chpl+%22class+%22&type=code)
+
+- `language:Chapel path:*.chpl "record "` - Find repositories with a Chapel file that have a record. [Search](https://github.com/search?q=language%3AChapel+path%3A*.chpl+%22record+%22&type=code)
+
+- `language:Chapel path:*.chpl "module "` - Find repositories with a Chapel file that have a module. [Search](https://github.com/search?q=language%3AChapel+path%3A*.chpl+%22module+%22&type=code)
+
+- `language:Chapel path:*.chpl "config "` - Find repositories with a Chapel file that have a config. [Search](https://github.com/search?q=language%3AChapel+path%3A*.chpl+%22config+%22&type=code)
+
+
+#### Cirru
+
+- `language:Cirru path:*.cirru` - Find repositories with a Cirru file. [Search](https://github.com/search?q=language%3ACirru+path%3A*.cirru&type=code)
+
+- `language:Cirru path:*.cirru ";;"` - Find repositories with a Cirru file that have a comment. [Search](https://github.com/search?q=language%3ACirru+path%3A*.cirru+%22%3B%3B%22&type=code)
+
+- `language:Cirru path:*.cirru "println "` - Find repositories with a Cirru file that have a println. [Search](https://github.com/search?q=language%3ACirru+path%3A*.cirru+%22println+%22&type=code)
+
+- `language:Cirru path:*.cirru "def "` - Find repositories with a Cirru file that have a def. [Search](https://github.com/search?q=language%3ACirru+path%3A*.cirru+%22def+%22&type=code)
+
+- `language:Cirru path:*.cirru "fn "` - Find repositories with a Cirru file that have a fn. [Search](https://github.com/search?q=language%3ACirru+path%3A*.cirru+%22fn+%22&type=code)
+
+- `language:Cirru path:*.cirru "if "` - Find repositories with a Cirru file that have a if. [Search](https://github.com/search?q=language%3ACirru+path%3A*.cirru+%22if+%22&type=code)
+
+- `language:Cirru path:*.cirru "do "` - Find repositories with a Cirru file that have a do. [Search](https://github.com/search?q=language%3ACirru+path%3A*.cirru+%22do+%22&type=code)
+
+- `language:Cirru path:*.cirru "let "` - Find repositories with a Cirru file that have a let. [Search](https://github.com/search?q=language%3ACirru+path%3A*.cirru+%22let+%22&type=code)
+
+- `language:Cirru path:*.cirru "loop "` - Find repositories with a Cirru file that have a loop. [Search](https://github.com/search?q=language%3ACirru+path%3A*.cirru+%22loop+%22&type=code)
+
+- `language:Cirru path:*.cirru "return "` - Find repositories with a Cirru file that have a return. [Search](https://github.com/search?q=language%3ACirru+path%3A*.cirru+%22return+%22&type=code)
+
 #### COBOL
 
 - `language:COBOL path:*.cbl` - Find repositories with a COBOL file. [Search](https://github.com/search?q=language%3ACOBOL+path%3A*.cbl&type=code)
 
 - `language:COBOL path:*.cbl "*"` - Find repositories with a COBOL file that have a comment. [Search](https://github.com/search?q=language%3ACOBOL+path%3A*.cbl+%22*%22&type=code)
+
+
+#### CoffeeScript
+
+- `language:CoffeeScript path:*.coffee` - Find repositories with a CoffeeScript file. [Search](https://github.com/search?q=language%3ACoffeeScript+path%3A*.coffee&type=code)
+
+- `language:CoffeeScript path:*.coffee "#"` - Find repositories with a CoffeeScript file that have a comment. [Search](https://github.com/search?q=language%3ACoffeeScript+path%3A*.coffee+%22%23%22&type=code)
+
+- `language:CoffeeScript path:*.coffee "import "` - Find repositories with a CoffeeScript file that have a import. [Search](https://github.com/search?q=language%3ACoffeeScript+path%3A*.coffee+%22import+%22&type=code)
+
+- `language:CoffeeScript path:*.coffee "require "` - Find repositories with a CoffeeScript file that have a require. [Search](https://github.com/search?q=language%3ACoffeeScript+path%3A*.coffee+%22require+%22&type=code)
+
+- `language:CoffeeScript path:*.coffee "class "` - Find repositories with a CoffeeScript file that have a class. [Search](https://github.com/search?q=language%3ACoffeeScript+path%3A*.coffee+%22class+%22&type=code)
+
+- `language:CoffeeScript path:*.coffee "extends "` - Find repositories with a CoffeeScript file that have a extends. [Search](https://github.com/search?q=language%3ACoffeeScript+path%3A*.coffee+%22extends+%22&type=code)
+
+- `language:CoffeeScript path:*.coffee "module "` - Find repositories with a CoffeeScript file that have a module. [Search](https://github.com/search?q=language%3ACoffeeScript+path%3A*.coffee+%22module+%22&type=code)
+
+- `language:CoffeeScript path:*.coffee "return "` - Find repositories with a CoffeeScript file that have a return. [Search](https://github.com/search?q=language%3ACoffeeScript+path%3A*.coffee+%22return+%22&type=code)
 
 #### CSS
 
@@ -311,6 +404,25 @@ Here are some searches for code on github.
 
 - `language:CSS path:*.css "/*"` - Find repositories with a CSS file that have a comment. [Search](https://github.com/search?q=language%3ACSS+path%3A*.css+%22%2F%2F%22+OR+%22%2F*%22&type=code)
 
+
+#### D
+
+- `language:D path:*.d` - Find repositories with a D file. [Search](https://github.com/search?q=language%3AD+path%3A*.d&type=code)
+
+- `language:D path:*.d "//" OR "/*"` - Find repositories with a D file that have a comment. [Search](https://github.com/search?q=language%3AD+path%3A*.d+%22%2F%2F%22+OR+%22%2F*%22&type=code)
+
+- `language:D path:*.d "import "` - Find repositories with a D file that have a import. [Search](https://github.com/search?q=language%3AD+path%3A*.d+%22import+%22&type=code)
+
+- `language:D path:*.d "extern "` - Find repositories with a D file that have a extern. [Search](https://github.com/search?q=language%3AD+path%3A*.d+%22extern+%22&type=code)
+
+- `language:D path:*.d "class "` - Find repositories with a D file that have a class. [Search](https://github.com/search?q=language%3AD+path%3A*.d+%22class+%22&type=code)
+
+- `language:D path:*.d "struct "` - Find repositories with a D file that have a struct. [Search](https://github.com/search?q=language%3AD+path%3A*.d+%22struct+%22&type=code)
+
+- `language:D path:*.d "enum "` - Find repositories with a D file that have a enum. [Search](https://github.com/search?q=language%3AD+path%3A*.d+%22enum+%22&type=code)
+
+- `language:D path:*.d "return "` - Find repositories with a D file that have a return. [Search](https://github.com/search?q=language%3AD+path%3A*.d+%22return+%22&type=code)
+
 #### Dart
 
 - `language:dart path:*.dart` - Find repositories with a Dart file. [Search](https://github.com/search?q=language%3Adart+path%3A*.dart&type=code)
@@ -320,6 +432,20 @@ Here are some searches for code on github.
 - `language:dart path:*.dart "import " <PACKAGE>` - Find repositories with a Dart file that have a import replace package with the package you want to search for e.g. `package:flutter/material.dart` or `package:provider/provider.dart`
 
 - `language:dart path:*.dart "//" OR "/*"` - Find repositories with a Dart file that have a comment. [Search](https://github.com/search?q=language%3Adart+path%3A*.dart+%22%2F%2F%22+OR+%22%2F*%22+&type=code)
+
+#### E
+
+- `language:E path:*.e` - Find repositories with a E file. [Search](https://github.com/search?q=language%3AE+path%3A*.e&type=code)
+
+- `language:E path:*.e "//" OR "/*"` - Find repositories with a E file that have a comment. [Search](https://github.com/search?q=language%3AE+path%3A*.e+%22%2F%2F%22+OR+%22%2F*%22&type=code)
+
+- `language:E path:*.e "import "` - Find repositories with a E file that have a import. [Search](https://github.com/search?q=language%3AE+path%3A*.e+%22import+%22&type=code)
+
+- `language:E path:*.e "extern "` - Find repositories with a E file that have a extern. [Search](https://github.com/search?q=language%3AE+path%3A*.e+%22extern+%22&type=code)
+
+- `language:E path:*.e "class "` - Find repositories with a E file that have a class. [Search](https://github.com/search?q=language%3AE+path%3A*.e+%22class+%22&type=code)
+
+- `language:E path:*.e "struct "` - Find repositories with a E file that have a struct. [Search](https://github.com/search?q=language%3AE+path%3A*.e+%22struct+%22&type=code)
 
 #### Elixir
 
@@ -342,6 +468,29 @@ Here are some searches for code on github.
 - `language:F# path:*.fs "open " <PACKAGE>` - Find repositories with a F# file that have a open replace package with the package you want to search for e.g. `package:flutter/material.dart` or `package:provider/provider.dart`
 
 - `language:F# path:*.fs "//" OR "/*"` - Find repositories with a F# file that have a comment. [Search](https://github.com/search?q=language%3AF%23+path%3A*.fs+%22%2F%2F%22+OR+%22%2F*%22&type=code)
+
+
+#### F*
+
+- `language:F* path:*.fst` - Find repositories with a F* file. [Search](https://github.com/search?q=language%3AF*+path%3A*.fst&type=code)
+
+- `language:F* path:*.fst "module "` - Find repositories with a F* file that have a module. [Search](https://github.com/search?q=language%3AF*+path%3A*.fst+%22module+%22&type=code)
+
+- `language:F* path:*.fst "open "` - Find repositories with a F* file that have a open. [Search](https://github.com/search?q=language%3AF*+path%3A*.fst+%22open+%22&type=code)
+
+- `language:F* path:*.fst "(*" OR "///"` - Find repositories with a F* file that have a comment. [Search](https://github.com/search?q=language%3AF*+path%3A*.fst+%22%28*%22+OR+%22%2F%2F%2F%22&type=code)
+
+- `language:F* path:*.fst "let "` - Find repositories with a F* file that have a let. [Search](https://github.com/search?q=language%3AF*+path%3A*.fst+%22let+%22&type=code)
+
+- `language:F* path:*.fst "val "` - Find repositories with a F* file that have a val. [Search](https://github.com/search?q=language%3AF*+path%3A*.fst+%22val+%22&type=code)
+
+- `language:F* path:*.fst "type "` - Find repositories with a F* file that have a type. [Search](https://github.com/search?q=language%3AF*+path%3A*.fst+%22type+%22&type=code)
+
+- `language:F* path:*.fst "assume "` - Find repositories with a F* file that have a assume. [Search](https://github.com/search?q=language%3AF*+path%3A*.fst+%22assume+%22&type=code)
+
+- `language:F* path:*.fst "assert "` - Find repositories with a F* file that have a assert. [Search](https://github.com/search?q=language%3AF*+path%3A*.fst+%22assert+%22&type=code)
+
+- `language:F* path:*.fst "exception "` - Find repositories with a F* file that have a exception. [Search](https://github.com/search?q=language%3AF*+path%3A*.fst+%22exception+%22&type=code)
 
 ### Fortran
 
@@ -367,6 +516,24 @@ Here are some searches for code on github.
 
 - `language:go "// TODO:" OR "// BUG:" OR "// FIXME:" OR "// XXX:"` - Find Go files that have a TODO, BUG, FIXME or XXX comment. [Search](https://github.com/search?q=language%3Ago+%22%2F%2F+TODO%3A%22+OR+%22%2F%2F+BUG%3A%22+OR+%22%2F%2F+FIXME%3A%22+OR+%22%2F%2F+XXX%3A%22&type=code)
 
+
+#### Groovy
+
+- `language:Groovy path:*.groovy` - Find repositories with a Groovy file. [Search](https://github.com/search?q=language%3AGroovy+path%3A*.groovy&type=code)
+
+- `language:Groovy path:*.groovy "import "` - Find repositories with a Groovy file that have a import. [Search](https://github.com/search?q=language%3AGroovy+path%3A*.groovy+%22import+%22&type=code)
+
+- `language:Groovy path:*.groovy "//" OR "/*"` - Find repositories with a Groovy file that have a comment. [Search](https://github.com/search?q=language%3AGroovy+path%3A*.groovy+%22%2F%2F%22+OR+%22%2F*%22&type=code)
+
+- `language:Groovy path:*.groovy "println "` - Find repositories with a Groovy file that have a println. [Search](https://github.com/search?q=language%3AGroovy+path%3A*.groovy+%22println+%22&type=code)
+
+- `language:Groovy path:*.groovy "def "` - Find repositories with a Groovy file that have a def. [Search](https://github.com/search?q=language%3AGroovy+path%3A*.groovy+%22def+%22&type=code)
+
+- `language:Groovy path:*.groovy "class "` - Find repositories with a Groovy file that have a class. [Search](https://github.com/search?q=language%3AGroovy+path%3A*.groovy+%22class+%22&type=code)
+
+- `language:Groovy path:*.groovy "interface "` - Find repositories with a Groovy file that have a interface. [Search](https://github.com/search?q=language%3AGroovy+path%3A*.groovy+%22interface+%22&type=code)
+
+- `language:Groovy path:*.groovy "trait "` - Find repositories with a Groovy file that have a trait. [Search](https://github.com/search?q=language%3AGroovy+path%3A*.groovy+%22trait+%22&type=code)
 
 ### Haskell
 
@@ -468,6 +635,17 @@ Here are some searches for code on github.
 
 - `language:Julia path:*.jl "import " <PACKAGE>` - Find repositories with a Julia file that have a import replace package with the package you want to search for.
 
+#### Juptyer Notebook
+
+- `language:"Jupyter Notebook" path:*.ipynb` - Find repositories with a Jupyter Notebook file. [Search](https://github.com/search?q=language%3A%22Jupyter+Notebook%22+path%3A*.ipynb&type=code)
+
+- `language:"Jupyter Notebook" path:*.ipynb "cell_type" "code"` - Find repositories with a Jupyter Notebook file that code cells. [Search](https://github.com/search?q=language%3A%22Jupyter+Notebook%22+path%3A*.ipynb+%22cell_type%22+%22code%22&type=code)
+
+- `language:"Jupyter Notebook" path:*.ipynb "cell_type" "markdown"` - Find repositories with a Jupyter Notebook file that markdown cells. [Search](https://github.com/search?q=language%3A%22Jupyter+Notebook%22+path%3A*.ipynb+%22cell_type%22+%22markdown%22&type=code)
+
+- `language:"Jupyter Notebook" path:*.ipynb "source"` - Find repositories with a Jupyter Notebook file sources. [Search](https://github.com/search?q=language%3A%22Jupyter+Notebook%22+path%3A*.ipynb+%22source%22&type=code)
+
+
 #### Kotlin
 
 - `language:kotlin path:*.kt` - Find repositories with a Kotlin file. [Search](https://github.com/search?q=language%3Akotlin+path%3A*.kt&type=code)
@@ -505,6 +683,25 @@ Here are some searches for code on github.
 - `language:Lua path:*.lua "function "` - Find repositories with a Lua file that have a function. [Search](https://github.com/search?q=language%3ALua+path%3A*.lua+%22function+%22&type=code)
 
 - `language:Lua path:*.lua "if "` - Find repositories with a Lua file that have a if statement. [Search](https://github.com/search?q=language%3ALua+path%3A*.lua+%22if+%22&type=code)
+
+#### Ocaml
+
+- `language:ocaml path:*.ml` - Find repositories with a Ocaml file. [Search](https://github.com/search?q=language%3Aocaml+path%3A*.ml&type=code)
+
+- `language:ocaml path:*.ml "(*"` - Find repositories with a Ocaml file that have a comment. [Search](https://github.com/search?q=language%3Aocaml+path%3A*.ml+%22%28*%22&type=code)
+
+- `language:ocaml path:*.ml "let "` - Find repositories with a Ocaml file that have a let. [Search](https://github.com/search?q=language%3Aocaml+path%3A*.ml+%22let+%22&type=code)
+
+- `language:ocaml path:*.ml "module "` - Find repositories with a Ocaml file that have a module. [Search](https://github.com/search?q=language%3Aocaml+path%3A*.ml+%22module+%22&type=code)
+
+- `language:ocaml path:*.ml "open "` - Find repositories with a Ocaml file that have a open. [Search](https://github.com/search?q=language%3Aocaml+path%3A*.ml+%22open+%22&type=code)
+
+- `language:ocaml path:*.ml "type "` - Find repositories with a Ocaml file that have a type. [Search](https://github.com/search?q=language%3Aocaml+path%3A*.ml+%22type+%22&type=code)
+
+- `language:ocaml path:*.ml "val "` - Find repositories with a Ocaml file that have a val. [Search](https://github.com/search?q=language%3Aocaml+path%3A*.ml+%22val+%22&type=code)
+
+- `language:ocaml path:*.ml "with "` - Find repositories with a Ocaml file that have a with. [Search](https://github.com/search?q=language%3Aocaml+path%3A*.ml+%22with+%22&type=code)
+
 
 #### Objective-C
 
@@ -653,7 +850,6 @@ Here are some searches for code on github.
 
 - `language:swift path:*.swift "// <COMMENT>"` - Find repositories with a Swift file that have a comment. Replace <COMMENT> with a comment.
 
-
 #### Typescript
 
 - `language:typescript path:*.ts` - Find repositories with a typescript file. [Search](https://github.com/search?q=language%3Atypescript%20path%3A*.ts&type=code)
@@ -720,6 +916,68 @@ Here are some searches for code on github.
 
 - `language:"Visual Basic" path:*.vb "Case "` - Find repositories with a visual basic file that use a Case statement. [Search](https://github.com/search?q=language%3A%22Visual+Basic%22+path%3A*.vb+%22Case+%22&type=code)
 
+#### Vue
+
+- `language:Vue path:*.vue` - Find repositories with a vue file. [Search](https://github.com/search?q=language%3AVue+path%3A*.vue&type=code)
+
+- `language:Vue path:*.vue "export default "` - Find repositories with a vue file that have a export default. [Search](https://github.com/search?q=language%3AVue+path%3A*.vue+%22export+default+%22&type=code)
+
+- `language:Vue path:*.vue "import "` - Find repositories with a vue file that have a import. [Search](https://github.com/search?q=language%3AVue+path%3A*.vue+%22import+%22&type=code)
+
+- `language:Vue path:*.vue "export "` - Find repositories with a vue file that have a export. [Search](https://github.com/search?q=language%3AVue+path%3A*.vue+%22export+%22&type=code)
+
+- `language:Vue path:*.vue "<!--"` - Find repositories with a vue file that have a comment. [Search](https://github.com/search?q=language%3AVue+path%3A*.vue+%22%3C%21--%22&type=code)
+
+- `language:Vue path:*.vue "const "` - Find repositories with a vue file that have a const. [Search](https://github.com/search?q=language%3AVue+path%3A*.vue+%22const+%22&type=code)
+
+- `language:Vue path:*.vue "let "` - Find repositories with a vue file that have a let. [Search](https://github.com/search?q=language%3AVue+path%3A*.vue+%22let+%22&type=code)
+
+- `language:Vue path:*.vue "var "` - Find repositories with a vue file that have a var. [Search](https://github.com/search?q=language%3AVue+path%3A*.vue+%22var+%22&type=code)
+
+- `language:Vue path:*.vue "function "` - Find repositories with a vue file that have a function. [Search](https://github.com/search?q=language%3AVue+path%3A*.vue+%22function+%22&type=code)
+
+- `language:Vue path:*.vue "if "` - Find repositories with a vue file that have a if. [Search](https://github.com/search?q=language%3AVue+path%3A*.vue+%22if+%22&type=code)
+
+
+#### WebAssembly
+
+- `language:WebAssembly path:*.wat` - Find repositories with a webassembly file. [Search](https://github.com/search?q=language%3AWebAssembly+path%3A*.wat&type=code)
+
+- `language:WebAssembly path:*.wat ";;"` - Find repositories with a webassembly file that have a comment. [Search](https://github.com/search?q=language%3AWebAssembly+path%3A*.wat+%22%3B%3B%22&type=code)
+
+- `language:WebAssembly path:*.wat "(func "` - Find repositories with a webassembly file that have a function. [Search](https://github.com/search?q=language%3AWebAssembly+path%3A*.wat+%22%28func+%22&type=code)
+
+- `language:WebAssembly path:*.wat "(module "` - Find repositories with a webassembly file that have a module. [Search](https://github.com/search?q=language%3AWebAssembly+path%3A*.wat+%22%28module+%22&type=code)
+
+- `language:WebAssembly path:*.wat "(type "` - Find repositories with a webassembly file that have a type. [Search](https://github.com/search?q=language%3AWebAssembly+path%3A*.wat+%22%28type+%22&type=code)
+
+- `language:WebAssembly path:*.wat "(import "` - Find repositories with a webassembly file that have a import. [Search](https://github.com/search?q=language%3AWebAssembly+path%3A*.wat+%22%28import+%22&type=code)
+
+- `language:WebAssembly path:*.wat "(export "` - Find repositories with a webassembly file that have a export. [Search](https://github.com/search?q=language%3AWebAssembly+path%3A*.wat+%22%28export+%22&type=code)
+
+- `language:WebAssembly path:*.wat "(table "` - Find repositories with a webassembly file that have a table. [Search](https://github.com/search?q=language%3AWebAssembly+path%3A*.wat+%22%28table+%22&type=code)
+
+- `language:WebAssembly path:*.wat "(memory "` - Find repositories with a webassembly file that have a memory. [Search](https://github.com/search?q=language%3AWebAssembly+path%3A*.wat+%22%28memory+%22&type=code)
+
+- `language:WebAssembly path:*.wat "(global "` - Find repositories with a webassembly file that have a global. [Search](https://github.com/search?q=language%3AWebAssembly+path%3A*.wat+%22%28global+%22&type=code)
+
+#### Zig
+
+- `language:zig path:*.zig` - Find repositories with a zig file. [Search](https://github.com/search?q=language%3Azig+path%3A*.zig&type=code)
+
+- `language:zig path:*.zig "fn "` - Find repositories with a zig file that have a function. [Search](https://github.com/search?q=language%3Azig+path%3A*.zig+%22fn+%22&type=code)
+
+- `language:zig path:*.zig "//"` - Find repositories with a zig file that have a comment. [Search](https://github.com/search?q=language%3Azig+path%3A*.zig+%22%2F%2F%22&type=code)
+
+- `language:zig path:*.zig "pub "` - Find repositories with a zig file that have a public function. [Search](https://github.com/search?q=language%3Azig+path%3A*.zig+%22pub+%22&type=code)
+
+- `language:zig path:*.zig "pub fn "` - Find repositories with a zig file that have a public function. [Search](https://github.com/search?q=language%3Azig+path%3A*.zig+%22pub+fn+%22&type=code)
+
+- `language:zig path:*.zig "pub const "` - Find repositories with a zig file that have a public const. [Search](https://github.com/search?q=language%3Azig+path%3A*.zig+%22pub+const+%22&type=code)
+
+- `language:zig path:*.zig "var "` - Find repositories with a zig file that have a var. [Search](https://github.com/search?q=language%3Azig+path%3A*.zig+%22var+%22&type=code)
+
+- `language:zig path:*.zig "pub var "` - Find repositories with a zig file that have a public var. [Search](https://github.com/search?q=language%3Azig+path%3A*.zig+%22pub+var+%22&type=code)
 
 ### Build Scripts
 
