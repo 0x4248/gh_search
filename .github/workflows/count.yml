@@ -15,5 +15,5 @@ jobs:
         run: python3 count.py
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Update readme gif
+          commit_message: Update readme searches count
           file_pattern: '*.md'
