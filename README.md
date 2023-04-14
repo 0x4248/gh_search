@@ -3,6 +3,18 @@ Total searches: `508`
 
 This is a list of prebuilt searches on Github. These searches are useful for finding code, commits, issues, pull requests, packages and repositories.
 
+You can modify the search to narrow down the results.
+
+For example:
+
+`language:python "if "` - [Search](https://github.com/search?q=language%3Apython+%22if+%22&type=code)
+
+I want to find python code that has an if statement with a input( on it so i modify the search to:
+
+`language:python "if input("` - [Search](https://github.com/search?q=language%3Apython+%22if+input%28%22&type=code)
+
+Now i get a list of python code that has an if statement with a input( on it.
+
 ## Table of Contents
 
 * [Code](#code)
