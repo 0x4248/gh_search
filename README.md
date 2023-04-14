@@ -13,12 +13,15 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
         + [Assembly](#assembly)
         + [AppleScript](#applescript)
         + [Bash](#bash)
+        + [BASIC](#basic)
+        + [Batchfile](#batchfile)
         + [C](#c)
         + [C++](#c-1)
         + [C#](#c-2)
         + [Ceylon](#ceylon)
         + [Chapel](#chapel)
         + [Cirru](#cirru)
+        + [Clojure](#clojure)
         + [COBOL](#cobol)
         + [CoffeeScript](#coffeescript)
         + [CSS](#css)
@@ -86,6 +89,12 @@ This is a list of prebuilt searches on Github. These searches are useful for fin
     + [Comment Annotations](#comment-annotations)
         + [General](#general)
         + [Doxygen](#doxygen)
+    + [Dotfiles](#dotfiles)
+        + [Bash](#bash-1)
+        + [Fish](#fish)
+        + [Git](#git)
+        + [Vim](#vim)
+        + [Zsh](#zsh)
 * [Repositories](#repositories)
 * [Issues](#issues)
     + [Open Issues](#open-issues)
@@ -158,6 +167,10 @@ Here are some searches for code on github.
 
 - `language:assembly path:*.asm ".global"` - Find repositories with a Assembly file that have a global instruction. [Search](https://github.com/search?q=language%3Aassembly+path%3A*.asm+%22.global%22&type=code)
 
+- `language:assembly path:*.asm ".extern"` - Find repositories with a Assembly file that have a extern instruction. [Search](https://github.com/search?q=language%3Aassembly+path%3A*.asm+%22.extern%22&type=code)
+
+- `language:assembly path:*.asm ".section"` - Find repositories with a Assembly file that have a section instruction. [Search](https://github.com/search?q=language%3Aassembly+path%3A*.asm+%22.section%22&type=code)
+
 #### AppleScript
 
 - `language:AppleScript path:*.applescript` - Find repositories with a AppleScript file. [Search](https://github.com/search?q=language%3AAppleScript+path%3A*.applescript&type=code)
@@ -201,6 +214,44 @@ Here are some searches for code on github.
 - `language:Bash path:*.bash "while "` - Find repositories with a Bash file that have a while statement. [Search](https://github.com/search?q=language%3ABash+path%3A*.bash+%22while+%22&type=code)
 
 - `language:Bash path:*.bash "until "` - Find repositories with a Bash file that have a until statement. [Search](https://github.com/search?q=language%3ABash+path%3A*.bash+%22until+%22&type=code)
+
+
+#### BASIC
+
+- `language:BASIC path:*.bas` - Find repositories with a BASIC file. [Search](https://github.com/search?q=language%3ABASIC+path%3A*.bas&type=code)
+
+- `language:BASIC path:*.bas "REM " OR "' "` - Find repositories with a BASIC file that have a comment. [Search](https://github.com/search?q=language%3ABASIC+path%3A*.bas+%22REM+%22+OR+%22%27+%22&type=code)
+
+- `language:BASIC path:*.bas "PRINT "` - Find repositories with a BASIC file that have a print instruction. [Search](https://github.com/search?q=language%3ABASIC+path%3A*.bas+%22PRINT+%22&type=code)
+
+- `language:BASIC path:*.bas "GOTO "` - Find repositories with a BASIC file that have a goto statement. [Search](https://github.com/search?q=language%3ABASIC+path%3A*.bas+%22GOTO+%22&type=code)
+
+- `language:BASIC path:*.bas "IF "` - Find repositories with a BASIC file that have a if statement. [Search](https://github.com/search?q=language%3ABASIC+path%3A*.bas+%22IF+%22&type=code)
+
+- `language:BASIC path:*.bas "FOR "` - Find repositories with a BASIC file that have a for statement. [Search](https://github.com/search?q=language%3ABASIC+path%3A*.bas+%22FOR+%22&type=code)
+
+
+#### Batchfile
+
+- `language:Batchfile path:*.bat OR path:*.cmd` - Find repositories with a Batchfile file. [Search](https://github.com/search?q=language%3ABatchfile+path%3A*.bat+OR+path%3A*.cmd&type=code)
+
+- `language:Batchfile path:*.bat OR path:*.cmd "@rem " OR language:Batchfile path:*.bat OR path:*.cmd ":: "` - Find repositories with a Batchfile file that have a comment. [Search](https://github.com/search?q=language%3ABatchfile+path%3A*.bat+OR+path%3A*.cmd+%22%40rem+%22+OR+language%3ABatchfile+path%3A*.bat+OR+path%3A*.cmd+%22%3A%3A+%22&type=code)
+
+- `language:Batchfile path:*.bat OR path:*.cmd "echo "` - Find repositories with a Batchfile file that have a echo instruction. [Search](https://github.com/search?q=language%3ABatchfile+path%3A*.bat+OR+path%3A*.cmd+%22echo+%22&type=code)
+
+- `language:Batchfile path:*.bat OR path:*.cmd "if "` - Find repositories with a Batchfile file that have a if statement. [Search](https://github.com/search?q=language%3ABatchfile+path%3A*.bat+OR+path%3A*.cmd+%22if+%22&type=code)
+
+- `language:Batchfile path:*.bat OR path:*.cmd "for "` - Find repositories with a Batchfile file that have a for statement. [Search](https://github.com/search?q=language%3ABatchfile+path%3A*.bat+OR+path%3A*.cmd+%22for+%22&type=code)
+
+- `language:Batchfile path:*.bat OR path:*.cmd "while "` - Find repositories with a Batchfile file that have a while statement. [Search](https://github.com/search?q=language%3ABatchfile+path%3A*.bat+OR+path%3A*.cmd+%22while+%22&type=code)
+
+- `language:Batchfile path:*.bat OR path:*.cmd "goto "` - Find repositories with a Batchfile file that have a goto statement. [Search](https://github.com/search?q=language%3ABatchfile+path%3A*.bat+OR+path%3A*.cmd+%22goto+%22&type=code)
+
+- `language:Batchfile path:*.bat OR path:*.cmd "call "` - Find repositories with a Batchfile file that have a call statement. [Search](https://github.com/search?q=language%3ABatchfile+path%3A*.bat+OR+path%3A*.cmd+%22call+%22&type=code)
+
+- `language:Batchfile path:*.bat OR path:*.cmd "set "` - Find repositories with a Batchfile file that have a set statement. [Search](https://github.com/search?q=language%3ABatchfile+path%3A*.bat+OR+path%3A*.cmd+%22set+%22&type=code)
+
+- `language:Batchfile path:*.bat OR path:*.cmd "exit "` - Find repositories with a Batchfile file that have a exit statement. [Search](https://github.com/search?q=language%3ABatchfile+path%3A*.bat+OR+path%3A*.cmd+%22exit+%22&type=code)
 
 #### C
 
@@ -368,6 +419,29 @@ Here are some searches for code on github.
 - `language:Cirru path:*.cirru "loop "` - Find repositories with a Cirru file that have a loop. [Search](https://github.com/search?q=language%3ACirru+path%3A*.cirru+%22loop+%22&type=code)
 
 - `language:Cirru path:*.cirru "return "` - Find repositories with a Cirru file that have a return. [Search](https://github.com/search?q=language%3ACirru+path%3A*.cirru+%22return+%22&type=code)
+
+#### Clojure
+
+- `language:Clojure path:*.clj` - Find repositories with a Clojure file. [Search](https://github.com/search?q=language%3AClojure+path%3A*.clj&type=code)
+
+- `language:Clojure path:*.clj ";;"` - Find repositories with a Clojure file that have a comment. [Search](https://github.com/search?q=language%3AClojure+path%3A*.clj+%22%3B%3B%22&type=code)
+
+- `language:Clojure path:*.clj "def "` - Find repositories with a Clojure file that have a def. [Search](https://github.com/search?q=language%3AClojure+path%3A*.clj+%22def+%22&type=code)
+
+- `language:Clojure path:*.clj "defn "` - Find repositories with a Clojure file that have a defn. [Search](https://github.com/search?q=language%3AClojure+path%3A*.clj+%22defn+%22&type=code)
+
+- `language:Clojure path:*.clj "if "` - Find repositories with a Clojure file that have a if. [Search](https://github.com/search?q=language%3AClojure+path%3A*.clj+%22if+%22&type=code)
+
+- `language:Clojure path:*.clj "do "` - Find repositories with a Clojure file that have a do. [Search](https://github.com/search?q=language%3AClojure+path%3A*.clj+%22do+%22&type=code)
+
+- `language:Clojure path:*.clj "let "` - Find repositories with a Clojure file that have a let. [Search](https://github.com/search?q=language%3AClojure+path%3A*.clj+%22let+%22&type=code)
+
+- `language:Clojure path:*.clj "loop "` - Find repositories with a Clojure file that have a loop. [Search](https://github.com/search?q=language%3AClojure+path%3A*.clj+%22loop+%22&type=code)
+
+- `language:Clojure path:*.clj "return "` - Find repositories with a Clojure file that have a return. [Search](https://github.com/search?q=language%3AClojure+path%3A*.clj+%22return+%22&type=code)
+
+- `language:Clojure path:*.clj "println "` - Find repositories with a Clojure file that have a println. [Search](https://github.com/search?q=language%3AClojure+path%3A*.clj+%22println+%22&type=code)
+
 
 #### COBOL
 
@@ -750,6 +824,10 @@ Here are some searches for code on github.
 
 #### Python
 
+- `language:python path:*.py` - Find repositories with a python file. [Search](https://github.com/search?q=language%3Apython%20path%3A*.py&type=code)
+
+- `language:python path:*.py "#"` - Find repositories with a python file that have a comment. [Search](https://github.com/search?q=language%3Apython+path%3A*.py+%22%23%22&type=code)
+
 - `language:python path:*/__main__.py OR language:python path:*/main.py` - Find repositories with a main python file. [Search](https://github.com/search?q=language%3Apython+path%3A*%2F__main__.py+OR+language%3Apython+path%3A*%2Fmain.py&type=code)
 
 - `language:python path:*/__init__.py` - Find repositories with an init file. [Search](https://github.com/search?q=language%3Apython+path%3A*%2F__init__.py&type=code)
@@ -773,6 +851,18 @@ Here are some searches for code on github.
 - `language:python "class "` - Find python files with a class. [Search](https://github.com/search?q=language%3Apython+%22class+%22&type=code)
 
 - `language:python "if "` - Find python files with a if statement. [Search](https://github.com/search?q=language%3Apython+%22if+%22&type=code)
+
+- `language:python "elif "` - Find python files with a elif statement. [Search](https://github.com/search?q=language%3Apython+%22elif+%22&type=code)
+
+- `language:python "else "` - Find python files with a else statement. [Search](https://github.com/search?q=language%3Apython+%22else+%22&type=code)
+
+- `language:python "for "` - Find python files with a for statement. [Search](https://github.com/search?q=language%3Apython+%22for+%22&type=code)
+
+- `language:python "while "` - Find python files with a while statement. [Search](https://github.com/search?q=language%3Apython+%22while+%22&type=code)
+
+- `language:python "try:"` - Find python files with a try statement. [Search](https://github.com/search?q=language%3Apython+%22try%3A%22&type=code)
+
+- `language:python "except "` - Find python files with a except statement. [Search](https://github.com/search?q=language%3Apython+%22except+%22&type=code)
 
 - `language:python if __name__ == "__main__"` - Find python files with a main function. [Search](https://github.com/search?q=language%3Apython+if+__name__+%3D%3D+%22__main__%22&type=code)
 
@@ -1228,6 +1318,51 @@ Here are some searches for code on github.
 - `"@version " OR "\version "` - Find files with a version comment. [Search](https://github.com/search?q=%22%40version+%22+OR+%22%5Cversion+%22&type=code)
 
 - `"@date " OR "\date "` - Find files with a date comment. [Search](https://github.com/search?q=%22%40date+%22+OR+%22%5Cdate+%22&type=code)
+
+
+### Dotfiles
+
+#### Bash
+
+- `language:shell path:.bashrc` - Find repositories with a bashrc file. [Search](https://github.com/search?q=language%3Ashell+path%3A.bashrc&type=code)
+
+- `language:shell path:.bash_profile` - Find repositories with a bash_profile file. [Search](https://github.com/search?q=language%3Ashell+path%3A.bash_profile&type=code)
+
+- `language:shell path:.bash_logout` - Find repositories with a bash_logout file. [Search](https://github.com/search?q=language%3Ashell+path%3A.bash_logout&type=code)
+
+- `language:shell path:.bash_aliases` - Find repositories with a bash_aliases file. [Search](https://github.com/search?q=language%3Ashell+path%3A.bash_aliases&type=code)
+
+#### Fish
+
+- `language:shell path:.config/fish/config.fish` - Find repositories with a fish config file. [Search](https://github.com/search?q=language%3Ashell+path%3A.config%2Ffish%2Fconfig.fish&type=code)
+
+- `language:shell path:.config/fish/*` - Find repositories with a fish config file. [Search](https://github.com/search?q=language%3Ashell+path%3A.config%2Ffish%2F*&type=code)
+
+#### Git
+- `path:.gitignore` - Find repositories with a gitignore file. [Search](https://github.com/search?q=path%3A.gitignore&type=code)
+
+- `path:.gitattributes` - Find repositories with a gitattributes file. [Search](https://github.com/search?q=path%3A.gitattributes&type=code)
+
+- `path:.gitmodules` - Find repositories with a gitmodules file. [Search](https://github.com/search?q=path%3A.gitmodules&type=code)
+
+- `language:"Git Config" path:.gitconfig` - Find repositories with a gitconfig file. [Search](https://github.com/search?q=language%3A%22Git+Config%22+path%3A.gitconfig&type=code)
+
+#### Vim
+
+- `language:vim path:.vimrc` - Find repositories with a vimrc file. [Search](https://github.com/search?q=language%3Avim+path%3A.vimrc&type=code)
+
+- `language:vim path:.vim` - Find repositories with a vim file. [Search](https://github.com/search?q=language%3Avim+path%3A.vim&type=code)
+
+- `language:vim path:.gvimrc` - Find repositories with a gvimrc file. [Search](https://github.com/search?q=language%3Avim+path%3A.gvimrc&type=code)
+
+- `language:vim path:.gvim` - Find repositories with a gvim file. [Search](https://github.com/search?q=language%3Avim+path%3A.gvim&type=code)
+
+#### Zsh
+
+- `language:shell path:.zshrc` - Find repositories with a zshrc file. [Search](https://github.com/search?q=language%3Ashell+path%3A.zshrc&type=code)
+
+- `language:shell path:.zshenv` - Find repositories with a zshenv file. [Search](https://github.com/search?q=language%3Ashell+path%3A.zshenv&type=code)
+
 
 ## Repositories
 
