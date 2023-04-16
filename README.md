@@ -49,6 +49,7 @@ Now i get a list of python code that has an if statement with a input( on it.
         + [Groovy](#groovy)
         + [Haskell](#haskell)
         + [HTML](#html)
+        + [J](#j)
         + [Java](#java)
         + [JavaScript](#javascript)
         + [Julia](#julia)
@@ -69,10 +70,13 @@ Now i get a list of python code that has an if statement with a input( on it.
         + [Scala](#scala)
         + [Swift](#swift)
         + [TypeScript](#typescript)
+        + [Vala](#vala)
         + [Vim script](#vim-script)
         + [Visual Basic](#visual-basic)
         + [Vue](#vue)
         + [WebAssembly](#webassembly)
+        + [XQuery](#xquery)
+        + [YARA](#yara)
         + [Zig](#zig)
     + [Build Scripts](#build-scripts)
         + [CMake](#cmake)
@@ -86,10 +90,17 @@ Now i get a list of python code that has an if statement with a input( on it.
         + [CSV](#csv)
         + [INI](#ini)
         + [JSON](#json)
-        + [YAML](#yaml)
+        + [JavaScript](#javascript-1)
+            + [NPM](#npm)
+        + [Python](#python-1)
+            + [Pipfile](#pipfile)
+            + [Pyproject.toml](#pyprojecttoml)
+            + [Requirements](#requirements)
         + [SQL](#sql)
         + [TOML](#toml)
+        + [XLST](#xlst)
         + [XML](#xml)
+        + [YAML](#yaml)
     + [Documentation](#documentation)
         + [AsciiDoc](#asciidoc)
         + [LaTeX](#latex)
@@ -645,6 +656,16 @@ Here are some searches for code on github.
 
 - `language:HTML path:*.html "<meta"` - Find repositories with a HTML file that have a meta tag. [Search](https://github.com/search?q=language%3AHTML+path%3A*.html+%22%3Cmeta%22&type=code)
 
+#### J
+
+- `language:J path:*.ijs` - Find repositories with a J file. [Search](https://github.com/search?q=language%3AJ+&type=code)
+
+- `language:J path:*.ijs "load "` - Find repositories with a J file that have a load. [Search](https://github.com/search?q=language%3AJ+path%3A*.ijs+%22load+%22&type=code)
+
+- `language:J path:*.ijs "NB. "` - Find repositories with a J file that have a comment. [Search](https://github.com/search?q=language%3AJ+path%3A*.ijs+%22NB.+%22&type=code)
+
+- `language:J path:*.ijs "=: "` - Find repositories with a J file that have a variable. [Search](https://github.com/search?q=language%3AJ+path%3A*.ijs+%22%3D%3A+%22&type=code)
+
 #### Java
 
 - `language:java path:*.java` - Find repositories with a java file. [Search](https://github.com/search?q=language%3Ajava+path%3A*.java&type=code)
@@ -836,6 +857,8 @@ Here are some searches for code on github.
 
 #### Python
 
+For configuration files, see [Configuration Files/Python](#python-1).
+
 - `language:python path:*.py` - Find repositories with a python file. [Search](https://github.com/search?q=language%3Apython%20path%3A*.py&type=code)
 
 - `language:python path:*.py "#"` - Find repositories with a python file that have a comment. [Search](https://github.com/search?q=language%3Apython+path%3A*.py+%22%23%22&type=code)
@@ -844,15 +867,9 @@ Here are some searches for code on github.
 
 - `language:python path:*/__init__.py` - Find repositories with an init file. [Search](https://github.com/search?q=language%3Apython+path%3A*%2F__init__.py&type=code)
 
-- `path:*/requirements.txt` - Find repositories with a requirements file. [Search](https://github.com/search?q=path%3A*%2Frequirements.txt&type=code)
-
-- `path:*/requirements.txt <PACKAGE>` - Find repositories with a requirements file that use a package replace package with the package you want to search for e.g. `requests==` or `flask==`
-
 - `language:python path:*/setup.py` - Find repositories with a setup file [Search](https://github.com/search?q=language%3Apython+path%3A*%2Fsetup.py&type=code)
 
 - `path:*/setup.cfg` - Find repositories with a setup config file. [Search](https://github.com/search?q=path%3A*%2Fsetup.cfg&type=code)
-
-- `path:*/pyproject.toml` - Find repositories with a pyproject file. [Search](https://github.com/search?q=path:*/pyproject.toml&type=code)
 
 - `language:python "import <PACKAGE>"` - Find python files that use a package replace package with the package you want to search for e.g. `requests` or `flask`
 
@@ -990,7 +1007,18 @@ Here are some searches for code on github.
 
 - `language:typescript "if(" <CONDITION>` - Find typescript files that use a if statement replace CONDITION with the condition you want to search for.
 
-### Vim Script
+
+#### Vala
+
+- `language:vala path:*.vala` - Find repositories with a vala file. [Search](https://github.com/search?q=language%3Avala+path%3A*.vala&type=code)
+
+- `language:vala path:*.vala "import "` - Find repositories with a vala file that have a import. [Search](https://github.com/search?q=language%3Avala+path%3A*.vala+%22import+%22&type=code)
+
+- `language:vala path:*.vala "//" OR "/*"` - Find repositories with a vala file that have a comment. [Search](https://github.com/search?q=language%3Avala+path%3A*.vala+%22%2F%2F%22+OR+%22%2F*%22&type=code)
+
+- `language:vala path:*.vala "function "` - Find repositories with a vala file that have a function. [Search](https://github.com/search?q=language%3Avala+path%3A*.vala+%22function+%22&type=code)
+
+#### Vim Script
 
 - `language:vim path:*.vim` - Find repositories with a vim file. [Search](https://github.com/search?q=language%3Avim%20path%3A*.vim&type=code)
 
@@ -1004,7 +1032,7 @@ Here are some searches for code on github.
 
 - `language:vim path:*.vim "var "` - Find repositories with a vim file that use a var statement. [Search](https://github.com/search?q=language%3Avim+path%3A*.vim+%22var+%22&type=code)
 
-### Visual Basic
+#### Visual Basic
 
 - `language:"Visual Basic" path:*.vb` - Find repositories with a visual basic file. [Search](https://github.com/search?q=language%3A%22Visual+Basic%22+path%3A*.vb&type=code)
 
@@ -1062,6 +1090,46 @@ Here are some searches for code on github.
 - `language:WebAssembly path:*.wat "(memory "` - Find repositories with a webassembly file that have a memory. [Search](https://github.com/search?q=language%3AWebAssembly+path%3A*.wat+%22%28memory+%22&type=code)
 
 - `language:WebAssembly path:*.wat "(global "` - Find repositories with a webassembly file that have a global. [Search](https://github.com/search?q=language%3AWebAssembly+path%3A*.wat+%22%28global+%22&type=code)
+
+#### XQuery
+
+- `language:XQuery path:*.xq` - Find repositories with a xquery file. [Search](https://github.com/search?q=language%3AXQuery+path%3A*.xq&type=code)
+
+- `language:XQuery path:*.xqm` - Find repositories with a xquery module file. [Search](https://github.com/search?q=language%3AXQuery+path%3A*.xqm&type=code)
+
+- `language:XQuery path:*.xqy` - Find repositories with a xquery xqy file. [Search](https://github.com/search?q=language%3AXQuery+path%3A*.xqy&type=code)
+
+- `language:XQuery path:*.xql` - Find repositories with a xquery xql file. [Search](https://github.com/search?q=language%3AXQuery+path%3A*.xql&type=code)
+
+- `language:XQuery path:*.xq*` - Find repositories with any xquery file extension. [Search](https://github.com/search?q=language%3AXQuery+path%3A*.xq*&type=code)
+
+- `language:XQuery path:*.xq* "declare "` - Find repositories with any xquery file extension that have a declare. [Search](https://github.com/search?q=language%3AXQuery+path%3A*.xq*+%22declare+%22&type=code)
+
+- `language:XQuery path:*.xq* "import "` - Find repositories with any xquery file extension that have a import. [Search](https://github.com/search?q=language%3AXQuery+path%3A*.xq*+%22import+%22&type=code)
+
+- `language:XQuery path:*.xq* "if "` - Find repositories with any xquery file extension that have a if. [Search](https://github.com/search?q=language%3AXQuery+path%3A*.xq*+%22if+%22&type=code)
+
+- `language:XQuery path:*.xq* "for "` - Find repositories with any xquery file extension that have a for. [Search](https://github.com/search?q=language%3AXQuery+path%3A*.xq*+%22for+%22&type=code)
+
+- `language:XQuery path:*.xq* "where "` - Find repositories with any xquery file extension that have a where. [Search](https://github.com/search?q=language%3AXQuery+path%3A*.xq*+%22where+%22&type=code)
+
+- `language:XQuery path:*.xq* "return "` - Find repositories with any xquery file extension that have a return. [Search](https://github.com/search?q=language%3AXQuery+path%3A*.xq*+%22return+%22&type=code)
+
+- `language:XQuery path:*.xq* "let "` - Find repositories with any xquery file extension that have a let. [Search](https://github.com/search?q=language%3AXQuery+path%3A*.xq*+%22let+%22&type=code)
+
+#### YARA
+
+- `language:YARA path:*.yar` - Find repositories with a yara file. [Search](https://github.com/search?q=language%3AYARA+path%3A*.yar&type=code)
+
+- `language:YARA path:*.yar "rule "` - Find repositories with a yara file that have a rule. [Search](https://github.com/search?q=language%3AYARA+path%3A*.yar+%22rule+%22&type=code)
+
+- `language:YARA path:*.yar "strings:"` - Find repositories with a yara file that have a strings. [Search](https://github.com/search?q=language%3AYARA+path%3A*.yar+%22strings%3A%22&type=code)
+
+- `language:YARA path:*.yar "condition:"` - Find repositories with a yara file that have a condition. [Search](https://github.com/search?q=language%3AYARA+path%3A*.yar+%22condition%3A%22&type=code)
+
+- `language:YARA path:*.yar "meta:"` - Find repositories with a yara file that have a meta. [Search](https://github.com/search?q=language%3AYARA+path%3A*.yar+%22meta%3A%22&type=code)
+
+- `language:YARA path:*.yar "import "` - Find repositories with a yara file that have a import. [Search](https://github.com/search?q=language%3AYARA+path%3A*.yar+%22import+%22&type=code)
 
 #### Zig
 
@@ -1158,6 +1226,18 @@ Here are some searches for code on github.
 
 - `language:ini path:*.ini [SECTION]` - Find repositories with a ini file that has a section replace section with the section you want to search for e.g. `tool` or `dependencies`
 
+#### JavaScript
+
+##### NPM
+
+- `language:javascript path:package.json` - Find repositories with a package.json file. [Search](https://github.com/search?q=language%3Ajavascript+path%3Apackage.json&type=code)
+
+- `language:javascript path:package.json "\"dependencies\":"` - Find repositories with a package.json file that has dependencies. [Search](https://github.com/search?q=language%3Ajavascript+path%3Apackage.json+%22%5C%22dependencies%5C%22%3A%22&type=code)
+
+- `language:javascript path:package.json "\"devDependencies\":"` - Find repositories with a package.json file that has devDependencies. [Search](https://github.com/search?q=language%3Ajavascript+path%3Apackage.json+%22%5C%22devDependencies%5C%22%3A%22&type=code)
+
+- `language:javascript path:package.json "\"scripts\":"` - Find repositories with a package.json file that has scripts. [Search](https://github.com/search?q=language%3Ajavascript+path%3Apackage.json+%22%5C%22scripts%5C%22%3A%22&type=code)
+
 #### JSON
 
 - `language:json path:*.json` - Find repositories with a json file. [Search](https://github.com/search?q=language%3Ajson+path%3A*.json&type=code)
@@ -1176,15 +1256,29 @@ Here are some searches for code on github.
 
 - `language:json path:*.tsconfig.json` - Find repositories with a TypeScript configuration file in JSON format. [Search](https://github.com/search?q=language%3Ajson+path%3A*.tsconfig.json&type=code)
 
-#### YAML
+#### Python
 
-- `language:yaml path:*.yaml` - Find repositories with a yaml file. [Search](https://github.com/search?q=language%3Ayaml+path%3A*.yaml&type=code)
+##### Pipfile
 
-- `path:.github/workflows language:yaml` - find github workflow files. [Search](https://github.com/search?q=path%3A.github%2Fworkflows+language%3Ayaml&type=code)
+- `language:toml path:Pipfile` - Find repositories with a Pipfile. [Search](https://github.com/search?q=language%3Atoml+path%3APipfile&type=code)
 
-- `path:.github/workflows language:yaml "uses: actions/checkout@v3"` - find github workflows that use actions/checkout@v3. [Search](https://github.com/search?q=path%3A.github%2Fworkflows+language%3Ayaml+%22uses%3A+actions%2Fcheckout%40v3%22&type=code)
+- `language:toml path:Pipfile "#"` - Find repositories with a Pipfile that use a comment. [Search](https://github.com/search?q=language%3Atoml+path%3APipfile+%22%23%22&type=code)
 
-- `path:.github/workflows language:yaml "uses: <PACKAGE>"` - find github workflows that use a package replace package with the package you want to search for e.g. `actions/checkout@v3` or `actions/setup-node@v2`
+##### Pyproject
+
+- `language:toml path:pyproject.toml` - Find repositories with a pyproject.toml file. [Search](https://github.com/search?q=language%3Atoml+path%3Apyproject.toml&type=code)
+
+- `language:toml path:pyproject.toml "#"` - Find repositories with a pyproject.toml file that use a comment. [Search](https://github.com/search?q=language%3Atoml+path%3Apyproject.toml+%22%23%22&type=code)
+
+- `language:toml path:pyproject.toml "version = \"1.0.0\""` - Find repositories with a pyproject.toml file that has a version of 1.0.0. Change the version to the version you want to search for. [Search](https://github.com/search?q=language%3Atoml+path%3Apyproject.toml+%22version+%3D+%5C%221.0.0%5C%22%22&type=code)
+
+- `language:toml path:pyproject.toml "requests ="` - Find repositories with a pyproject.toml file that has requests. You can replace requests with any package you want to search for. [Search](https://github.com/search?q=language%3Atoml+path%3Apyproject.toml+%22requests+%3D%22&type=code)
+
+##### Requirements
+
+- `language:python path:requirements.txt` - Find repositories with a requirements.txt file. [Search](https://github.com/search?q=language%3Apython+path%3Arequirements.txt&type=code)
+
+- `language:python path:requirements.txt "requests"` - Find repositories with a requirements.txt file that has requests. You can replace requests with any package you want to search for. [Search](https://github.com/search?q=language%3Apython+path%3Arequirements.txt+%22requests%22&type=code)
 
 #### SQL
 
@@ -1206,11 +1300,33 @@ Here are some searches for code on github.
 
 - `language:toml path:*.toml "# TODO:"` - Find repositories with a toml file that has a todo comment. [Search](https://github.com/search?q=language%3Atoml+path%3A*.toml+%22%23+TODO%3A%22&type=code)
 
+#### XLST
+
+- `language:xslt path:*.xslt OR path:*.xsl` - Find repositories with a xslt file. [Search](https://github.com/search?q=language%3Axslt+path%3A*.xslt+OR+path%3A*.xsl&type=code)
+
+- `language:xslt path:*.xslt OR path:*.xsl "xsl:stylesheet"` - Find repositories with a xslt file that has a xsl:stylesheet tag. [Search](https://github.com/search?q=language%3Axslt+path%3A*.xslt+OR+path%3A*.xsl+%22xsl%3Astylesheet%22&type=code)
+
+- `language:xslt path:*.xslt OR path:*.xsl "xsl:stylesheet" "xsl:template"` - Find repositories with a xslt file that has a xsl:stylesheet tag and a xsl:template tag. [Search](https://github.com/search?q=language%3Axslt+path%3A*.xslt+OR+path%3A*.xsl+%22xsl%3Astylesheet%22+%22xsl%3Atemplate%22&type=code)
+
+- `language:xslt path:*.xslt OR path:*.xsl "xsl:if"` - Find repositories with a xslt file that has a xsl:if tag. [Search](https://github.com/search?q=language%3Axslt+path%3A*.xslt+OR+path%3A*.xsl+%22xsl%3Aif%22&type=code)
+
+- `language:xslt path:*.xslt OR path:*.xsl "xsl:for-each"` - Find repositories with a xslt file that has a xsl:for-each tag. [Search](https://github.com/search?q=language%3Axslt+path%3A*.xslt+OR+path%3A*.xsl+%22xsl%3Afor-each%22&type=code)
+
 #### XML
 
 - `language:xml path:*.xml` - Find repositories with a xml file. [Search](https://github.com/search?q=language%3Axml+path%3A*.xml&type=code)
 
 - `language:xml <?xml version="1.0" encoding="UTF-8"?>` - Find repositories with a xml file that has the xml version of 1.0 and a file encoding of UTF-8. [Search](https://github.com/search?q=language%3Axml+%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E&type=code)
+
+#### YAML
+
+- `language:yaml path:*.yaml` - Find repositories with a yaml file. [Search](https://github.com/search?q=language%3Ayaml+path%3A*.yaml&type=code)
+
+- `path:.github/workflows language:yaml` - find github workflow files. [Search](https://github.com/search?q=path%3A.github%2Fworkflows+language%3Ayaml&type=code)
+
+- `path:.github/workflows language:yaml "uses: actions/checkout@v3"` - find github workflows that use actions/checkout@v3. [Search](https://github.com/search?q=path%3A.github%2Fworkflows+language%3Ayaml+%22uses%3A+actions%2Fcheckout%40v3%22&type=code)
+
+- `path:.github/workflows language:yaml "uses: <PACKAGE>"` - find github workflows that use a package replace package with the package you want to search for e.g. `actions/checkout@v3` or `actions/setup-node@v2`
 
 ### Documentation
 
