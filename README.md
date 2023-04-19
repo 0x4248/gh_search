@@ -39,6 +39,7 @@ Now i get a list of python code that has an if statement with a input( on it.
         + [CSS](#css)
         + [D](#d)
         + [Dart](#dart)
+        + [DataWeave](#dataweave)
         + [E](#e)
         + [Elixir](#elixir)
         + [EJS](#ejs)
@@ -55,8 +56,10 @@ Now i get a list of python code that has an if statement with a input( on it.
         + [Julia](#julia)
         + [Jupyter Notebook](#jupyter-notebook)
         + [Kotlin](#kotlin)
+        + [LFE](#lfe)
         + [Lisp](#lisp)
         + [Lua](#lua)
+        + [LLVM](#llvm)
         + [OCaml](#ocaml)
         + [Objective-C](#objective-c)
         + [Perl](#perl)
@@ -64,10 +67,13 @@ Now i get a list of python code that has an if statement with a input( on it.
         + [PowerShell](#powershell)
         + [Python](#python)
         + [R](#r)
+        + [RAML](#raml)
         + [Ruby](#ruby)
         + [Rust](#rust)
+        + [SAS](#sas)
         + [SASS](#sass)
         + [Scala](#scala)
+        + [SQF](#sqf)
         + [Swift](#swift)
         + [TypeScript](#typescript)
         + [Vala](#vala)
@@ -75,6 +81,7 @@ Now i get a list of python code that has an if statement with a input( on it.
         + [Visual Basic](#visual-basic)
         + [Vue](#vue)
         + [WebAssembly](#webassembly)
+        + [Wollok](#wollok)
         + [XQuery](#xquery)
         + [YARA](#yara)
         + [Zig](#zig)
@@ -530,6 +537,20 @@ Here are some searches for code on github.
 
 - `language:dart path:*.dart "//" OR "/*"` - Find repositories with a Dart file that have a comment. [Search](https://github.com/search?q=language%3Adart+path%3A*.dart+%22%2F%2F%22+OR+%22%2F*%22+&type=code)
 
+#### DataWeave
+
+- `language:DataWeave path:*.dwl` - Find repositories with a DataWeave file. [Search](https://github.com/search?q=language%3ADataWeave+path%3A*.dwl&type=code)
+
+- `language:DataWeave path:*.dwl "//" OR "/*"` - Find repositories with a DataWeave file that have a comment. [Search](https://github.com/search?q=language%3ADataWeave+path%3A*.dwl+%22%2F%2F%22+OR+%22%2F*%22&type=code)
+
+- `language:DataWeave path:*.dwl "import "` - Find repositories with a DataWeave file that have a import. [Search](https://github.com/search?q=language%3ADataWeave+path%3A*.dwl+%22import+%22&type=code)
+
+- `language:DataWeave path:*.dwl "output "` - Find repositories with a DataWeave file that have a output. [Search](https://github.com/search?q=language%3ADataWeave+path%3A*.dwl+%22output+%22&type=code)
+
+- `language:DataWeave path:*.dwl "var "` - Find repositories with a DataWeave file that have a var. [Search](https://github.com/search?q=language%3ADataWeave+path%3A*.dwl+%22var+%22&type=code)
+
+- `language:DataWeave path:*.dwl "fun"` - Find repositories with a DataWeave file that have a function. [Search](https://github.com/search?q=language%3ADataWeave+path%3A*.dwl+%22fun%22&type=code)
+
 #### E
 
 - `language:E path:*.e` - Find repositories with a E file. [Search](https://github.com/search?q=language%3AE+path%3A*.e&type=code)
@@ -752,7 +773,6 @@ Here are some searches for code on github.
 
 - `language:"Jupyter Notebook" path:*.ipynb "source"` - Find repositories with a Jupyter Notebook file sources. [Search](https://github.com/search?q=language%3A%22Jupyter+Notebook%22+path%3A*.ipynb+%22source%22&type=code)
 
-
 #### Kotlin
 
 - `language:kotlin path:*.kt` - Find repositories with a Kotlin file. [Search](https://github.com/search?q=language%3Akotlin+path%3A*.kt&type=code)
@@ -766,6 +786,16 @@ Here are some searches for code on github.
 - `language:kotlin path:*.kt "fun " <NAME>` - Find repositories with a Kotlin file that have a function with a name of <NAME>. Replace <NAME> with a package name.
 
 - `language:kotlin path:*.kt "// <COMMENT>"` - Find repositories with a Kotlin file that have a comment. Replace <COMMENT> with a comment.
+
+#### LFE
+
+- `language:LFE path:*.lfe` - Find repositories with a LFE file. [Search](https://github.com/search?q=language%3ALFE+path%3A*.lfe&type=code)
+
+- `language:LFE path:*.lfe ";"` - Find repositories with a LFE file that have a comment. [Search](https://github.com/search?q=language%3ALFE+path%3A*.lfe+%22%3B%22&type=code)
+
+- `language:LFE path:*.lfe "defun "` - Find repositories with a LFE file that have a defun. [Search](https://github.com/search?q=language%3ALFE+path%3A*.lfe+%22defun+%22&type=code)
+
+- `language:LFE path:*.lfe "let "` - Find repositories with a LFE file that have a let. [Search](https://github.com/search?q=language%3ALFE+path%3A*.lfe+%22let+%22&type=code)
 
 ##### Lisp
 
@@ -790,6 +820,32 @@ Here are some searches for code on github.
 - `language:Lua path:*.lua "function "` - Find repositories with a Lua file that have a function. [Search](https://github.com/search?q=language%3ALua+path%3A*.lua+%22function+%22&type=code)
 
 - `language:Lua path:*.lua "if "` - Find repositories with a Lua file that have a if statement. [Search](https://github.com/search?q=language%3ALua+path%3A*.lua+%22if+%22&type=code)
+
+#### LLVM
+
+- `language:LLVM path:*.ll` - Find repositories with a LLVM file. [Search](https://github.com/search?q=language%3ALLVM+path%3A*.ll&type=code)
+
+- `language:LLVM path:*.ll "; " NOT ");"` - Find repositories with a LLVM file that have a comment. [Search](https://github.com/search?q=language%3ALLVM+path%3A*.ll+%22%3B+%22+NOT+%22%29%3B%22&type=code)
+
+- `language:LLVM path:*.ll "define "` - Find repositories with a LLVM file that have a define. [Search](https://github.com/search?q=language%3ALLVM+path%3A*.ll+%22define+%22&type=code)
+
+- `language:LLVM path:*.ll "declare "` - Find repositories with a LLVM file that have a declare. [Search](https://github.com/search?q=language%3ALLVM+path%3A*.ll+%22declare+%22&type=code)
+
+- `language:LLVM path:*.ll "call "` - Find repositories with a LLVM file that have a call. [Search](https://github.com/search?q=language%3ALLVM+path%3A*.ll+%22call+%22&type=code)
+
+- `language:LLVM path:*.ll "ret "` - Find repositories with a LLVM file that have a ret. [Search](https://github.com/search?q=language%3ALLVM+path%3A*.ll+%22ret+%22&type=code)
+
+- `language:LLVM path:*.ll "br "` - Find repositories with a LLVM file that have a br. [Search](https://github.com/search?q=language%3ALLVM+path%3A*.ll+%22br+%22&type=code)
+
+- `language:LLVM path:*.ll "switch "` - Find repositories with a LLVM file that have a switch. [Search](https://github.com/search?q=language%3ALLVM+path%3A*.ll+%22switch+%22&type=code)
+
+- `language:LLVM path:*.ll "unreachable"` - Find repositories with a LLVM file that have a unreachable. [Search](https://github.com/search?q=language%3ALLVM+path%3A*.ll+%22unreachable%22&type=code)
+
+- `language:LLVM path:*.ll "alloca "` - Find repositories with a LLVM file that have a alloca. [Search](https://github.com/search?q=language%3ALLVM+path%3A*.ll+%22alloca+%22&type=code)
+
+- `language:LLVM path:*.ll "load "` - Find repositories with a LLVM file that have a load. [Search](https://github.com/search?q=language%3ALLVM+path%3A*.ll+%22load+%22&type=code)
+
+- `language:LLVM path:*.ll "store "` - Find repositories with a LLVM file that have a store. [Search](https://github.com/search?q=language%3ALLVM+path%3A*.ll+%22store+%22&type=code)
 
 #### Ocaml
 
@@ -901,6 +957,29 @@ For configuration files, see [Configuration Files/Python](#python-1).
 
 - `language:R path:*.R "#"` - Find repositories with a R file that have a comment. [Search](https://github.com/search?q=language%3AR%20path%3A*.R%20%22%23%22&type=code)
 
+
+#### RAML
+
+- `language:RAML path:*.raml` - Find repositories with a RAML file. [Search](https://github.com/search?q=language%3ARAML+path%3A*.raml&type=code)
+
+- `language:RAML path:*.raml "#" NOT "#%RAML"` - Find repositories with a RAML file that have a comment. [Search](https://github.com/search?q=language%3ARAML+path%3A*.raml+%22%23%22+NOT+%22%23%25RAML%22&type=code)
+
+- `language:RAML path:*.raml "baseUri:"` - Find repositories with a RAML file that have a baseUri. [Search](https://github.com/search?q=language%3ARAML+path%3A*.raml+%22baseUri%3A%22&type=code)
+
+- `language:RAML path:*.raml "title:"` - Find repositories with a RAML file that have a title. [Search](https://github.com/search?q=language%3ARAML+path%3A*.raml+%22title%3A%22&type=code)
+
+- `language:RAML path:*.raml "version:"` - Find repositories with a RAML file that have a version. [Search](https://github.com/search?q=language%3ARAML+path%3A*.raml+%22version%3A%22&type=code)
+
+- `language:RAML path:*.raml "schemas:"` - Find repositories with a RAML file that have a schemas. [Search](https://github.com/search?q=language%3ARAML+path%3A*.raml+%22schemas%3A%22&type=code)
+
+- `language:RAML path:*.raml "types:"` - Find repositories with a RAML file that have a types. [Search](https://github.com/search?q=language%3ARAML+path%3A*.raml+%22types%3A%22&type=code)
+
+- `language:RAML path:*.raml "traits:"` - Find repositories with a RAML file that have a traits. [Search](https://github.com/search?q=language%3ARAML+path%3A*.raml+%22traits%3A%22&type=code)
+
+- `language:RAML path:*.raml "resourceTypes:"` - Find repositories with a RAML file that have a resourceTypes. [Search](https://github.com/search?q=language%3ARAML+path%3A*.raml+%22resourceTypes%3A%22&type=code)
+
+- `language:RAML path:*.raml "securitySchemes:"` - Find repositories with a RAML file that have a securitySchemes. [Search](https://github.com/search?q=language%3ARAML+path%3A*.raml+%22securitySchemes%3A%22&type=code)
+
 #### Ruby
 
 - `language:ruby path:*.rb` - Find repositories with a ruby file. [Search](https://github.com/search?q=language%3Aruby+path%3A*.rb&type=code)
@@ -935,6 +1014,20 @@ For configuration files, see [Configuration Files/Python](#python-1).
 
 - `language:rust "fn <NAME>"` - Find Rust files that use a function. Replace <NAME> with a package name.
 
+#### SAS
+
+- `language:SAS path:*.sas` - Find repositories with a SAS file. [Search](https://github.com/search?q=language%3ASAS+path%3A*.sas&type=code)
+
+- `language:SAS path:*.sas "/*"` - Find repositories with a SAS file that have a comment. [Search](https://github.com/search?q=language%3ASAS+path%3A*.sas+%22%2F*%22&type=code)
+
+- `language:SAS path:*.sas "proc "` - Find repositories with a SAS file that have a proc. [Search](https://github.com/search?q=language%3ASAS+path%3A*.sas+%22proc+%22&type=code)
+
+- `language:SAS path:*.sas "data "` - Find repositories with a SAS file that have a data. [Search](https://github.com/search?q=language%3ASAS+path%3A*.sas+%22data+%22&type=code)
+
+- `language:SAS path:*.sas "run;"` - Find repositories with a SAS file that have a run. [Search](https://github.com/search?q=language%3ASAS+path%3A*.sas+%22run%3B%22&type=code)
+
+- `language:SAS path:*.sas "libname "` - Find repositories with a SAS file that have a libname. [Search](https://github.com/search?q=language%3ASAS+path%3A*.sas+%22libname+%22&type=code)
+
 #### SASS
 
 - `language:SASS path:*.sass` - Find repositories with a SASS file. [Search](https://github.com/search?q=language%3ASASS+path%3A*.sass&type=code)
@@ -954,6 +1047,16 @@ For configuration files, see [Configuration Files/Python](#python-1).
 - `language:Scala path:*.scala "import " <PACKAGE>` - Find repositories with a Scala file that have a import replace package with the package you want to search for.
 
 - `language:Scala path:*.scala "//" OR "/*"` - Find repositories with a Scala file that have a comment. [Search](https://github.com/search?q=language%3AScala+path%3A*.scala+%22%2F%2F%22+OR+%22%2F*%22&type=code)
+
+#### SQF
+
+- `language:SQF path:*.sqf` - Find repositories with a SQF file. [Search](https://github.com/search?q=language%3ASQF+path%3A*.sqf&type=code)
+
+- `language:SQF path:*.sqf "//" OR language:SQF path:*.sqf "/*"` - Find repositories with a SQF file that have a comment. [Search](https://github.com/search?q=language%3ASQF+path%3A*.sqf+%22%2F%2F%22+OR+language%3ASQF+path%3A*.sqf+%22%2F*%22&type=code)
+
+- `language:SQF path:*.sqf "private "` - Find repositories with a SQF file that have a private. [Search](https://github.com/search?q=language%3ASQF+path%3A*.sqf+%22private+%22&type=code)
+
+- `language:SQF path:*.sqf "call "` - Find repositories with a SQF file that have a call. [Search](https://github.com/search?q=language%3ASQF+path%3A*.sqf+%22call+%22&type=code)
 
 #### Swift
 
@@ -1090,6 +1193,21 @@ For configuration files, see [Configuration Files/Python](#python-1).
 - `language:WebAssembly path:*.wat "(memory "` - Find repositories with a webassembly file that have a memory. [Search](https://github.com/search?q=language%3AWebAssembly+path%3A*.wat+%22%28memory+%22&type=code)
 
 - `language:WebAssembly path:*.wat "(global "` - Find repositories with a webassembly file that have a global. [Search](https://github.com/search?q=language%3AWebAssembly+path%3A*.wat+%22%28global+%22&type=code)
+
+
+#### Wollok
+
+- `language:Wollok path:*.wlk` - Find repositories with a wollok file. [Search](https://github.com/search?q=language%3AWollok+path%3A*.wlk&type=code)
+
+- `language:Wollok path:*.wlk "//" OR language:Wollok path:*.wlk "/*"` - Find repositories with a wollok file that have a comment. [Search](https://github.com/search?q=language%3AWollok+path%3A*.wlk+%22%2F%2F%22+OR+language%3AWollok+path%3A*.wlk+%22%2F*%22&type=code)
+
+- `language:Wollok path:*.wlk "class "` - Find repositories with a wollok file that have a class. [Search](https://github.com/search?q=language%3AWollok+path%3A*.wlk+%22class+%22&type=code)
+
+- `language:Wollok path:*.wlk "object "` - Find repositories with a wollok file that have a object. [Search](https://github.com/search?q=language%3AWollok+path%3A*.wlk+%22object+%22&type=code)
+
+- `language:Wollok path:*.wlk "method "` - Find repositories with a wollok file that have a method. [Search](https://github.com/search?q=language%3AWollok+path%3A*.wlk+%22method+%22&type=code)
+
+- `language:Wollok path:*.wlk "var "` - Find repositories with a wollok file that have a var. [Search](https://github.com/search?q=language%3AWollok+path%3A*.wlk+%22var+%22&type=code)
 
 #### XQuery
 
@@ -1501,6 +1619,10 @@ For configuration files, see [Configuration Files/Python](#python-1).
 - `license:gpl` - Find repositories with gpl licence. [Search](https://github.com/search?q=license%3Agpl+&type=repositories)
 
 - `stars:>200` - Find repositories with more that 200 stars. [Search](https://github.com/search?q=stars%3A%3E200&type=repositories)
+
+- `CVE-20` - Find repositories that CVE exploits. [Search](https://github.com/search?q=CVE-20&type=repositories)
+
+- `awesome` - Find awesome lists repositories. [Search](https://github.com/search?q=awesome&type=repositories)
 
 ## Issues
 
