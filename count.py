@@ -1,6 +1,8 @@
 # Gh_search (count.py)
 # A list of prebuilt searches on Github.
 # Github: https://www.github.com/awesomelewis2007/gh_search
+# Licence: GPL-v3.0
+# By: Lewis Evans
 #
 # This file adds the total number of searches to the README.md file.
 
