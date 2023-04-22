@@ -89,7 +89,10 @@ Now i get a list of python code that has an if statement with a input( on it.
         + [CMake](#cmake)
         + [Gradle](#gradle)
         + [Makefile](#makefile)
+        + [Maven](#maven)
         + [Ninja](#ninja)
+        + [SCons](#scons)
+        + [Rake](#rake)
     + [Containers](#containers)
         + [Dockerfile](#dockerfile)
         + [LXC](#lxc)
@@ -1301,11 +1304,54 @@ For configuration files, see [Configuration Files/Python](#python-1).
 
 - `path:*/Makefile language:make = python3` - Find repositories with a Makefile that use python3. [Search](https://github.com/search?q=path%3A*%2FMakefile+language%3Amake+%22+%3D+python3%22&type=code)
 
+#### Maven
+
+- `path:pom.xml` - Find repositories with a pom.xml. [Search](https://github.com/search?q=path%3Apom.xml&type=code)
+
+- `path:pom.xml "dependency"` - Find repositories with a pom.xml that use a package. [Search](https://github.com/search?q=path%3Apom.xml+%22dependency%22&type=code)
+
+- `path:pom.xml "version"` - Find repositories with a pom.xml that use a version. [Search](https://github.com/search?q=path%3Apom.xml+%22version%22&type=code)
+
+- `path:pom.xml "project"` - Find repositories with a pom.xml that use a project. [Search](https://github.com/search?q=path%3Apom.xml+%22project%22&type=code)
+
 #### Ninja
 
 - `path:*.ninja` - Find repositories with a ninja file. [Search](https://github.com/search?q=path%3A*.ninja&type=code)
 
 - `path:*.ninja "rule "` - Find repositories with a ninja file that use a rule. [Search](https://github.com/search?q=path%3A*.ninja+%22rule+%22&type=code)
+
+- `path:*.ninja "build "` - Find repositories with a ninja file that use a build. [Search](https://github.com/search?q=path%3A*.ninja+%22build+%22&type=code)
+
+- `path:*.ninja "command "` - Find repositories with a ninja file that use a command. [Search](https://github.com/search?q=path%3A*.ninja+%22command+%22&type=code)
+
+#### Rake
+
+- `path:*/Rakefile` - Find repositories with a Rakefile. [Search](https://github.com/search?q=path%3A*%2FRakefile&type=code)
+
+- `path:*/Rakefile "require "` - Find repositories with a Rakefile that use a package. [Search](https://github.com/search?q=path%3A*%2FRakefile+%22require+%22&type=code)
+
+- `path:*/Rakefile "namespace "` - Find repositories with a Rakefile that use a namespace. [Search](https://github.com/search?q=path%3A*%2FRakefile+%22namespace+%22&type=code)
+
+- `path:*/Rakefile "task "` - Find repositories with a Rakefile that use a task. [Search](https://github.com/search?q=path%3A*%2FRakefile+%22task+%22&type=code)
+
+- `path:*/Rakefile "desc "` - Find repositories with a Rakefile that use a desc. [Search](https://github.com/search?q=path%3A*%2FRakefile+%22desc+%22&type=code)
+
+- `path:*/Rakefile "rule "` - Find repositories with a Rakefile that use a rule. [Search](https://github.com/search?q=path%3A*%2FRakefile+%22rule+%22&type=code)
+
+#### SCons
+
+- `path:*/SConstruct` - Find repositories with a SConstruct. [Search](https://github.com/search?q=path%3A*%2FSConstruct&type=code)
+
+- `path:*/SConstruct "env.Program"` - Find repositories with a SConstruct that use a package. [Search](https://github.com/search?q=path%3A*%2FSConstruct+%22env.Program%22&type=code)
+
+- `path:*/SConstruct "config.AddVariables"` - Find repositories with a SConstruct that use a config. [Search](https://github.com/search?q=path%3A*%2FSConstruct+%22config.AddVariables%22&type=code)
+
+- `path:*/SConstruct "env.Append"` - Find repositories with a SConstruct that use a env. [Search](https://github.com/search?q=path%3A*%2FSConstruct+%22env.Append%22&type=code)
+
+- `path:*/SConstruct "Platform"` - Find repositories with a SConstruct that use a Platform. [Search](https://github.com/search?q=path%3A*%2FSConstruct+%22Platform%22&type=code)
+
+- `path:*/SConstruct "env.Tool"` - Find repositories with a SConstruct that use a env. [Search](https://github.com/search?q=path%3A*%2FSConstruct+%22env.Tool%22&type=code)
+
 
 ### Containers
 
