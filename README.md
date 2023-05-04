@@ -82,6 +82,7 @@ Now i get a list of python code that has an if statement with a input( on it.
         + [Vue](#vue)
         + [WebAssembly](#webassembly)
         + [Wollok](#wollok)
+        + [xBase](#xbase)
         + [XQuery](#xquery)
         + [YARA](#yara)
         + [Zig](#zig)
@@ -163,6 +164,14 @@ Here are some searches for code on github.
 - `language:Ada path:*.adb OR path:*.ads "function "` - Find repositories with a Ada file that have a function keyword. [Search](https://github.com/search?q=language%3AAda+path%3A*.adb+OR+path%3A*.ads+%22function+%22&type=code)
 
 - `language:Ada path:*.adb OR path:*.ads "procedure "` - Find repositories with a Ada file that have a procedure keyword. [Search](https://github.com/search?q=language%3AAda+path%3A*.adb+OR+path%3A*.ads+%22procedure+%22&type=code)
+
+- `language:Ada path:*.adb OR path:*.ads "if "` - Find repositories with a Ada file that have a if keyword. [Search](https://github.com/search?q=language%3AAda+path%3A*.adb+OR+path%3A*.ads+%22if+%22&type=code)
+
+- `language:Ada path:*.adb OR path:*.ads "case "` - Find repositories with a Ada file that have a case keyword. [Search](https://github.com/search?q=language%3AAda+path%3A*.adb+OR+path%3A*.ads+%22case+%22&type=code)
+
+- `language:Ada path:*.adb OR path:*.ads "declare"` - Find repositories with a Ada file that have a declare keyword. [Search](https://github.com/search?q=language%3AAda+path%3A*.adb+OR+path%3A*.ads+%22declare%22&type=code)
+
+- `language:Ada path:*.adb OR path:*.ads "loop"` - Find repositories with a Ada file that have a loop keyword. [Search](https://github.com/search?q=language%3AAda+path%3A*.adb+OR+path%3A*.ads+%22loop%22&type=code)
 
 #### ASP
 
@@ -1211,6 +1220,24 @@ For configuration files, see [Configuration Files/Python](#python-1).
 - `language:Wollok path:*.wlk "method "` - Find repositories with a wollok file that have a method. [Search](https://github.com/search?q=language%3AWollok+path%3A*.wlk+%22method+%22&type=code)
 
 - `language:Wollok path:*.wlk "var "` - Find repositories with a wollok file that have a var. [Search](https://github.com/search?q=language%3AWollok+path%3A*.wlk+%22var+%22&type=code)
+
+#### xBase
+
+- `language:xBase` - Find repositories with a xbase file. [Search](https://github.com/search?q=language%3AxBase&type=code)
+
+- `language:xBase "//" OR language:xBase "/*"` - Find repositories with a xbase file that have a comment. [Search](https://github.com/search?q=language%3AxBase+%22%2F%2F%22+OR+language%3AxBase+%22%2F*%22&type=code)
+
+- `language:xBase "#include "` - Find repositories with a xbase file that have a include. [Search](https://github.com/search?q=language%3AxBase+%22%23include+%22&type=code)
+
+- `language:xBase "#define "` - Find repositories with a xbase file that have a define. [Search](https://github.com/search?q=language%3AxBase+%22%23define+%22&type=code)
+
+- `language:xBase "FUNCTION "` - Find repositories with a xbase file that have a function. [Search](https://github.com/search?q=language%3AxBase+%22FUNCTION+%22&type=code)
+
+- `language:xBase "PROCEDURE "` - Find repositories with a xbase file that have a procedure. [Search](https://github.com/search?q=language%3AxBase+%22PROCEDURE+%22&type=code)
+
+- `language:xBase "CLASS "` - Find repositories with a xbase file that have a class. [Search](https://github.com/search?q=language%3AxBase+%22CLASS+%22&type=code)
+
+- `language:xBase "METHOD "` - Find repositories with a xbase file that have a method. [Search](https://github.com/search?q=language%3AxBase+%22METHOD+%22&type=code)
 
 #### XQuery
 
