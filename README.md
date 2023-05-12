@@ -1221,6 +1221,14 @@ For configuration files, see [Configuration Files/Python](#python-1).
 
 - `language:Wollok path:*.wlk "var "` - Find repositories with a wollok file that have a var. [Search](https://github.com/search?q=language%3AWollok+path%3A*.wlk+%22var+%22&type=code)
 
+- `language:Wollok path:*.wlk "if "` - Find repositories with a wollok file that have a if. [Search](https://github.com/search?q=language%3AWollok%20path%3A*.wlk%20%22if%20%22&type=code)
+
+- `language:Wollok path:*.wlk "for "` - Find repositories with a wollok file that have a for. [Search](https://github.com/search?q=language%3AWollok+path%3A*.wlk+%22for+%22&type=code)
+
+- `language:Wollok path:*.wlk "object "` - Find repositories with a wollok file that have a while. [Search](https://github.com/search?q=language%3AWollok+path%3A*.wlk+%22object+%22&type=code)
+
+- `language:Wollok path:*.wlk "return "` - Find repositories with a wollok file that have a return. [Search](https://github.com/search?q=language%3AWollok+path%3A*.wlk+%22return+%22&type=code)
+
 #### xBase
 
 - `language:xBase` - Find repositories with a xbase file. [Search](https://github.com/search?q=language%3AxBase&type=code)
