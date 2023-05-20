@@ -1535,7 +1535,7 @@ For configuration files, see [Configuration Files/Python](#python-1).
 
 - `language:asciidoc path:README.adoc` - Find repositories with a readme file. [Search](https://github.com/search?q=language%3Aasciidoc+path%3AREADME.adoc&type=code)
 
--`language:asciidoc path:LICENSE.adoc` - Find repositories with a license file. [Search](https://github.com/search?q=language%3Aasciidoc+path%3ALICENSE.adoc&type=code)
+-`language:asciidoc path:LICENCE.adoc` - Find repositories with a license file. [Search](https://github.com/search?q=language%3Aasciidoc+path%3ALICENCE.adoc&type=code)
 
 - `language:asciidoc path:CHANGELOG.adoc` - Find repositories with a changelog file. [Search](https://github.com/search?q=language%3Aasciidoc+path%3ACHANGELOG.adoc&type=code)
 
@@ -1551,7 +1551,7 @@ For configuration files, see [Configuration Files/Python](#python-1).
 
 - `language:markdown path:README.md` - Find repositories with a readme file. [Search](https://github.com/search?q=language%3Amarkdown+path%3AREADME.md&type=code)
 
-- `language:markdown path:LICENSE.md` - Find repositories with a license file. [Search](https://github.com/search?q=language%3Amarkdown+path%3ALICENSE.md&type=code)
+- `language:markdown path:LICENCE.md` - Find repositories with a license file. [Search](https://github.com/search?q=language%3Amarkdown+path%3ALICENCE.md&type=code)
 
 - `language:markdown path:CONTRIBUTING.md` - Find repositories with a contributing file. [Search](https://github.com/search?q=language%3Amarkdown+path%3ACONTRIBUTING.md&type=code)
 
@@ -1579,7 +1579,7 @@ For configuration files, see [Configuration Files/Python](#python-1).
 
 - `path:README.rtf` - Find repositories with a readme file. [Search](https://github.com/search?q=path%3AREADME.rtf&type=code)
 
-- `path:LICENSE.rtf` - Find repositories with a license file. [Search](https://github.com/search?q=path%3ALICENSE.rtf&type=code)
+- `path:LICENCE.rtf` - Find repositories with a license file. [Search](https://github.com/search?q=path%3ALICENCE.rtf&type=code)
 
 - `path:CHANGELOG.rtf` - Find repositories with a changelog file. [Search](https://github.com/search?q=path%3ACHANGELOG.rtf&type=code)
 
@@ -1589,7 +1589,7 @@ For configuration files, see [Configuration Files/Python](#python-1).
 
 - `language:text path:README.txt` - Find repositories with a readme file. [Search](https://github.com/search?q=language%3Atext+path%3AREADME.txt&type=code)
 
-- `language:text path:LICENSE.txt` - Find repositories with a license file. [Search](https://github.com/search?q=language%3Atext+path%3ALICENSE.txt&type=code)
+- `language:text path:LICENCE.txt` - Find repositories with a license file. [Search](https://github.com/search?q=language%3Atext+path%3ALICENCE.txt&type=code)
 
 - `language:text path:CHANGELOG.txt` - Find repositories with a changelog file. [Search](https://github.com/search?q=language%3Atext+path%3ACHANGELOG.txt&type=code)
 
