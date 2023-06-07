@@ -1,5 +1,5 @@
 # Github prebuilt searches
-Total searches: `684`
+Total searches: `686`
 
 This is a list of prebuilt searches on Github. These searches are useful for finding code, commits, issues, pull requests, packages and repositories.
 
