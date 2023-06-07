@@ -1070,6 +1070,9 @@ For configuration files, see [Configuration Files/Python](#python-1).
 
 - `language:SQF path:*.sqf "call "` - Find repositories with a SQF file that have a call. [Search](https://github.com/search?q=language%3ASQF+path%3A*.sqf+%22call+%22&type=code)
 
+- `language:SQF path:*.sqf "#include "` - Find repositories with a SQF file that have a #include. [Search](https://github.com/search?q=language%3ASQF+path%3A*.sqf+%22%23include+%22&type=code)
+
+- `language:SQF path:*.sqf "if "` - Find repositories with a SQF file that have a if. [Search](https://github.com/search?q=language%3ASQF+path%3A*.sqf+%22if+%22&type=code)
 #### Swift
 
 - `language:swift path:*.swift` - Find repositories with a Swift file. [Search](https://github.com/search?q=language%3Aswift+path%3A*.swift&type=code)
