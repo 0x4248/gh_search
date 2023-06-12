@@ -5,6 +5,7 @@
 # By: Lewis Evans
 #
 # This file adds the total number of searches to the README.md file.
+# This file should be ran from the github actions workflow.
 
 if __name__ == "__main__":
     f = open("README.md", "r")
