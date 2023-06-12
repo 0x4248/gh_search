@@ -295,6 +295,10 @@ Here are some searches for code on github.
 
 - `language:Batchfile path:*.bat OR path:*.cmd "exit "` - Find repositories with a Batchfile file that have a exit statement. [Search](https://github.com/search?q=language%3ABatchfile+path%3A*.bat+OR+path%3A*.cmd+%22exit+%22&type=code)
 
+- `language:Batchfile path:*.bat OR path:*.cmd "pause "` - Find repositories with a Batchfile file that have a pause statement. [Search](https://github.com/search?q=language%3ABatchfile+path%3A*.bat+OR+path%3A*.cmd+%22pause+%22&type=code)
+
+- `language:Batchfile path:*.bat OR path:*.cmd "choice "` - Find repositories with a Batchfile file that have a choice statement. [Search](https://github.com/search?q=language%3ABatchfile+path%3A*.bat+OR+path%3A*.cmd+%22choice+%22&type=code)
+
 #### C
 
 - `language:c path:*.c` - Find repositories with a C file. [Search](https://github.com/search?q=language%3Ac+path%3A*.c&type=code)
