@@ -1,6 +1,6 @@
 # Gh_search (count.py)
 # A list of prebuilt searches on Github.
-# Github: https://www.github.com/awesomelewis2007/gh_search
+# Github: https://www.github.com/lewisevans2007/gh_search
 # Licence: GNU General Public License v3.0
 # By: Lewis Evans
 #
