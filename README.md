@@ -9,11 +9,11 @@ For example:
 
 `language:python "if "` - [Search](https://github.com/search?q=language%3Apython+%22if+%22&type=code)
 
-I want to find python code that has an if statement with a input( on it so i modify the search to:
+I want to find python code that has an if statement with a input( on it so I modify the search to:
 
 `language:python "if input("` - [Search](https://github.com/search?q=language%3Apython+%22if+input%28%22&type=code)
 
-Now i get a list of python code that has an if statement with a input( on it.
+Now I get a list of python code that has an if statement with a input( on it.
 
 ## Table of Contents
 
