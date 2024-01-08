@@ -3,7 +3,7 @@ Total searches: `688`
 
 This is a list of prebuilt searches on Github. These searches are useful for finding code, commits, issues, pull requests, packages and repositories.
 
-You can modify the search to narrow down the results.
+You can modify the search to narrow down the results to what you are looking for.
 
 For example:
 
