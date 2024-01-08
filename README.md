@@ -13,7 +13,7 @@ I want to find python code that has an if statement with a input( on it so I mod
 
 `language:python "if input("` - [Search](https://github.com/search?q=language%3Apython+%22if+input%28%22&type=code)
 
-Now I get a list of python code that has an if statement with a input( on it.
+Now I get a list of python code that has an if statement with a `input(` on it.
 
 ## Table of Contents
 
